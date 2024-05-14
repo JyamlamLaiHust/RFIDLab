@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>up-tech_logo.png</file>
+        <file>oneCard.jpg</file>
+        <file>changePwd.png</file>
+        <file>connect.png</file>
+        <file>disconnect.png</file>
+        <file>export.png</file>
+        <file>help.png</file>
+        <file>login.png</file>
+        <file>logout.png</file>
+        <file>main.png</file>
+        <file>recharge.png</file>
+        <file>recoder1.png</file>
+        <file>record.png</file>
+        <file>record2.png</file>
+        <file>record3.png</file>
+        <file>record4.png</file>
+        <file>regester.png</file>
+        <file>cast.png</file>
+        <file>pay.png</file>
+        <file>record5.png</file>
+        <file>Hotel Management System.png</file>
+    </qresource>
+</RCC>
