@@ -1,0 +1,4 @@
+<map id="PersonTableModel::deleteRecords" name="PersonTableModel::deleteRecords">
+<area shape="rect" id="node1" title="PersonTableModel::deleteRecords." alt="" coords="195,5,367,47"/>
+<area shape="rect" id="node2" href="$class_write_off_person.html#a4ac5c022a769acb97dfb615a2fceb1f3" title="WriteOffPerson::on_btn_LogOff_clicked 注销按钮点击事件" alt="" coords="5,5,147,47"/>
+</map>

@@ -1,0 +1,232 @@
+\hypertarget{class_u_h_f___thread}{}\section{U\+H\+F\+\_\+\+Thread Class Reference}
+\label{class_u_h_f___thread}\index{UHF\_Thread@{UHF\_Thread}}
+
+
+{\ttfamily \#include $<$uhf\+\_\+thread.\+h$>$}
+
+
+
+Inheritance diagram for U\+H\+F\+\_\+\+Thread\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_u_h_f___thread__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for U\+H\+F\+\_\+\+Thread\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{class_u_h_f___thread__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_h_f___thread_a4382c7acd8bb18adbaa580d3fb76ae17}{card\+ID}} (Q\+String cardid)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_h_f___thread_a4e345d08f3f78642458925017371cac2}{U\+H\+F\+\_\+\+Thread}} (Q\+Object $\ast$parent=0)
+\item 
+\mbox{\hyperlink{class_u_h_f___thread_a884aee3bdd34d43aa21af0ebe0012e7b}{$\sim$\+U\+H\+F\+\_\+\+Thread}} ()
+\item 
+bool \mbox{\hyperlink{class_u_h_f___thread_a8a872370902a9eb489a836ab28d8044c}{U\+A\+R\+T\+\_\+\+Connect}} (Q\+String Com\+Name, int Baudrate)
+\item 
+bool \mbox{\hyperlink{class_u_h_f___thread_a4d29770cacd38ec97148b8642df794b8}{U\+A\+R\+T\+\_\+\+Disconnect}} ()
+\item 
+bool \mbox{\hyperlink{class_u_h_f___thread_a8fc7d9ed28c737bc95cc33fc780b8bc2}{U\+H\+F\+\_\+\+I\+N\+IT}} ()
+\item 
+bool \mbox{\hyperlink{class_u_h_f___thread_a5c1a49f76f8e3a29fb009b7d638e5488}{Read\+\_\+\+Card\+ID}} ()
+\item 
+void \mbox{\hyperlink{class_u_h_f___thread_a5e287beadcbcccffcd5859fa25263785}{Process\+\_\+data}} (int cmd, char data\mbox{[}$\,$\mbox{]}, int length, int status)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_u_h_f___thread_ab40811b93c5e8b31c4f40cc79139e504}{n\+Run\+Flag}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_h_f___thread_a7ae2a5c0bae9b20e0fbc315febefb818}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m900_dll}{M900\+Dll}} $\ast$ \mbox{\hyperlink{class_u_h_f___thread_aca70040f175e3e6140b6b19c4b84b42b}{Dll}}
+\item 
+Q\+Serial\+Port $\ast$ \mbox{\hyperlink{class_u_h_f___thread_a20904e9764b311fdb015c3fd6cbec497}{serialport}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_u_h_f___thread_a4e345d08f3f78642458925017371cac2}\label{class_u_h_f___thread_a4e345d08f3f78642458925017371cac2}} 
+\index{UHF\_Thread@{UHF\_Thread}!UHF\_Thread@{UHF\_Thread}}
+\index{UHF\_Thread@{UHF\_Thread}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{UHF\_Thread()}{UHF\_Thread()}}
+{\footnotesize\ttfamily U\+H\+F\+\_\+\+Thread\+::\+U\+H\+F\+\_\+\+Thread (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_u_h_f___thread_a884aee3bdd34d43aa21af0ebe0012e7b}\label{class_u_h_f___thread_a884aee3bdd34d43aa21af0ebe0012e7b}} 
+\index{UHF\_Thread@{UHF\_Thread}!````~UHF\_Thread@{$\sim$UHF\_Thread}}
+\index{````~UHF\_Thread@{$\sim$UHF\_Thread}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{$\sim$UHF\_Thread()}{~UHF\_Thread()}}
+{\footnotesize\ttfamily U\+H\+F\+\_\+\+Thread\+::$\sim$\+U\+H\+F\+\_\+\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_h_f___thread_a4382c7acd8bb18adbaa580d3fb76ae17}\label{class_u_h_f___thread_a4382c7acd8bb18adbaa580d3fb76ae17}} 
+\index{UHF\_Thread@{UHF\_Thread}!cardID@{cardID}}
+\index{cardID@{cardID}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{cardID}{cardID}}
+{\footnotesize\ttfamily void U\+H\+F\+\_\+\+Thread\+::card\+ID (\begin{DoxyParamCaption}\item[{Q\+String}]{cardid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_h_f___thread_a4382c7acd8bb18adbaa580d3fb76ae17_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_u_h_f___thread_a5e287beadcbcccffcd5859fa25263785}\label{class_u_h_f___thread_a5e287beadcbcccffcd5859fa25263785}} 
+\index{UHF\_Thread@{UHF\_Thread}!Process\_data@{Process\_data}}
+\index{Process\_data@{Process\_data}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{Process\_data()}{Process\_data()}}
+{\footnotesize\ttfamily void U\+H\+F\+\_\+\+Thread\+::\+Process\+\_\+data (\begin{DoxyParamCaption}\item[{int}]{cmd,  }\item[{char}]{data\mbox{[}$\,$\mbox{]},  }\item[{int}]{length,  }\item[{int}]{status }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_h_f___thread_a5e287beadcbcccffcd5859fa25263785_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_u_h_f___thread_a5e287beadcbcccffcd5859fa25263785_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_u_h_f___thread_a5c1a49f76f8e3a29fb009b7d638e5488}\label{class_u_h_f___thread_a5c1a49f76f8e3a29fb009b7d638e5488}} 
+\index{UHF\_Thread@{UHF\_Thread}!Read\_CardID@{Read\_CardID}}
+\index{Read\_CardID@{Read\_CardID}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{Read\_CardID()}{Read\_CardID()}}
+{\footnotesize\ttfamily bool U\+H\+F\+\_\+\+Thread\+::\+Read\+\_\+\+Card\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_h_f___thread_a5c1a49f76f8e3a29fb009b7d638e5488_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_h_f___thread_a5c1a49f76f8e3a29fb009b7d638e5488_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_u_h_f___thread_a7ae2a5c0bae9b20e0fbc315febefb818}\label{class_u_h_f___thread_a7ae2a5c0bae9b20e0fbc315febefb818}} 
+\index{UHF\_Thread@{UHF\_Thread}!run@{run}}
+\index{run@{run}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void U\+H\+F\+\_\+\+Thread\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_h_f___thread_a7ae2a5c0bae9b20e0fbc315febefb818_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_u_h_f___thread_a8a872370902a9eb489a836ab28d8044c}\label{class_u_h_f___thread_a8a872370902a9eb489a836ab28d8044c}} 
+\index{UHF\_Thread@{UHF\_Thread}!UART\_Connect@{UART\_Connect}}
+\index{UART\_Connect@{UART\_Connect}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{UART\_Connect()}{UART\_Connect()}}
+{\footnotesize\ttfamily bool U\+H\+F\+\_\+\+Thread\+::\+U\+A\+R\+T\+\_\+\+Connect (\begin{DoxyParamCaption}\item[{Q\+String}]{Com\+Name,  }\item[{int}]{Baudrate }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_h_f___thread_a8a872370902a9eb489a836ab28d8044c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_u_h_f___thread_a4d29770cacd38ec97148b8642df794b8}\label{class_u_h_f___thread_a4d29770cacd38ec97148b8642df794b8}} 
+\index{UHF\_Thread@{UHF\_Thread}!UART\_Disconnect@{UART\_Disconnect}}
+\index{UART\_Disconnect@{UART\_Disconnect}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{UART\_Disconnect()}{UART\_Disconnect()}}
+{\footnotesize\ttfamily bool U\+H\+F\+\_\+\+Thread\+::\+U\+A\+R\+T\+\_\+\+Disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_h_f___thread_a4d29770cacd38ec97148b8642df794b8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_u_h_f___thread_a8fc7d9ed28c737bc95cc33fc780b8bc2}\label{class_u_h_f___thread_a8fc7d9ed28c737bc95cc33fc780b8bc2}} 
+\index{UHF\_Thread@{UHF\_Thread}!UHF\_INIT@{UHF\_INIT}}
+\index{UHF\_INIT@{UHF\_INIT}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{UHF\_INIT()}{UHF\_INIT()}}
+{\footnotesize\ttfamily bool U\+H\+F\+\_\+\+Thread\+::\+U\+H\+F\+\_\+\+I\+N\+IT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_h_f___thread_a8fc7d9ed28c737bc95cc33fc780b8bc2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_h_f___thread_a8fc7d9ed28c737bc95cc33fc780b8bc2_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_u_h_f___thread_aca70040f175e3e6140b6b19c4b84b42b}\label{class_u_h_f___thread_aca70040f175e3e6140b6b19c4b84b42b}} 
+\index{UHF\_Thread@{UHF\_Thread}!Dll@{Dll}}
+\index{Dll@{Dll}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{Dll}{Dll}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_m900_dll}{M900\+Dll}}$\ast$ U\+H\+F\+\_\+\+Thread\+::\+Dll\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_u_h_f___thread_ab40811b93c5e8b31c4f40cc79139e504}\label{class_u_h_f___thread_ab40811b93c5e8b31c4f40cc79139e504}} 
+\index{UHF\_Thread@{UHF\_Thread}!nRunFlag@{nRunFlag}}
+\index{nRunFlag@{nRunFlag}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{nRunFlag}{nRunFlag}}
+{\footnotesize\ttfamily bool U\+H\+F\+\_\+\+Thread\+::n\+Run\+Flag}
+
+\mbox{\Hypertarget{class_u_h_f___thread_a20904e9764b311fdb015c3fd6cbec497}\label{class_u_h_f___thread_a20904e9764b311fdb015c3fd6cbec497}} 
+\index{UHF\_Thread@{UHF\_Thread}!serialport@{serialport}}
+\index{serialport@{serialport}!UHF\_Thread@{UHF\_Thread}}
+\subsubsection{\texorpdfstring{serialport}{serialport}}
+{\footnotesize\ttfamily Q\+Serial\+Port$\ast$ U\+H\+F\+\_\+\+Thread\+::serialport\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab4/900\+M/\mbox{\hyperlink{uhf__thread_8h}{uhf\+\_\+thread.\+h}}\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab4/900\+M/\mbox{\hyperlink{uhf__thread_8cpp}{uhf\+\_\+thread.\+cpp}}\end{DoxyCompactItemize}

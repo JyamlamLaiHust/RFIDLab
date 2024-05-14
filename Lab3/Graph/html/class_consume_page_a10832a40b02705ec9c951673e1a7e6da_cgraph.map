@@ -1,0 +1,5 @@
+<map id="ConsumePage::on_cardIdReceived" name="ConsumePage::on_cardIdReceived">
+<area shape="rect" id="node1" title="ConsumePage::on_cardIdReceived." alt="" coords="5,46,232,73"/>
+<area shape="rect" id="node2" href="$class_register_table_model.html#ac5551b9d80a8b16c69007ecd39a0cbf9" title="RegisterTableModel::restore 绑定表名" alt="" coords="280,5,416,47"/>
+<area shape="rect" id="node3" href="$class_register_table_model.html#a5d54272261bd8aaae74929fa468b0271" title="RegisterTableModel::findRecord." alt="" coords="280,71,416,112"/>
+</map>

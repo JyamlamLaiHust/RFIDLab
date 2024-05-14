@@ -1,0 +1,142 @@
+\hypertarget{database__api_8h}{}\section{/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.56M/14443/\+One\+\_\+\+Card\+\_\+\+System/database/database\+\_\+api.h File Reference}
+\label{database__api_8h}\index{/home/hover/Desktop/Labs/HUST\_RFID\_Labs/Lab2/13.56M/14443/One\_Card\_System/database/database\_api.h@{/home/hover/Desktop/Labs/HUST\_RFID\_Labs/Lab2/13.56M/14443/One\_Card\_System/database/database\_api.h}}
+{\ttfamily \#include $<$Qt\+Sql/\+Q\+Sql\+Table\+Model$>$}\newline
+Include dependency graph for database\+\_\+api.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{database__api_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{database__api_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{database__api_8h_a9f4bb50e3fdcef4560fcdec270801e2b}{D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME}}~\char`\"{}db\+\_\+\+One\+Card\+System.\+db\char`\"{}
+\item 
+\#define \mbox{\hyperlink{database__api_8h_a529bf5b332c8f3b960bfe2be87bb6303}{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+A\+D\+M\+IN}}~\char`\"{}table\+\_\+admin\char`\"{}
+\item 
+\#define \mbox{\hyperlink{database__api_8h_a23459a3057ab03d078473efa7b6971e9}{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+P\+E\+R\+S\+ON}}~\char`\"{}table\+\_\+\+Person\char`\"{}
+\item 
+\#define \mbox{\hyperlink{database__api_8h_a875229282d174216b70b49bed60f3d3e}{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+R\+E\+G\+I\+S\+T\+ER}}~\char`\"{}table\+\_\+\+Register\char`\"{}
+\item 
+\#define \mbox{\hyperlink{database__api_8h_a600c7ab4e1a552881f5bccb61fbf7b96}{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+W\+R\+I\+T\+E\+O\+FF}}~\char`\"{}table\+\_\+\+Write\+Off\char`\"{}
+\item 
+\#define \mbox{\hyperlink{database__api_8h_afa9c2c817755c392e3edb9e527a9cc7b}{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+R\+E\+C\+O\+RD}}~\char`\"{}table\+\_\+\+Records\char`\"{}
+\item 
+\#define \mbox{\hyperlink{database__api_8h_acd9c74c0fc60c2eda362b58a599b81ec}{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+R\+E\+C\+H\+A\+R\+GE}}~\char`\"{}table\+\_\+\+Recharge\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{database__api_8h_ac6c85a4b04059f2c3ca574b4286f9ac8}{D\+B\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em D\+B\+\_\+\+Init 创建数据库管理对象实体，初始化数据库 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{database__api_8h_acede77d15daa26fcb23693b5801508fc}{D\+B\+\_\+\+Close}} ()
+\begin{DoxyCompactList}\small\item\em D\+B\+\_\+\+Close 关闭数据库 \end{DoxyCompactList}\item 
+Q\+String\+List \mbox{\hyperlink{database__api_8h_afe3693a90b3d6d198d160121ebbfea04}{get\+Table\+Names}} ()
+\begin{DoxyCompactList}\small\item\em get\+Table\+Names \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{database__api_8h_a9f4bb50e3fdcef4560fcdec270801e2b}\label{database__api_8h_a9f4bb50e3fdcef4560fcdec270801e2b}} 
+\index{database\_api.h@{database\_api.h}!DATABASE\_NAME@{DATABASE\_NAME}}
+\index{DATABASE\_NAME@{DATABASE\_NAME}!database\_api.h@{database\_api.h}}
+\subsubsection{\texorpdfstring{DATABASE\_NAME}{DATABASE\_NAME}}
+{\footnotesize\ttfamily \#define D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME~\char`\"{}db\+\_\+\+One\+Card\+System.\+db\char`\"{}}
+
+\mbox{\Hypertarget{database__api_8h_a529bf5b332c8f3b960bfe2be87bb6303}\label{database__api_8h_a529bf5b332c8f3b960bfe2be87bb6303}} 
+\index{database\_api.h@{database\_api.h}!TABLE\_NAME\_ADMIN@{TABLE\_NAME\_ADMIN}}
+\index{TABLE\_NAME\_ADMIN@{TABLE\_NAME\_ADMIN}!database\_api.h@{database\_api.h}}
+\subsubsection{\texorpdfstring{TABLE\_NAME\_ADMIN}{TABLE\_NAME\_ADMIN}}
+{\footnotesize\ttfamily \#define T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+A\+D\+M\+IN~\char`\"{}table\+\_\+admin\char`\"{}}
+
+\mbox{\Hypertarget{database__api_8h_a23459a3057ab03d078473efa7b6971e9}\label{database__api_8h_a23459a3057ab03d078473efa7b6971e9}} 
+\index{database\_api.h@{database\_api.h}!TABLE\_NAME\_PERSON@{TABLE\_NAME\_PERSON}}
+\index{TABLE\_NAME\_PERSON@{TABLE\_NAME\_PERSON}!database\_api.h@{database\_api.h}}
+\subsubsection{\texorpdfstring{TABLE\_NAME\_PERSON}{TABLE\_NAME\_PERSON}}
+{\footnotesize\ttfamily \#define T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+P\+E\+R\+S\+ON~\char`\"{}table\+\_\+\+Person\char`\"{}}
+
+\mbox{\Hypertarget{database__api_8h_acd9c74c0fc60c2eda362b58a599b81ec}\label{database__api_8h_acd9c74c0fc60c2eda362b58a599b81ec}} 
+\index{database\_api.h@{database\_api.h}!TABLE\_NAME\_RECHARGE@{TABLE\_NAME\_RECHARGE}}
+\index{TABLE\_NAME\_RECHARGE@{TABLE\_NAME\_RECHARGE}!database\_api.h@{database\_api.h}}
+\subsubsection{\texorpdfstring{TABLE\_NAME\_RECHARGE}{TABLE\_NAME\_RECHARGE}}
+{\footnotesize\ttfamily \#define T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+R\+E\+C\+H\+A\+R\+GE~\char`\"{}table\+\_\+\+Recharge\char`\"{}}
+
+\mbox{\Hypertarget{database__api_8h_afa9c2c817755c392e3edb9e527a9cc7b}\label{database__api_8h_afa9c2c817755c392e3edb9e527a9cc7b}} 
+\index{database\_api.h@{database\_api.h}!TABLE\_NAME\_RECORD@{TABLE\_NAME\_RECORD}}
+\index{TABLE\_NAME\_RECORD@{TABLE\_NAME\_RECORD}!database\_api.h@{database\_api.h}}
+\subsubsection{\texorpdfstring{TABLE\_NAME\_RECORD}{TABLE\_NAME\_RECORD}}
+{\footnotesize\ttfamily \#define T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+R\+E\+C\+O\+RD~\char`\"{}table\+\_\+\+Records\char`\"{}}
+
+\mbox{\Hypertarget{database__api_8h_a875229282d174216b70b49bed60f3d3e}\label{database__api_8h_a875229282d174216b70b49bed60f3d3e}} 
+\index{database\_api.h@{database\_api.h}!TABLE\_NAME\_REGISTER@{TABLE\_NAME\_REGISTER}}
+\index{TABLE\_NAME\_REGISTER@{TABLE\_NAME\_REGISTER}!database\_api.h@{database\_api.h}}
+\subsubsection{\texorpdfstring{TABLE\_NAME\_REGISTER}{TABLE\_NAME\_REGISTER}}
+{\footnotesize\ttfamily \#define T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+R\+E\+G\+I\+S\+T\+ER~\char`\"{}table\+\_\+\+Register\char`\"{}}
+
+\mbox{\Hypertarget{database__api_8h_a600c7ab4e1a552881f5bccb61fbf7b96}\label{database__api_8h_a600c7ab4e1a552881f5bccb61fbf7b96}} 
+\index{database\_api.h@{database\_api.h}!TABLE\_NAME\_WRITEOFF@{TABLE\_NAME\_WRITEOFF}}
+\index{TABLE\_NAME\_WRITEOFF@{TABLE\_NAME\_WRITEOFF}!database\_api.h@{database\_api.h}}
+\subsubsection{\texorpdfstring{TABLE\_NAME\_WRITEOFF}{TABLE\_NAME\_WRITEOFF}}
+{\footnotesize\ttfamily \#define T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+W\+R\+I\+T\+E\+O\+FF~\char`\"{}table\+\_\+\+Write\+Off\char`\"{}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{database__api_8h_acede77d15daa26fcb23693b5801508fc}\label{database__api_8h_acede77d15daa26fcb23693b5801508fc}} 
+\index{database\_api.h@{database\_api.h}!DB\_Close@{DB\_Close}}
+\index{DB\_Close@{DB\_Close}!database\_api.h@{database\_api.h}}
+\subsubsection{\texorpdfstring{DB\_Close()}{DB\_Close()}}
+{\footnotesize\ttfamily void D\+B\+\_\+\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+D\+B\+\_\+\+Close 关闭数据库 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{database__api_8h_acede77d15daa26fcb23693b5801508fc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{database__api_8h_ac6c85a4b04059f2c3ca574b4286f9ac8}\label{database__api_8h_ac6c85a4b04059f2c3ca574b4286f9ac8}} 
+\index{database\_api.h@{database\_api.h}!DB\_Init@{DB\_Init}}
+\index{DB\_Init@{DB\_Init}!database\_api.h@{database\_api.h}}
+\subsubsection{\texorpdfstring{DB\_Init()}{DB\_Init()}}
+{\footnotesize\ttfamily void D\+B\+\_\+\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+D\+B\+\_\+\+Init 创建数据库管理对象实体，初始化数据库 
+
+\mbox{\Hypertarget{database__api_8h_afe3693a90b3d6d198d160121ebbfea04}\label{database__api_8h_afe3693a90b3d6d198d160121ebbfea04}} 
+\index{database\_api.h@{database\_api.h}!getTableNames@{getTableNames}}
+\index{getTableNames@{getTableNames}!database\_api.h@{database\_api.h}}
+\subsubsection{\texorpdfstring{getTableNames()}{getTableNames()}}
+{\footnotesize\ttfamily Q\+String\+List get\+Table\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Table\+Names 
+
+\begin{DoxyReturn}{Returns}
+Q\+String\+List型的表名集合 获取数据库所有表的表名 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{database__api_8h_afe3693a90b3d6d198d160121ebbfea04_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,6 @@
+<map id="SerialPortThread::setRetryTimes" name="SerialPortThread::setRetryTimes">
+<area shape="rect" id="node1" title="SerialPortThread::setRetryTimes." alt="" coords="695,5,871,47"/>
+<area shape="rect" id="node2" href="$class_main_window.html#a7fddd1ab5d3fcf4454ef1fdfd45f56a7" title="MainWindow::updateConnect 更新串口参数" alt="" coords="456,13,647,39"/>
+<area shape="rect" id="node3" href="$class_main_window.html#ad253da665707b1e03f610b2dea97976e" title="MainWindow::handConnect 连接槽函数" alt="" coords="229,13,408,39"/>
+<area shape="rect" id="node4" href="$class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db" title=" " alt="" coords="5,13,181,39"/>
+</map>

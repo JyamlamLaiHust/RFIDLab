@@ -1,0 +1,194 @@
+\hypertarget{class_recharge_table_model}{}\section{Recharge\+Table\+Model Class Reference}
+\label{class_recharge_table_model}\index{RechargeTableModel@{RechargeTableModel}}
+
+
+{\ttfamily \#include $<$rechargetablemodel.\+h$>$}
+
+
+
+Inheritance diagram for Recharge\+Table\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{class_recharge_table_model__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Recharge\+Table\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{class_recharge_table_model__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_recharge_table_model_a62106e9be4a9d706aa0ee3ad265099d0}{Recharge\+Table\+Model}} (Q\+Object $\ast$parent=0)
+\item 
+void \mbox{\hyperlink{class_recharge_table_model_abf3ad9d708cfff7bbbc94e247b0bb508}{create\+Table}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recharge_table_model_abf3ad9d708cfff7bbbc94e247b0bb508}{Recharge\+Table\+Model\+::create\+Table}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_recharge_table_model_a0747bbbc51e5061dad46178edfae4d85}{bind\+Table}} (void)
+\begin{DoxyCompactList}\small\item\em Recharge\+Table\+Model\+::restore 绑定表名 \end{DoxyCompactList}\item 
+Q\+Sql\+Record \mbox{\hyperlink{class_recharge_table_model_a3ed6573e99f35f145d017a7adc89b5cc}{find\+Record}} (const Q\+String \&tag\+Id)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recharge_table_model_a3ed6573e99f35f145d017a7adc89b5cc}{Recharge\+Table\+Model\+::find\+Record}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_recharge_table_model_a184459df461ce60d8f8d1874a23ff3d8}{delete\+By\+Tag\+Id}} (const Q\+String \&tag\+Id)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recharge_table_model_a184459df461ce60d8f8d1874a23ff3d8}{Recharge\+Table\+Model\+::delete\+By\+Tag\+Id}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_recharge_table_model_a3717a682f1efe46f47cd2101cef9a467}{add\+Record}} (Q\+String tag\+Id, Q\+String time, Q\+String old\+\_\+value, Q\+String value, Q\+String current\+\_\+value, Q\+String remark)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recharge_table_model_a3717a682f1efe46f47cd2101cef9a467}{Recharge\+Table\+Model\+::add\+Record}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \mbox{\hyperlink{class_recharge_table_model_a710733d9714fdf177f2f31507c42180c}{table\+Name}}
+\item 
+Q\+String\+List \mbox{\hyperlink{class_recharge_table_model_a2c05ed8c1a95ed985eb26f5721e04fce}{header}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_recharge_table_model_a62106e9be4a9d706aa0ee3ad265099d0}\label{class_recharge_table_model_a62106e9be4a9d706aa0ee3ad265099d0}} 
+\index{RechargeTableModel@{RechargeTableModel}!RechargeTableModel@{RechargeTableModel}}
+\index{RechargeTableModel@{RechargeTableModel}!RechargeTableModel@{RechargeTableModel}}
+\subsubsection{\texorpdfstring{RechargeTableModel()}{RechargeTableModel()}}
+{\footnotesize\ttfamily Recharge\+Table\+Model\+::\+Recharge\+Table\+Model (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_recharge_table_model_a3717a682f1efe46f47cd2101cef9a467}\label{class_recharge_table_model_a3717a682f1efe46f47cd2101cef9a467}} 
+\index{RechargeTableModel@{RechargeTableModel}!addRecord@{addRecord}}
+\index{addRecord@{addRecord}!RechargeTableModel@{RechargeTableModel}}
+\subsubsection{\texorpdfstring{addRecord()}{addRecord()}}
+{\footnotesize\ttfamily int Recharge\+Table\+Model\+::add\+Record (\begin{DoxyParamCaption}\item[{Q\+String}]{tag\+Id,  }\item[{Q\+String}]{time,  }\item[{Q\+String}]{old\+\_\+value,  }\item[{Q\+String}]{value,  }\item[{Q\+String}]{current\+\_\+value,  }\item[{Q\+String}]{remark }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_recharge_table_model_a3717a682f1efe46f47cd2101cef9a467}{Recharge\+Table\+Model\+::add\+Record}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tag\+Id} & 卡号 \\
+\hline
+{\em time} & 消费时间 \\
+\hline
+{\em old\+\_\+value} & 原有金额 \\
+\hline
+{\em value} & 充值金额 \\
+\hline
+{\em current\+\_\+value} & 充值后的金额 \\
+\hline
+{\em remark} & 备注 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+记录条数 添加记录 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recharge_table_model_a3717a682f1efe46f47cd2101cef9a467_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_recharge_table_model_a0747bbbc51e5061dad46178edfae4d85}\label{class_recharge_table_model_a0747bbbc51e5061dad46178edfae4d85}} 
+\index{RechargeTableModel@{RechargeTableModel}!bindTable@{bindTable}}
+\index{bindTable@{bindTable}!RechargeTableModel@{RechargeTableModel}}
+\subsubsection{\texorpdfstring{bindTable()}{bindTable()}}
+{\footnotesize\ttfamily void Recharge\+Table\+Model\+::bind\+Table (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Recharge\+Table\+Model\+::restore 绑定表名 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recharge_table_model_a0747bbbc51e5061dad46178edfae4d85_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_recharge_table_model_abf3ad9d708cfff7bbbc94e247b0bb508}\label{class_recharge_table_model_abf3ad9d708cfff7bbbc94e247b0bb508}} 
+\index{RechargeTableModel@{RechargeTableModel}!createTable@{createTable}}
+\index{createTable@{createTable}!RechargeTableModel@{RechargeTableModel}}
+\subsubsection{\texorpdfstring{createTable()}{createTable()}}
+{\footnotesize\ttfamily void Recharge\+Table\+Model\+::create\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_recharge_table_model_abf3ad9d708cfff7bbbc94e247b0bb508}{Recharge\+Table\+Model\+::create\+Table}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+Name} & 数据块表名称 用于创建充值记录表 \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_recharge_table_model_abf3ad9d708cfff7bbbc94e247b0bb508_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_recharge_table_model_a184459df461ce60d8f8d1874a23ff3d8}\label{class_recharge_table_model_a184459df461ce60d8f8d1874a23ff3d8}} 
+\index{RechargeTableModel@{RechargeTableModel}!deleteByTagId@{deleteByTagId}}
+\index{deleteByTagId@{deleteByTagId}!RechargeTableModel@{RechargeTableModel}}
+\subsubsection{\texorpdfstring{deleteByTagId()}{deleteByTagId()}}
+{\footnotesize\ttfamily bool Recharge\+Table\+Model\+::delete\+By\+Tag\+Id (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{tag\+Id }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_recharge_table_model_a184459df461ce60d8f8d1874a23ff3d8}{Recharge\+Table\+Model\+::delete\+By\+Tag\+Id}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tag\+Id} & 卡号 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+如果成功返回true，否则false 根据卡号删除记录 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_recharge_table_model_a3ed6573e99f35f145d017a7adc89b5cc}\label{class_recharge_table_model_a3ed6573e99f35f145d017a7adc89b5cc}} 
+\index{RechargeTableModel@{RechargeTableModel}!findRecord@{findRecord}}
+\index{findRecord@{findRecord}!RechargeTableModel@{RechargeTableModel}}
+\subsubsection{\texorpdfstring{findRecord()}{findRecord()}}
+{\footnotesize\ttfamily Q\+Sql\+Record Recharge\+Table\+Model\+::find\+Record (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{tag\+Id }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_recharge_table_model_a3ed6573e99f35f145d017a7adc89b5cc}{Recharge\+Table\+Model\+::find\+Record}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tag\+Id} & 卡号 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Q\+Sql\+Record型记录集 根据卡号查找记录 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_recharge_table_model_a2c05ed8c1a95ed985eb26f5721e04fce}\label{class_recharge_table_model_a2c05ed8c1a95ed985eb26f5721e04fce}} 
+\index{RechargeTableModel@{RechargeTableModel}!header@{header}}
+\index{header@{header}!RechargeTableModel@{RechargeTableModel}}
+\subsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily Q\+String\+List Recharge\+Table\+Model\+::header\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_recharge_table_model_a710733d9714fdf177f2f31507c42180c}\label{class_recharge_table_model_a710733d9714fdf177f2f31507c42180c}} 
+\index{RechargeTableModel@{RechargeTableModel}!tableName@{tableName}}
+\index{tableName@{tableName}!RechargeTableModel@{RechargeTableModel}}
+\subsubsection{\texorpdfstring{tableName}{tableName}}
+{\footnotesize\ttfamily Q\+String Recharge\+Table\+Model\+::table\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/database/\mbox{\hyperlink{rechargetablemodel_8h}{rechargetablemodel.\+h}}\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/database/\mbox{\hyperlink{rechargetablemodel_8cpp}{rechargetablemodel.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="WriteOffTableModel::bindTable" name="WriteOffTableModel::bindTable">
+<area shape="rect" id="node1" title="WriteOffTableModel::restore 绑定表名" alt="" coords="251,27,387,69"/>
+<area shape="rect" id="node2" href="$class_table_info_pages.html#ad1da457e9ca5163f17d14035185457f7" title="TableInfoPages::currentAction." alt="" coords="5,5,203,32"/>
+<area shape="rect" id="node3" href="$class_write_off_person.html#a4ac5c022a769acb97dfb615a2fceb1f3" title="WriteOffPerson::on_btn_LogOff_clicked 注销按钮点击事件" alt="" coords="33,57,175,98"/>
+</map>

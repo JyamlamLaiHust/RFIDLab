@@ -1,0 +1,4 @@
+<map id="RegistorWidget::on_btn_Refresh_clicked" name="RegistorWidget::on_btn_Refresh_clicked">
+<area shape="rect" id="node1" title="RegistorWidget::on_btn_Refresh_clicked 刷新按钮点击事件" alt="" coords="5,5,152,47"/>
+<area shape="rect" id="node2" href="$class_register_table_model.html#ac5551b9d80a8b16c69007ecd39a0cbf9" title="RegisterTableModel::restore 绑定表名" alt="" coords="200,5,336,47"/>
+</map>

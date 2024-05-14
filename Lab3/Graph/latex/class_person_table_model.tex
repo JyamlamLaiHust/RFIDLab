@@ -1,0 +1,226 @@
+\hypertarget{class_person_table_model}{}\section{Person\+Table\+Model Class Reference}
+\label{class_person_table_model}\index{PersonTableModel@{PersonTableModel}}
+
+
+{\ttfamily \#include $<$persontablemodel.\+h$>$}
+
+
+
+Inheritance diagram for Person\+Table\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{class_person_table_model__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Person\+Table\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{class_person_table_model__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_person_table_model_af1b578edb6207eeb621e50fa2d246fb6}{Person\+Table\+Model}} (Q\+Object $\ast$parent=0)
+\item 
+void \mbox{\hyperlink{class_person_table_model_a121018cb2905e38572a05c457e9fda35}{create\+Table}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_person_table_model_a121018cb2905e38572a05c457e9fda35}{Person\+Table\+Model\+::create\+Table}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_person_table_model_a4abbde77bb6256c11d464d59c77878e4}{bind\+Table}} (void)
+\begin{DoxyCompactList}\small\item\em Person\+Table\+Model\+::restore 绑定表名 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_person_table_model_afd1547d0c85e360bad55b08aa0f4e338}{find\+Record\+By\+Id}} (const Q\+String person\+Id)
+\begin{DoxyCompactList}\small\item\em Person\+Table\+Model\+::find\+Record. \end{DoxyCompactList}\item 
+Q\+Sql\+Record \mbox{\hyperlink{class_person_table_model_aead4c2d3f11bb6b137fefbb5a88ff777}{find\+Record\+By\+Name}} (const Q\+String user\+Name)
+\begin{DoxyCompactList}\small\item\em Person\+Table\+Model\+::find\+Record. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_person_table_model_a4cac1b30aecba8739333cbcfb8d66515}{insert\+Records}} (Q\+String person\+Id, Q\+String person\+Name, Q\+String person\+Type, Q\+String remark)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_person_table_model_a4cac1b30aecba8739333cbcfb8d66515}{Person\+Table\+Model\+::insert\+Records}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_person_table_model_a23ae24fe86e68f54a2d3259c924e122c}{delete\+Records}} (int row)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_person_table_model_a23ae24fe86e68f54a2d3259c924e122c}{Person\+Table\+Model\+::delete\+Records}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \mbox{\hyperlink{class_person_table_model_aa9eec9359f87a39d2234dcaa324287d3}{table\+Name}}
+\item 
+Q\+String\+List \mbox{\hyperlink{class_person_table_model_a09a55d4ee08db1303be39589899a8081}{header}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_person_table_model_af1b578edb6207eeb621e50fa2d246fb6}\label{class_person_table_model_af1b578edb6207eeb621e50fa2d246fb6}} 
+\index{PersonTableModel@{PersonTableModel}!PersonTableModel@{PersonTableModel}}
+\index{PersonTableModel@{PersonTableModel}!PersonTableModel@{PersonTableModel}}
+\subsubsection{\texorpdfstring{PersonTableModel()}{PersonTableModel()}}
+{\footnotesize\ttfamily Person\+Table\+Model\+::\+Person\+Table\+Model (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_person_table_model_a4abbde77bb6256c11d464d59c77878e4}\label{class_person_table_model_a4abbde77bb6256c11d464d59c77878e4}} 
+\index{PersonTableModel@{PersonTableModel}!bindTable@{bindTable}}
+\index{bindTable@{bindTable}!PersonTableModel@{PersonTableModel}}
+\subsubsection{\texorpdfstring{bindTable()}{bindTable()}}
+{\footnotesize\ttfamily void Person\+Table\+Model\+::bind\+Table (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Person\+Table\+Model\+::restore 绑定表名 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_person_table_model_a4abbde77bb6256c11d464d59c77878e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_person_table_model_a121018cb2905e38572a05c457e9fda35}\label{class_person_table_model_a121018cb2905e38572a05c457e9fda35}} 
+\index{PersonTableModel@{PersonTableModel}!createTable@{createTable}}
+\index{createTable@{createTable}!PersonTableModel@{PersonTableModel}}
+\subsubsection{\texorpdfstring{createTable()}{createTable()}}
+{\footnotesize\ttfamily void Person\+Table\+Model\+::create\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_person_table_model_a121018cb2905e38572a05c457e9fda35}{Person\+Table\+Model\+::create\+Table}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+Name} & 数据块表名称 用于创建\+Person表 \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_person_table_model_a121018cb2905e38572a05c457e9fda35_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_person_table_model_a23ae24fe86e68f54a2d3259c924e122c}\label{class_person_table_model_a23ae24fe86e68f54a2d3259c924e122c}} 
+\index{PersonTableModel@{PersonTableModel}!deleteRecords@{deleteRecords}}
+\index{deleteRecords@{deleteRecords}!PersonTableModel@{PersonTableModel}}
+\subsubsection{\texorpdfstring{deleteRecords()}{deleteRecords()}}
+{\footnotesize\ttfamily bool Person\+Table\+Model\+::delete\+Records (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_person_table_model_a23ae24fe86e68f54a2d3259c924e122c}{Person\+Table\+Model\+::delete\+Records}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & 待删除的行 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+如果删除成功返回true，否则false 删除一行记录 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_person_table_model_a23ae24fe86e68f54a2d3259c924e122c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_person_table_model_afd1547d0c85e360bad55b08aa0f4e338}\label{class_person_table_model_afd1547d0c85e360bad55b08aa0f4e338}} 
+\index{PersonTableModel@{PersonTableModel}!findRecordById@{findRecordById}}
+\index{findRecordById@{findRecordById}!PersonTableModel@{PersonTableModel}}
+\subsubsection{\texorpdfstring{findRecordById()}{findRecordById()}}
+{\footnotesize\ttfamily int Person\+Table\+Model\+::find\+Record\+By\+Id (\begin{DoxyParamCaption}\item[{const Q\+String}]{person\+Id }\end{DoxyParamCaption})}
+
+
+
+Person\+Table\+Model\+::find\+Record. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person\+Id} & 人员编号 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Q\+Sql\+Record型记录集 根据人员编号查找记录 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_person_table_model_afd1547d0c85e360bad55b08aa0f4e338_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_person_table_model_aead4c2d3f11bb6b137fefbb5a88ff777}\label{class_person_table_model_aead4c2d3f11bb6b137fefbb5a88ff777}} 
+\index{PersonTableModel@{PersonTableModel}!findRecordByName@{findRecordByName}}
+\index{findRecordByName@{findRecordByName}!PersonTableModel@{PersonTableModel}}
+\subsubsection{\texorpdfstring{findRecordByName()}{findRecordByName()}}
+{\footnotesize\ttfamily Q\+Sql\+Record Person\+Table\+Model\+::find\+Record\+By\+Name (\begin{DoxyParamCaption}\item[{const Q\+String}]{user\+Name }\end{DoxyParamCaption})}
+
+
+
+Person\+Table\+Model\+::find\+Record. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person\+Id} & 人员编号 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Q\+Sql\+Record型记录集 根据人员编号查找记录 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_person_table_model_a4cac1b30aecba8739333cbcfb8d66515}\label{class_person_table_model_a4cac1b30aecba8739333cbcfb8d66515}} 
+\index{PersonTableModel@{PersonTableModel}!insertRecords@{insertRecords}}
+\index{insertRecords@{insertRecords}!PersonTableModel@{PersonTableModel}}
+\subsubsection{\texorpdfstring{insertRecords()}{insertRecords()}}
+{\footnotesize\ttfamily bool Person\+Table\+Model\+::insert\+Records (\begin{DoxyParamCaption}\item[{Q\+String}]{person\+Id,  }\item[{Q\+String}]{person\+Name,  }\item[{Q\+String}]{person\+Type,  }\item[{Q\+String}]{remark }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_person_table_model_a4cac1b30aecba8739333cbcfb8d66515}{Person\+Table\+Model\+::insert\+Records}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person\+Id} & 人员编号 \\
+\hline
+{\em person\+Name} & 人员名称 \\
+\hline
+{\em person\+Type} & 身份类别 \\
+\hline
+{\em remark} & 备注信息 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回true，失败返回false 向表格中插入记录 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_person_table_model_a4cac1b30aecba8739333cbcfb8d66515_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_person_table_model_a09a55d4ee08db1303be39589899a8081}\label{class_person_table_model_a09a55d4ee08db1303be39589899a8081}} 
+\index{PersonTableModel@{PersonTableModel}!header@{header}}
+\index{header@{header}!PersonTableModel@{PersonTableModel}}
+\subsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily Q\+String\+List Person\+Table\+Model\+::header\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_person_table_model_aa9eec9359f87a39d2234dcaa324287d3}\label{class_person_table_model_aa9eec9359f87a39d2234dcaa324287d3}} 
+\index{PersonTableModel@{PersonTableModel}!tableName@{tableName}}
+\index{tableName@{tableName}!PersonTableModel@{PersonTableModel}}
+\subsubsection{\texorpdfstring{tableName}{tableName}}
+{\footnotesize\ttfamily Q\+String Person\+Table\+Model\+::table\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/database/\mbox{\hyperlink{persontablemodel_8h}{persontablemodel.\+h}}\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/database/\mbox{\hyperlink{persontablemodel_8cpp}{persontablemodel.\+cpp}}\end{DoxyCompactItemize}

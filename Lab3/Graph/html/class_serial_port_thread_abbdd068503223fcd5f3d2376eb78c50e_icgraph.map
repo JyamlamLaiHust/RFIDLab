@@ -1,0 +1,16 @@
+<map id="SerialPortThread::serialPortIsOpen" name="SerialPortThread::serialPortIsOpen">
+<area shape="rect" id="node1" title="SerialPortThread::serialPortIsOpen." alt="" coords="729,318,888,359"/>
+<area shape="rect" id="node2" href="$class_consume_page.html#a00810bb404e95cf82b060d366a127b23" title="ConsumePage::readCardId." alt="" coords="503,5,681,32"/>
+<area shape="rect" id="node5" href="$class_consume_page.html#a5d3f29ff49ea73facf73e34267adf0ed" title="ConsumePage::on_btn_OK_clicked 食堂结账按钮点击事件" alt="" coords="515,57,669,98"/>
+<area shape="rect" id="node6" href="$class_consume_page.html#a9ace94ec565505f97e29f0f732ef13bf" title="ConsumePage::on_btn_OK2_clicked 超市消费结账按钮点击事件" alt="" coords="515,122,669,163"/>
+<area shape="rect" id="node7" href="$class_consume_page.html#aef47c443ac40ea430537571bae1328ff" title="ConsumePage::on_btn_OK1_clicked 教学楼结账按钮点击事件" alt="" coords="515,187,669,229"/>
+<area shape="rect" id="node8" href="$class_consume_page.html#a3d244573d28510df3c7b3ca0d6eb3843" title="ConsumePage::on_btn_OK3_clicked 其他结账按钮点击事件" alt="" coords="515,253,669,294"/>
+<area shape="rect" id="node9" href="$class_recharge_dialog.html#aafd9329cbf935615b90bb79350681f8b" title="RechargeDialog::on_btn_inventory_clicked 识别按钮点击事件" alt="" coords="515,318,669,359"/>
+<area shape="rect" id="node10" href="$class_dialog_card_config.html#a50f8d5a8eab6386e03a86094ae5098b7" title="DialogCardConfig::on_btn_Init_clicked 初始化按钮点击事件" alt="" coords="520,383,664,425"/>
+<area shape="rect" id="node11" href="$class_dialog_card_config.html#a1959f4e04b85a8366ca705e31a4db85c" title="DialogCardConfig::on_btn_MemData_clicked 查看内存数据" alt="" coords="513,449,671,490"/>
+<area shape="rect" id="node12" href="$class_registor_widget.html#a4bbc6a6b1f22c708966d79a5947e36b1" title="RegistorWidget::on_btn_Inventory_clicked 识别按钮点击事件" alt="" coords="514,514,670,555"/>
+<area shape="rect" id="node13" href="$class_table_info_pages.html#aa65b69a9006eed0d90854eae510f2246" title="TableInfoPages::on_btn_Enventory_clicked 识别按钮点击事件" alt="" coords="511,579,673,621"/>
+<area shape="rect" id="node14" href="$class_write_off_person.html#a46c1284c1eb58a77b86218af80712c74" title="WriteOffPerson::on_btn_Inventory_clicked 识别按钮点击事件" alt="" coords="514,645,670,686"/>
+<area shape="rect" id="node3" href="$class_consume_page.html#add3af5a3661b2a7172bddb5fa81452a0" title="ConsumePage::handleConnect 处理信号与插槽的连接关系" alt="" coords="253,5,455,32"/>
+<area shape="rect" id="node4" href="$class_consume_page.html#a2215feb8cdf2b12d83d4b6ff9f567661" title=" " alt="" coords="5,5,205,32"/>
+</map>

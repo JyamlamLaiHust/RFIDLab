@@ -1,0 +1,98 @@
+\hypertarget{serialportthread_8h}{}\section{/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.56M/14443/\+One\+\_\+\+Card\+\_\+\+System/serial\+Thread/serialportthread.h File Reference}
+\label{serialportthread_8h}\index{/home/hover/Desktop/Labs/HUST\_RFID\_Labs/Lab2/13.56M/14443/One\_Card\_System/serialThread/serialportthread.h@{/home/hover/Desktop/Labs/HUST\_RFID\_Labs/Lab2/13.56M/14443/One\_Card\_System/serialThread/serialportthread.h}}
+{\ttfamily \#include $<$Q\+Thread$>$}\newline
+{\ttfamily \#include $<$Q\+Timer$>$}\newline
+{\ttfamily \#include $<$Qt\+Serial\+Port/\+Q\+Serial\+Port$>$}\newline
+{\ttfamily \#include $<$Qt\+Serial\+Port/\+Q\+Serial\+Port\+Info$>$}\newline
+{\ttfamily \#include $<$Q\+String\+List$>$}\newline
+{\ttfamily \#include \char`\"{}tools/tools.\+h\char`\"{}}\newline
+Include dependency graph for serialportthread.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serialportthread_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serialportthread_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_serial_port_thread}{Serial\+Port\+Thread}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{serialportthread_8h_a58c73f770d96826095f8f3824737f67b}{Read\+Retry\+Times}} \{ \newline
+\mbox{\hyperlink{serialportthread_8h_a58c73f770d96826095f8f3824737f67baecea9f9088a5d81a909319ce365556d4}{N\+O\+\_\+\+R\+E\+T\+RY}} = 0, 
+\mbox{\hyperlink{serialportthread_8h_a58c73f770d96826095f8f3824737f67bab81231eba3a89d823e741a8fbbf578d1}{R\+E\+T\+R\+Y\+\_\+5}} = 5, 
+\mbox{\hyperlink{serialportthread_8h_a58c73f770d96826095f8f3824737f67ba4219c7d8c68e329b2622a9f8fe310c48}{R\+E\+T\+R\+Y\+\_\+10}} = 10, 
+\mbox{\hyperlink{serialportthread_8h_a58c73f770d96826095f8f3824737f67ba03efa3ea9075841ad5ed1207c4509b92}{R\+E\+T\+R\+Y\+\_\+15}} = 15, 
+\newline
+\mbox{\hyperlink{serialportthread_8h_a58c73f770d96826095f8f3824737f67baa6d6d5cf633c02865880ef933f3b0b99}{R\+E\+T\+R\+Y\+\_\+20}} = 20, 
+\mbox{\hyperlink{serialportthread_8h_a58c73f770d96826095f8f3824737f67ba4c4690e55f4c4602c155f67c7f502e25}{R\+E\+T\+R\+Y\+\_\+25}} = 25, 
+\mbox{\hyperlink{serialportthread_8h_a58c73f770d96826095f8f3824737f67ba632d66cdb363a4b7bcba94418449c39e}{R\+E\+T\+R\+Y\+\_\+30}} = 30, 
+\mbox{\hyperlink{serialportthread_8h_a58c73f770d96826095f8f3824737f67baf7f3944202b939276fba9c161d950e65}{R\+E\+T\+R\+Y\+\_\+35}} = 35, 
+\newline
+\mbox{\hyperlink{serialportthread_8h_a58c73f770d96826095f8f3824737f67ba0c868d73fabd38824d276e9b59980e46}{R\+E\+T\+R\+Y\+\_\+40}} = 40, 
+\mbox{\hyperlink{serialportthread_8h_a58c73f770d96826095f8f3824737f67bade1e31f07478de9182774b2ffc741333}{R\+E\+T\+R\+Y\+\_\+45}} = 45
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{serialportthread_8h_a58c73f770d96826095f8f3824737f67b}\label{serialportthread_8h_a58c73f770d96826095f8f3824737f67b}} 
+\index{serialportthread.h@{serialportthread.h}!ReadRetryTimes@{ReadRetryTimes}}
+\index{ReadRetryTimes@{ReadRetryTimes}!serialportthread.h@{serialportthread.h}}
+\subsubsection{\texorpdfstring{ReadRetryTimes}{ReadRetryTimes}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{serialportthread_8h_a58c73f770d96826095f8f3824737f67b}{Read\+Retry\+Times}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_RETRY@{NO\_RETRY}!serialportthread.h@{serialportthread.h}}\index{serialportthread.h@{serialportthread.h}!NO\_RETRY@{NO\_RETRY}}}\mbox{\Hypertarget{serialportthread_8h_a58c73f770d96826095f8f3824737f67baecea9f9088a5d81a909319ce365556d4}\label{serialportthread_8h_a58c73f770d96826095f8f3824737f67baecea9f9088a5d81a909319ce365556d4}} 
+N\+O\+\_\+\+R\+E\+T\+RY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RETRY\_5@{RETRY\_5}!serialportthread.h@{serialportthread.h}}\index{serialportthread.h@{serialportthread.h}!RETRY\_5@{RETRY\_5}}}\mbox{\Hypertarget{serialportthread_8h_a58c73f770d96826095f8f3824737f67bab81231eba3a89d823e741a8fbbf578d1}\label{serialportthread_8h_a58c73f770d96826095f8f3824737f67bab81231eba3a89d823e741a8fbbf578d1}} 
+R\+E\+T\+R\+Y\+\_\+5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RETRY\_10@{RETRY\_10}!serialportthread.h@{serialportthread.h}}\index{serialportthread.h@{serialportthread.h}!RETRY\_10@{RETRY\_10}}}\mbox{\Hypertarget{serialportthread_8h_a58c73f770d96826095f8f3824737f67ba4219c7d8c68e329b2622a9f8fe310c48}\label{serialportthread_8h_a58c73f770d96826095f8f3824737f67ba4219c7d8c68e329b2622a9f8fe310c48}} 
+R\+E\+T\+R\+Y\+\_\+10&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RETRY\_15@{RETRY\_15}!serialportthread.h@{serialportthread.h}}\index{serialportthread.h@{serialportthread.h}!RETRY\_15@{RETRY\_15}}}\mbox{\Hypertarget{serialportthread_8h_a58c73f770d96826095f8f3824737f67ba03efa3ea9075841ad5ed1207c4509b92}\label{serialportthread_8h_a58c73f770d96826095f8f3824737f67ba03efa3ea9075841ad5ed1207c4509b92}} 
+R\+E\+T\+R\+Y\+\_\+15&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RETRY\_20@{RETRY\_20}!serialportthread.h@{serialportthread.h}}\index{serialportthread.h@{serialportthread.h}!RETRY\_20@{RETRY\_20}}}\mbox{\Hypertarget{serialportthread_8h_a58c73f770d96826095f8f3824737f67baa6d6d5cf633c02865880ef933f3b0b99}\label{serialportthread_8h_a58c73f770d96826095f8f3824737f67baa6d6d5cf633c02865880ef933f3b0b99}} 
+R\+E\+T\+R\+Y\+\_\+20&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RETRY\_25@{RETRY\_25}!serialportthread.h@{serialportthread.h}}\index{serialportthread.h@{serialportthread.h}!RETRY\_25@{RETRY\_25}}}\mbox{\Hypertarget{serialportthread_8h_a58c73f770d96826095f8f3824737f67ba4c4690e55f4c4602c155f67c7f502e25}\label{serialportthread_8h_a58c73f770d96826095f8f3824737f67ba4c4690e55f4c4602c155f67c7f502e25}} 
+R\+E\+T\+R\+Y\+\_\+25&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RETRY\_30@{RETRY\_30}!serialportthread.h@{serialportthread.h}}\index{serialportthread.h@{serialportthread.h}!RETRY\_30@{RETRY\_30}}}\mbox{\Hypertarget{serialportthread_8h_a58c73f770d96826095f8f3824737f67ba632d66cdb363a4b7bcba94418449c39e}\label{serialportthread_8h_a58c73f770d96826095f8f3824737f67ba632d66cdb363a4b7bcba94418449c39e}} 
+R\+E\+T\+R\+Y\+\_\+30&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RETRY\_35@{RETRY\_35}!serialportthread.h@{serialportthread.h}}\index{serialportthread.h@{serialportthread.h}!RETRY\_35@{RETRY\_35}}}\mbox{\Hypertarget{serialportthread_8h_a58c73f770d96826095f8f3824737f67baf7f3944202b939276fba9c161d950e65}\label{serialportthread_8h_a58c73f770d96826095f8f3824737f67baf7f3944202b939276fba9c161d950e65}} 
+R\+E\+T\+R\+Y\+\_\+35&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RETRY\_40@{RETRY\_40}!serialportthread.h@{serialportthread.h}}\index{serialportthread.h@{serialportthread.h}!RETRY\_40@{RETRY\_40}}}\mbox{\Hypertarget{serialportthread_8h_a58c73f770d96826095f8f3824737f67ba0c868d73fabd38824d276e9b59980e46}\label{serialportthread_8h_a58c73f770d96826095f8f3824737f67ba0c868d73fabd38824d276e9b59980e46}} 
+R\+E\+T\+R\+Y\+\_\+40&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RETRY\_45@{RETRY\_45}!serialportthread.h@{serialportthread.h}}\index{serialportthread.h@{serialportthread.h}!RETRY\_45@{RETRY\_45}}}\mbox{\Hypertarget{serialportthread_8h_a58c73f770d96826095f8f3824737f67bade1e31f07478de9182774b2ffc741333}\label{serialportthread_8h_a58c73f770d96826095f8f3824737f67bade1e31f07478de9182774b2ffc741333}} 
+R\+E\+T\+R\+Y\+\_\+45&\\
+\hline
+
+\end{DoxyEnumFields}

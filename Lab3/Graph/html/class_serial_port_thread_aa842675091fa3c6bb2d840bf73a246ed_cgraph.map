@@ -1,0 +1,5 @@
+<map id="SerialPortThread::SerialPortThread" name="SerialPortThread::SerialPortThread">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,165,65"/>
+<area shape="rect" id="node2" href="$class_serial_port_thread.html#a1f0e27279ed5e305f0f71caec3a835f8" title="SerialPortThread::onError 当发送出错时发送错误信号" alt="" coords="213,5,383,32"/>
+<area shape="rect" id="node3" href="$class_serial_port_thread.html#adfceb467826dc0f59d0eb66c1ba0a1a6" title="SerialPortThread::stopTimer 停止定时器" alt="" coords="431,31,616,57"/>
+</map>

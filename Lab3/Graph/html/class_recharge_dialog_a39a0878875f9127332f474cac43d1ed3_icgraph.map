@@ -1,0 +1,4 @@
+<map id="RechargeDialog::on_btn_clear_clicked" name="RechargeDialog::on_btn_clear_clicked">
+<area shape="rect" id="node1" title="RechargeDialog::on_btn_clear_clicked 清除按钮点击事件" alt="" coords="208,5,343,47"/>
+<area shape="rect" id="node2" href="$class_recharge_dialog.html#aafd9329cbf935615b90bb79350681f8b" title="RechargeDialog::on_btn_inventory_clicked 识别按钮点击事件" alt="" coords="5,5,160,47"/>
+</map>

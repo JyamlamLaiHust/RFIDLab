@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>780</width>
+    <height>515</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Times New Roman</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="sizeGripEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>780</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>系统管理</string>
+    </property>
+    <addaction name="action_login"/>
+    <addaction name="separator"/>
+    <addaction name="action_connect"/>
+    <addaction name="action_Disconnect"/>
+    <addaction name="action_export"/>
+    <addaction name="separator"/>
+    <addaction name="action_mainPage"/>
+    <addaction name="actionquit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>用户管理</string>
+    </property>
+    <addaction name="action_register"/>
+    <addaction name="action_writeoff"/>
+    <addaction name="action_recharge"/>
+    <addaction name="separator"/>
+    <addaction name="action_changepwd"/>
+    <addaction name="separator"/>
+    <addaction name="action_consume"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>记录查询</string>
+    </property>
+    <addaction name="action_writeofftable"/>
+    <addaction name="action_registtable"/>
+    <addaction name="separator"/>
+    <addaction name="action_recordtable"/>
+    <addaction name="action_recharges"/>
+    <addaction name="separator"/>
+    <addaction name="action_persontable"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_about"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <action name="action_login">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/login.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>登陆</string>
+   </property>
+   <property name="statusTip">
+    <string>管理员登录接口</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionquit">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/logout.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="statusTip">
+    <string>退出系统</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_export">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/export.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>导出</string>
+   </property>
+   <property name="statusTip">
+    <string>将数据表格导出</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_register">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/regester.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>用户注册</string>
+   </property>
+   <property name="statusTip">
+    <string>新用户注册</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_writeoff">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/changePwd.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>用户注销</string>
+   </property>
+   <property name="statusTip">
+    <string>注销账户</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_changepwd">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/record3.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>修改密码</string>
+   </property>
+   <property name="statusTip">
+    <string>管理员用于修改密码</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionGhuj">
+   <property name="text">
+    <string>ghuj</string>
+   </property>
+  </action>
+  <action name="action_recordtable">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/record4.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>消费记录</string>
+   </property>
+   <property name="statusTip">
+    <string>查询消费记录表</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_writeofftable">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/recoder1.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>注销记录</string>
+   </property>
+   <property name="statusTip">
+    <string>查询注销表</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_registtable">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/record.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>注册记录</string>
+   </property>
+   <property name="statusTip">
+    <string>查询注册表</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_persontable">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/record2.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>人员信息</string>
+   </property>
+   <property name="statusTip">
+    <string>查询注册用户表</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionAsdf_7">
+   <property name="text">
+    <string>asdf</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/help.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="statusTip">
+    <string>关于本软件的相关说明</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_connect">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/connect.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>连接</string>
+   </property>
+   <property name="statusTip">
+    <string>连接读卡器模块</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_Disconnect">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/disconnect.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>断开</string>
+   </property>
+   <property name="statusTip">
+    <string>与读卡器断开连接</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionAsdf">
+   <property name="text">
+    <string>asdf</string>
+   </property>
+  </action>
+  <action name="action_recharge">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/cast.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>用户充值</string>
+   </property>
+   <property name="statusTip">
+    <string>给M1卡充值</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_consume">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/pay.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>消费模拟</string>
+   </property>
+   <property name="statusTip">
+    <string>模拟一些消费场景</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_mainPage">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/main.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>主页</string>
+   </property>
+   <property name="statusTip">
+    <string>返回到软件的主界面</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_recharges">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/record5.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>充值记录</string>
+   </property>
+   <property name="statusTip">
+    <string>充值记录信息查询</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

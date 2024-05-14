@@ -1,0 +1,4 @@
+<map id="SettingsDialog::apply" name="SettingsDialog::apply">
+<area shape="rect" id="node1" title="SettingsDialog::apply 应用按钮点击事件" alt="" coords="5,5,151,32"/>
+<area shape="rect" id="node2" href="$class_settings_dialog.html#a349c9a5d2af7bb8001df096b43786d2d" title="SettingsDialog::updateSettings 更新串口配置" alt="" coords="199,5,400,32"/>
+</map>

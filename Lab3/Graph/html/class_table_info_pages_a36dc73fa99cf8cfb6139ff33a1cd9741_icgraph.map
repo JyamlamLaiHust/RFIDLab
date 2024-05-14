@@ -1,0 +1,5 @@
+<map id="TableInfoPages::updateTableView" name="TableInfoPages::updateTableView">
+<area shape="rect" id="node1" title="TableInfoPages::updateTableView." alt="" coords="251,42,469,69"/>
+<area shape="rect" id="node2" href="$class_table_info_pages.html#a22d86b2a8cb70049164f3d880f9f237a" title="TableInfoPages::on_btn_Query_clicked 查询按钮点击事件" alt="" coords="35,5,173,47"/>
+<area shape="rect" id="node3" href="$class_table_info_pages.html#ad1da457e9ca5163f17d14035185457f7" title="TableInfoPages::currentAction." alt="" coords="5,71,203,98"/>
+</map>

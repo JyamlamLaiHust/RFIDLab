@@ -1,0 +1,8 @@
+<map id="RegisterTableModel::findRecord" name="RegisterTableModel::findRecord">
+<area shape="rect" id="node1" title="RegisterTableModel::findRecord." alt="" coords="469,115,605,156"/>
+<area shape="rect" id="node2" href="$class_register_table_model.html#a5bc3bbf6efa90e52e7759ddf89e8d6bb" title="RegisterTableModel::deleteRecord." alt="" coords="240,5,376,47"/>
+<area shape="rect" id="node3" href="$class_write_off_person.html#a4ac5c022a769acb97dfb615a2fceb1f3" title="WriteOffPerson::on_btn_LogOff_clicked 注销按钮点击事件" alt="" coords="5,35,147,76"/>
+<area shape="rect" id="node4" href="$class_consume_page.html#a10832a40b02705ec9c951673e1a7e6da" title="ConsumePage::on_cardIdReceived." alt="" coords="195,122,421,149"/>
+<area shape="rect" id="node5" href="$class_recharge_dialog.html#adf95e380b531e5817063abac78cdd607" title="RechargeDialog::on_cardIdReceived." alt="" coords="241,173,375,215"/>
+<area shape="rect" id="node6" href="$class_registor_widget.html#ae280a0ef976dd2835f4a33c60b67e8a9" title="RegistorWidget::on_btn_Register_clicked 注册按钮点击事件" alt="" coords="233,239,383,280"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="MainWindow::sendAction" name="MainWindow::sendAction">
+<area shape="rect" id="node1" title=" " alt="" coords="673,31,841,57"/>
+<area shape="rect" id="node2" href="$class_main_window.html#ae449e932d7b98f64803ef7e1c9c7cb82" title="MainWindow::addWidgets 添加子页面" alt="" coords="233,5,404,32"/>
+<area shape="rect" id="node4" href="$class_main_window.html#a9a567ed8fe2074af6b1b276972dddfbd" title="MainWindow::ViewTables 查询记录响应槽" alt="" coords="456,56,625,83"/>
+<area shape="rect" id="node3" href="$class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db" title=" " alt="" coords="5,31,181,57"/>
+<area shape="rect" id="node5" href="$class_main_window.html#ad253da665707b1e03f610b2dea97976e" title="MainWindow::handConnect 连接槽函数" alt="" coords="229,56,408,83"/>
+</map>

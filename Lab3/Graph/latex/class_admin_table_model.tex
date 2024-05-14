@@ -1,0 +1,239 @@
+\hypertarget{class_admin_table_model}{}\section{Admin\+Table\+Model Class Reference}
+\label{class_admin_table_model}\index{AdminTableModel@{AdminTableModel}}
+
+
+{\ttfamily \#include $<$admintablemodel.\+h$>$}
+
+
+
+Inheritance diagram for Admin\+Table\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_admin_table_model__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Admin\+Table\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_admin_table_model__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_admin_table_model_a19a985b406a9cc0a7d9c270c7e22e43e}{Admin\+Table\+Model}} (Q\+Object $\ast$parent=0)
+\item 
+void \mbox{\hyperlink{class_admin_table_model_a221d30635e1a6f55fcfbf241108636df}{create\+Table}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_person_table_model_a121018cb2905e38572a05c457e9fda35}{Person\+Table\+Model\+::create\+Table}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_admin_table_model_a8f24c9bdafcd7d3b4f668b8893d64b59}{bind\+Table}} (void)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_person_table_model_a4abbde77bb6256c11d464d59c77878e4}{Person\+Table\+Model\+::bind\+Table}} 绑定表格 \end{DoxyCompactList}\item 
+Q\+Sql\+Table\+Model $\ast$ \mbox{\hyperlink{class_admin_table_model_a67350532cce04df05f02baf1148d957b}{get\+Model}} (void)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_admin_table_model_a67350532cce04df05f02baf1148d957b}{Admin\+Table\+Model\+::get\+Model}}. \end{DoxyCompactList}\item 
+Q\+Sql\+Record \mbox{\hyperlink{class_admin_table_model_a951c5e298d36e8451a13c63711933b5e}{find\+Record}} (const Q\+String \&user\+Name)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_admin_table_model_a951c5e298d36e8451a13c63711933b5e}{Admin\+Table\+Model\+::find\+Record}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_admin_table_model_a42e5ffcf891cda90e417db09ba12bce7}{insert\+Records}} (Q\+String user\+Name, Q\+String pawd, Q\+String remark)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_admin_table_model_a42e5ffcf891cda90e417db09ba12bce7}{Admin\+Table\+Model\+::insert\+Records}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_admin_table_model_a5d8e20b2b978cf098ea4f2df9e8c32ad}{update\+Records}} (Q\+String person\+Name, Q\+String pwd, Q\+String time)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_admin_table_model_a5d8e20b2b978cf098ea4f2df9e8c32ad}{Admin\+Table\+Model\+::update\+Records}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Sql\+Table\+Model $\ast$ \mbox{\hyperlink{class_admin_table_model_a3b69ce64a42913beec5f71b44eeb5dee}{model}}
+\item 
+Q\+String \mbox{\hyperlink{class_admin_table_model_aa0c4f5fa7a71cc6b253af2fd58f9d92c}{table\+Name}}
+\item 
+Q\+String\+List \mbox{\hyperlink{class_admin_table_model_a6b2b624bbc5516ea248c5a4818121165}{header}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_admin_table_model_a19a985b406a9cc0a7d9c270c7e22e43e}\label{class_admin_table_model_a19a985b406a9cc0a7d9c270c7e22e43e}} 
+\index{AdminTableModel@{AdminTableModel}!AdminTableModel@{AdminTableModel}}
+\index{AdminTableModel@{AdminTableModel}!AdminTableModel@{AdminTableModel}}
+\subsubsection{\texorpdfstring{AdminTableModel()}{AdminTableModel()}}
+{\footnotesize\ttfamily Admin\+Table\+Model\+::\+Admin\+Table\+Model (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_admin_table_model_a8f24c9bdafcd7d3b4f668b8893d64b59}\label{class_admin_table_model_a8f24c9bdafcd7d3b4f668b8893d64b59}} 
+\index{AdminTableModel@{AdminTableModel}!bindTable@{bindTable}}
+\index{bindTable@{bindTable}!AdminTableModel@{AdminTableModel}}
+\subsubsection{\texorpdfstring{bindTable()}{bindTable()}}
+{\footnotesize\ttfamily void Admin\+Table\+Model\+::bind\+Table (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_person_table_model_a4abbde77bb6256c11d464d59c77878e4}{Person\+Table\+Model\+::bind\+Table}} 绑定表格 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_table_model_a8f24c9bdafcd7d3b4f668b8893d64b59_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_admin_table_model_a221d30635e1a6f55fcfbf241108636df}\label{class_admin_table_model_a221d30635e1a6f55fcfbf241108636df}} 
+\index{AdminTableModel@{AdminTableModel}!createTable@{createTable}}
+\index{createTable@{createTable}!AdminTableModel@{AdminTableModel}}
+\subsubsection{\texorpdfstring{createTable()}{createTable()}}
+{\footnotesize\ttfamily void Admin\+Table\+Model\+::create\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_person_table_model_a121018cb2905e38572a05c457e9fda35}{Person\+Table\+Model\+::create\+Table}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+Name} & 数据块表名称 用于创建\+Person表 \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_table_model_a221d30635e1a6f55fcfbf241108636df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_admin_table_model_a951c5e298d36e8451a13c63711933b5e}\label{class_admin_table_model_a951c5e298d36e8451a13c63711933b5e}} 
+\index{AdminTableModel@{AdminTableModel}!findRecord@{findRecord}}
+\index{findRecord@{findRecord}!AdminTableModel@{AdminTableModel}}
+\subsubsection{\texorpdfstring{findRecord()}{findRecord()}}
+{\footnotesize\ttfamily Q\+Sql\+Record Admin\+Table\+Model\+::find\+Record (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{user\+Name }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_admin_table_model_a951c5e298d36e8451a13c63711933b5e}{Admin\+Table\+Model\+::find\+Record}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person\+Id} & 人员编号 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Q\+Sql\+Record型记录集 根据人员编号查找记录 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_table_model_a951c5e298d36e8451a13c63711933b5e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_admin_table_model_a67350532cce04df05f02baf1148d957b}\label{class_admin_table_model_a67350532cce04df05f02baf1148d957b}} 
+\index{AdminTableModel@{AdminTableModel}!getModel@{getModel}}
+\index{getModel@{getModel}!AdminTableModel@{AdminTableModel}}
+\subsubsection{\texorpdfstring{getModel()}{getModel()}}
+{\footnotesize\ttfamily Q\+Sql\+Table\+Model $\ast$ Admin\+Table\+Model\+::get\+Model (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_admin_table_model_a67350532cce04df05f02baf1148d957b}{Admin\+Table\+Model\+::get\+Model}}. 
+
+\begin{DoxyReturn}{Returns}
+Q\+Sql\+Table\+Model型model 获取注销表的\+Model 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_table_model_a67350532cce04df05f02baf1148d957b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_admin_table_model_a42e5ffcf891cda90e417db09ba12bce7}\label{class_admin_table_model_a42e5ffcf891cda90e417db09ba12bce7}} 
+\index{AdminTableModel@{AdminTableModel}!insertRecords@{insertRecords}}
+\index{insertRecords@{insertRecords}!AdminTableModel@{AdminTableModel}}
+\subsubsection{\texorpdfstring{insertRecords()}{insertRecords()}}
+{\footnotesize\ttfamily int Admin\+Table\+Model\+::insert\+Records (\begin{DoxyParamCaption}\item[{Q\+String}]{user\+Name,  }\item[{Q\+String}]{pawd,  }\item[{Q\+String}]{remark }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_admin_table_model_a42e5ffcf891cda90e417db09ba12bce7}{Admin\+Table\+Model\+::insert\+Records}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person\+Name} & 人员名称 \\
+\hline
+{\em person\+Type} & 身份类别 \\
+\hline
+{\em remark} & 备注信息 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+插入记录的行号 向表格中插入记录 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_table_model_a42e5ffcf891cda90e417db09ba12bce7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_admin_table_model_a5d8e20b2b978cf098ea4f2df9e8c32ad}\label{class_admin_table_model_a5d8e20b2b978cf098ea4f2df9e8c32ad}} 
+\index{AdminTableModel@{AdminTableModel}!updateRecords@{updateRecords}}
+\index{updateRecords@{updateRecords}!AdminTableModel@{AdminTableModel}}
+\subsubsection{\texorpdfstring{updateRecords()}{updateRecords()}}
+{\footnotesize\ttfamily bool Admin\+Table\+Model\+::update\+Records (\begin{DoxyParamCaption}\item[{Q\+String}]{person\+Name,  }\item[{Q\+String}]{pwd,  }\item[{Q\+String}]{time }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_admin_table_model_a5d8e20b2b978cf098ea4f2df9e8c32ad}{Admin\+Table\+Model\+::update\+Records}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person\+Name} & 用户名 \\
+\hline
+{\em pwd} & 新密码 \\
+\hline
+{\em time} & 更新的时间 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+如果更新成功返回true，否则false 更新密码 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_table_model_a5d8e20b2b978cf098ea4f2df9e8c32ad_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_admin_table_model_a6b2b624bbc5516ea248c5a4818121165}\label{class_admin_table_model_a6b2b624bbc5516ea248c5a4818121165}} 
+\index{AdminTableModel@{AdminTableModel}!header@{header}}
+\index{header@{header}!AdminTableModel@{AdminTableModel}}
+\subsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily Q\+String\+List Admin\+Table\+Model\+::header\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_admin_table_model_a3b69ce64a42913beec5f71b44eeb5dee}\label{class_admin_table_model_a3b69ce64a42913beec5f71b44eeb5dee}} 
+\index{AdminTableModel@{AdminTableModel}!model@{model}}
+\index{model@{model}!AdminTableModel@{AdminTableModel}}
+\subsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily Q\+Sql\+Table\+Model$\ast$ Admin\+Table\+Model\+::model\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_admin_table_model_aa0c4f5fa7a71cc6b253af2fd58f9d92c}\label{class_admin_table_model_aa0c4f5fa7a71cc6b253af2fd58f9d92c}} 
+\index{AdminTableModel@{AdminTableModel}!tableName@{tableName}}
+\index{tableName@{tableName}!AdminTableModel@{AdminTableModel}}
+\subsubsection{\texorpdfstring{tableName}{tableName}}
+{\footnotesize\ttfamily Q\+String Admin\+Table\+Model\+::table\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/database/\mbox{\hyperlink{admintablemodel_8h}{admintablemodel.\+h}}\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/database/\mbox{\hyperlink{admintablemodel_8cpp}{admintablemodel.\+cpp}}\end{DoxyCompactItemize}

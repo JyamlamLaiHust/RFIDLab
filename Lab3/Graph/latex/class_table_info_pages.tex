@@ -1,0 +1,222 @@
+\hypertarget{class_table_info_pages}{}\section{Table\+Info\+Pages Class Reference}
+\label{class_table_info_pages}\index{TableInfoPages@{TableInfoPages}}
+
+
+{\ttfamily \#include $<$tableinfopages.\+h$>$}
+
+
+
+Inheritance diagram for Table\+Info\+Pages\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{class_table_info_pages__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Table\+Info\+Pages\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_table_info_pages__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_table_info_pages_ab9cfb22829b4a4c7f2eb453e04a5547e}{Table\+Info\+Pages}} (Q\+Widget $\ast$parent=0, \mbox{\hyperlink{class_serial_port_thread}{Serial\+Port\+Thread}} $\ast$\mbox{\hyperlink{class_table_info_pages_a82b9f14a806dec6177ae0242326715b6}{serial}}=0)
+\item 
+\mbox{\hyperlink{class_table_info_pages_a9f496b74ed85bc0ac9a22f1eaa43d66a}{$\sim$\+Table\+Info\+Pages}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_table_info_pages_a22d86b2a8cb70049164f3d880f9f237a}{on\+\_\+btn\+\_\+\+Query\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_table_info_pages_a22d86b2a8cb70049164f3d880f9f237a}{Table\+Info\+Pages\+::on\+\_\+btn\+\_\+\+Query\+\_\+clicked}} 查询按钮点击事件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_table_info_pages_ad1da457e9ca5163f17d14035185457f7}{current\+Action}} (Q\+Action $\ast$action)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_table_info_pages_ad1da457e9ca5163f17d14035185457f7}{Table\+Info\+Pages\+::current\+Action}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_table_info_pages_a36dc73fa99cf8cfb6139ff33a1cd9741}{update\+Table\+View}} (Q\+Sql\+Table\+Model $\ast$model)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_table_info_pages_a36dc73fa99cf8cfb6139ff33a1cd9741}{Table\+Info\+Pages\+::update\+Table\+View}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_table_info_pages_aaa08abbcf7a0c7c76645896a9cdb610e}{on\+\_\+combo\+Box\+\_\+current\+Index\+Changed}} (const Q\+String \&text)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_table_info_pages_aaa08abbcf7a0c7c76645896a9cdb610e}{Table\+Info\+Pages\+::on\+\_\+combo\+Box\+\_\+current\+Index\+Changed}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_table_info_pages_aa65b69a9006eed0d90854eae510f2246}{on\+\_\+btn\+\_\+\+Enventory\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_table_info_pages_aa65b69a9006eed0d90854eae510f2246}{Table\+Info\+Pages\+::on\+\_\+btn\+\_\+\+Enventory\+\_\+clicked}} 识别按钮点击事件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_table_info_pages_aaa0d74e1218669ec7b10609c82b130d9}{on\+\_\+tag\+Id\+Received}} (Q\+String tag\+Id)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_table_info_pages_aaa0d74e1218669ec7b10609c82b130d9}{Table\+Info\+Pages\+::on\+\_\+tag\+Id\+Received}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Table\+Info\+Pages $\ast$ \mbox{\hyperlink{class_table_info_pages_a443191ceb391295c9fc39133ceb484a9}{ui}}
+\item 
+Q\+Sql\+Table\+Model $\ast$ \mbox{\hyperlink{class_table_info_pages_a9e63478f73b6775d0c5232a8b9b5c854}{current\+Model}}
+\item 
+\mbox{\hyperlink{class_serial_port_thread}{Serial\+Port\+Thread}} $\ast$ \mbox{\hyperlink{class_table_info_pages_a82b9f14a806dec6177ae0242326715b6}{serial}}
+\item 
+\mbox{\hyperlink{class_m1356_dll}{M1356\+Dll}} $\ast$ \mbox{\hyperlink{class_table_info_pages_a872072cca279224ba09c34a76c63c404}{m1356dll}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_table_info_pages_ab9cfb22829b4a4c7f2eb453e04a5547e}\label{class_table_info_pages_ab9cfb22829b4a4c7f2eb453e04a5547e}} 
+\index{TableInfoPages@{TableInfoPages}!TableInfoPages@{TableInfoPages}}
+\index{TableInfoPages@{TableInfoPages}!TableInfoPages@{TableInfoPages}}
+\subsubsection{\texorpdfstring{TableInfoPages()}{TableInfoPages()}}
+{\footnotesize\ttfamily Table\+Info\+Pages\+::\+Table\+Info\+Pages (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0},  }\item[{\mbox{\hyperlink{class_serial_port_thread}{Serial\+Port\+Thread}} $\ast$}]{serial = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_table_info_pages_a9f496b74ed85bc0ac9a22f1eaa43d66a}\label{class_table_info_pages_a9f496b74ed85bc0ac9a22f1eaa43d66a}} 
+\index{TableInfoPages@{TableInfoPages}!````~TableInfoPages@{$\sim$TableInfoPages}}
+\index{````~TableInfoPages@{$\sim$TableInfoPages}!TableInfoPages@{TableInfoPages}}
+\subsubsection{\texorpdfstring{$\sim$TableInfoPages()}{~TableInfoPages()}}
+{\footnotesize\ttfamily Table\+Info\+Pages\+::$\sim$\+Table\+Info\+Pages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_table_info_pages_ad1da457e9ca5163f17d14035185457f7}\label{class_table_info_pages_ad1da457e9ca5163f17d14035185457f7}} 
+\index{TableInfoPages@{TableInfoPages}!currentAction@{currentAction}}
+\index{currentAction@{currentAction}!TableInfoPages@{TableInfoPages}}
+\subsubsection{\texorpdfstring{currentAction}{currentAction}}
+{\footnotesize\ttfamily void Table\+Info\+Pages\+::current\+Action (\begin{DoxyParamCaption}\item[{Q\+Action $\ast$}]{action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_table_info_pages_ad1da457e9ca5163f17d14035185457f7}{Table\+Info\+Pages\+::current\+Action}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & 当前的\+Action 菜单点击事件槽函数 \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_table_info_pages_ad1da457e9ca5163f17d14035185457f7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_table_info_pages_aa65b69a9006eed0d90854eae510f2246}\label{class_table_info_pages_aa65b69a9006eed0d90854eae510f2246}} 
+\index{TableInfoPages@{TableInfoPages}!on\_btn\_Enventory\_clicked@{on\_btn\_Enventory\_clicked}}
+\index{on\_btn\_Enventory\_clicked@{on\_btn\_Enventory\_clicked}!TableInfoPages@{TableInfoPages}}
+\subsubsection{\texorpdfstring{on\_btn\_Enventory\_clicked}{on\_btn\_Enventory\_clicked}}
+{\footnotesize\ttfamily void Table\+Info\+Pages\+::on\+\_\+btn\+\_\+\+Enventory\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_table_info_pages_aa65b69a9006eed0d90854eae510f2246}{Table\+Info\+Pages\+::on\+\_\+btn\+\_\+\+Enventory\+\_\+clicked}} 识别按钮点击事件 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_table_info_pages_aa65b69a9006eed0d90854eae510f2246_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_table_info_pages_a22d86b2a8cb70049164f3d880f9f237a}\label{class_table_info_pages_a22d86b2a8cb70049164f3d880f9f237a}} 
+\index{TableInfoPages@{TableInfoPages}!on\_btn\_Query\_clicked@{on\_btn\_Query\_clicked}}
+\index{on\_btn\_Query\_clicked@{on\_btn\_Query\_clicked}!TableInfoPages@{TableInfoPages}}
+\subsubsection{\texorpdfstring{on\_btn\_Query\_clicked}{on\_btn\_Query\_clicked}}
+{\footnotesize\ttfamily void Table\+Info\+Pages\+::on\+\_\+btn\+\_\+\+Query\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_table_info_pages_a22d86b2a8cb70049164f3d880f9f237a}{Table\+Info\+Pages\+::on\+\_\+btn\+\_\+\+Query\+\_\+clicked}} 查询按钮点击事件 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_table_info_pages_a22d86b2a8cb70049164f3d880f9f237a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_table_info_pages_aaa08abbcf7a0c7c76645896a9cdb610e}\label{class_table_info_pages_aaa08abbcf7a0c7c76645896a9cdb610e}} 
+\index{TableInfoPages@{TableInfoPages}!on\_comboBox\_currentIndexChanged@{on\_comboBox\_currentIndexChanged}}
+\index{on\_comboBox\_currentIndexChanged@{on\_comboBox\_currentIndexChanged}!TableInfoPages@{TableInfoPages}}
+\subsubsection{\texorpdfstring{on\_comboBox\_currentIndexChanged}{on\_comboBox\_currentIndexChanged}}
+{\footnotesize\ttfamily void Table\+Info\+Pages\+::on\+\_\+combo\+Box\+\_\+current\+Index\+Changed (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_table_info_pages_aaa08abbcf7a0c7c76645896a9cdb610e}{Table\+Info\+Pages\+::on\+\_\+combo\+Box\+\_\+current\+Index\+Changed}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & 当前的显示文本 下拉框文本发生改变时调用 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_table_info_pages_aaa0d74e1218669ec7b10609c82b130d9}\label{class_table_info_pages_aaa0d74e1218669ec7b10609c82b130d9}} 
+\index{TableInfoPages@{TableInfoPages}!on\_tagIdReceived@{on\_tagIdReceived}}
+\index{on\_tagIdReceived@{on\_tagIdReceived}!TableInfoPages@{TableInfoPages}}
+\subsubsection{\texorpdfstring{on\_tagIdReceived}{on\_tagIdReceived}}
+{\footnotesize\ttfamily void Table\+Info\+Pages\+::on\+\_\+tag\+Id\+Received (\begin{DoxyParamCaption}\item[{Q\+String}]{tag\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_table_info_pages_aaa0d74e1218669ec7b10609c82b130d9}{Table\+Info\+Pages\+::on\+\_\+tag\+Id\+Received}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tag\+Id} & 卡号 读取到卡号槽函数，显示卡号 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_table_info_pages_a36dc73fa99cf8cfb6139ff33a1cd9741}\label{class_table_info_pages_a36dc73fa99cf8cfb6139ff33a1cd9741}} 
+\index{TableInfoPages@{TableInfoPages}!updateTableView@{updateTableView}}
+\index{updateTableView@{updateTableView}!TableInfoPages@{TableInfoPages}}
+\subsubsection{\texorpdfstring{updateTableView}{updateTableView}}
+{\footnotesize\ttfamily void Table\+Info\+Pages\+::update\+Table\+View (\begin{DoxyParamCaption}\item[{Q\+Sql\+Table\+Model $\ast$}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_table_info_pages_a36dc73fa99cf8cfb6139ff33a1cd9741}{Table\+Info\+Pages\+::update\+Table\+View}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & 数据表的model 更新\+Table\+View界面 \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_table_info_pages_a36dc73fa99cf8cfb6139ff33a1cd9741_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_table_info_pages_a9e63478f73b6775d0c5232a8b9b5c854}\label{class_table_info_pages_a9e63478f73b6775d0c5232a8b9b5c854}} 
+\index{TableInfoPages@{TableInfoPages}!currentModel@{currentModel}}
+\index{currentModel@{currentModel}!TableInfoPages@{TableInfoPages}}
+\subsubsection{\texorpdfstring{currentModel}{currentModel}}
+{\footnotesize\ttfamily Q\+Sql\+Table\+Model$\ast$ Table\+Info\+Pages\+::current\+Model\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_table_info_pages_a872072cca279224ba09c34a76c63c404}\label{class_table_info_pages_a872072cca279224ba09c34a76c63c404}} 
+\index{TableInfoPages@{TableInfoPages}!m1356dll@{m1356dll}}
+\index{m1356dll@{m1356dll}!TableInfoPages@{TableInfoPages}}
+\subsubsection{\texorpdfstring{m1356dll}{m1356dll}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_m1356_dll}{M1356\+Dll}}$\ast$ Table\+Info\+Pages\+::m1356dll\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_table_info_pages_a82b9f14a806dec6177ae0242326715b6}\label{class_table_info_pages_a82b9f14a806dec6177ae0242326715b6}} 
+\index{TableInfoPages@{TableInfoPages}!serial@{serial}}
+\index{serial@{serial}!TableInfoPages@{TableInfoPages}}
+\subsubsection{\texorpdfstring{serial}{serial}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_serial_port_thread}{Serial\+Port\+Thread}}$\ast$ Table\+Info\+Pages\+::serial\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_table_info_pages_a443191ceb391295c9fc39133ceb484a9}\label{class_table_info_pages_a443191ceb391295c9fc39133ceb484a9}} 
+\index{TableInfoPages@{TableInfoPages}!ui@{ui}}
+\index{ui@{ui}!TableInfoPages@{TableInfoPages}}
+\subsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Table\+Info\+Pages$\ast$ Table\+Info\+Pages\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/pages/tables/\mbox{\hyperlink{tableinfopages_8h}{tableinfopages.\+h}}\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/pages/tables/\mbox{\hyperlink{tableinfopages_8cpp}{tableinfopages.\+cpp}}\end{DoxyCompactItemize}

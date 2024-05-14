@@ -1,0 +1,29 @@
+<map id="MainWindow::handConnect" name="MainWindow::handConnect">
+<area shape="rect" id="node1" title="MainWindow::handConnect 连接槽函数" alt="" coords="5,579,184,605"/>
+<area shape="rect" id="node2" href="$class_main_window.html#a7fddd1ab5d3fcf4454ef1fdfd45f56a7" title="MainWindow::updateConnect 更新串口参数" alt="" coords="251,144,442,171"/>
+<area shape="rect" id="node9" href="$class_main_window.html#acb789dac6a35383ad1d7bb6f652c7cee" title="MainWindow::About 关于按钮点击事件" alt="" coords="278,275,415,301"/>
+<area shape="rect" id="node10" href="$class_main_window.html#a86aa997699ba4fdf4d7b258a412315e5" title="MainWindow::ChangePasswd 修改密码按钮点击事件" alt="" coords="250,376,443,403"/>
+<area shape="rect" id="node12" href="$class_main_window.html#af225d8bd24ccc47792010109b928f6ba" title="MainWindow::ExportTable 数据导出按钮点击事件" alt="" coords="261,427,433,453"/>
+<area shape="rect" id="node13" href="$class_main_window.html#a27370c71ccd518528509731b5d19e904" title="MainWindow::Login 登陆按钮点击事件" alt="" coords="279,579,414,605"/>
+<area shape="rect" id="node14" href="$class_main_window.html#a24ffccc8ae4041a33faa25844a3db1f8" title="MainWindow::Connect 连接菜单点击事件" alt="" coords="271,629,422,656"/>
+<area shape="rect" id="node15" href="$class_main_window.html#a4c998ea4be4f3f4ead67e5af459b89de" title="MainWindow::Disconnect 与读卡器断开连接，关闭串口，停止读写线程" alt="" coords="263,680,431,707"/>
+<area shape="rect" id="node16" href="$class_main_window.html#a9a567ed8fe2074af6b1b276972dddfbd" title="MainWindow::ViewTables 查询记录响应槽" alt="" coords="262,731,431,757"/>
+<area shape="rect" id="node17" href="$class_main_window.html#a6228fbb5ed376fb71633b797affc2e11" title="MainWindow::Register 注册按钮点击事件" alt="" coords="271,477,422,504"/>
+<area shape="rect" id="node18" href="$class_main_window.html#aae6b6877a9efd611b15d4e7601c3b45a" title="MainWindow::WriteOff 注销用户" alt="" coords="271,528,422,555"/>
+<area shape="rect" id="node19" href="$class_main_window.html#a0d17e2ebc098f3d11f2074378c8aaebc" title="MainWindow::ViewConsume 显示消费场景页面" alt="" coords="253,781,440,808"/>
+<area shape="rect" id="node20" href="$class_main_window.html#a436dc8be6b93d1c347e5422fb3550a0b" title="MainWindow::viewMainPage 显示welcome页面" alt="" coords="253,832,440,859"/>
+<area shape="rect" id="node21" href="$class_main_window.html#a45f9088074a2cb76009c6a7f047fbace" title="MainWindow::ExitApplication 退出按钮点击事件" alt="" coords="251,883,442,909"/>
+<area shape="rect" id="node22" href="$class_main_window.html#acfa568cdc9d07d4a8cc9e1eda8fee0e1" title="MainWindow::Recharge 充值" alt="" coords="267,325,426,352"/>
+<area shape="rect" id="node23" href="$class_main_window.html#a18b22ec92e72eb11a50503f30dbc756d" title=" " alt="" coords="247,933,447,960"/>
+<area shape="rect" id="node24" href="$class_main_window.html#afa5d14c3c19a3ce9a57a63f32d7b6af5" title="MainWindow::onOperationError." alt="" coords="246,984,447,1011"/>
+<area shape="rect" id="node25" href="$class_main_window.html#a13d0382dd96e94f56a05300323d278da" title="MainWindow::on_serialMsgreceived." alt="" coords="232,224,461,251"/>
+<area shape="rect" id="node3" href="$class_settings_dialog.html#aaffeca2603f381c3b7db7c8c934599fb" title="SettingsDialog::settings." alt="" coords="535,5,695,32"/>
+<area shape="rect" id="node4" href="$class_serial_port_thread.html#a7f6a1a41be1727ce2549aa0d8e386340" title="SerialPortThread::setSerialPort." alt="" coords="513,56,716,83"/>
+<area shape="rect" id="node5" href="$class_serial_port_thread.html#a0508026c05c1c2b2c1d2912be2162a9f" title="SerialPortThread::setRetryTimes." alt="" coords="527,107,703,149"/>
+<area shape="rect" id="node6" href="$class_m1356_dll.html#ab86ae59233d587f4688470796cbb85b1" title=" " alt="" coords="509,173,720,200"/>
+<area shape="rect" id="node7" href="$class_serial_port_thread.html#a16e0dbd72535df1b954ed3c4598f633a" title="SerialPortThread::writeData." alt="" coords="524,224,705,251"/>
+<area shape="rect" id="node8" href="$tools_8cpp.html#a107fa26ed0cd09983e6bb5006221bf89" title="普通字符串转为16进制字符串" alt="" coords="768,224,919,251"/>
+<area shape="rect" id="node11" href="$class_main_window.html#add9eeb672a0e00eb427170f1367b2281" title="MainWindow::CheckLogin." alt="" coords="529,427,700,453"/>
+<area shape="rect" id="node26" href="$class_m1356_dll.html#a40131e8263bd201208a37ec1826d5310" title=" " alt="" coords="519,275,710,317"/>
+<area shape="rect" id="node27" href="$tools_8cpp.html#a485150ce2280036069db9d4c633646cd" title="QSTRING_TO_HEX." alt="" coords="545,341,685,368"/>
+</map>

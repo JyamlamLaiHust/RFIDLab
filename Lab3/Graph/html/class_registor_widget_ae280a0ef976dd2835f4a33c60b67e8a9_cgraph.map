@@ -1,0 +1,9 @@
+<map id="RegistorWidget::on_btn_Register_clicked" name="RegistorWidget::on_btn_Register_clicked">
+<area shape="rect" id="node1" title="RegistorWidget::on_btn_Register_clicked 注册按钮点击事件" alt="" coords="5,145,156,186"/>
+<area shape="rect" id="node2" href="$tools_8cpp.html#a8997e5cfa09ec239bd4c851065261274" title="获取当前日期和时间" alt="" coords="240,5,360,32"/>
+<area shape="rect" id="node3" href="$class_register_table_model.html#ac5551b9d80a8b16c69007ecd39a0cbf9" title="RegisterTableModel::restore 绑定表名" alt="" coords="232,57,368,98"/>
+<area shape="rect" id="node4" href="$class_person_table_model.html#a4abbde77bb6256c11d464d59c77878e4" title="PersonTableModel::restore 绑定表名" alt="" coords="204,123,396,149"/>
+<area shape="rect" id="node5" href="$class_register_table_model.html#a5d54272261bd8aaae74929fa468b0271" title="RegisterTableModel::findRecord." alt="" coords="232,174,368,215"/>
+<area shape="rect" id="node6" href="$class_register_table_model.html#a00875a777cf37efa655d76c3437d11bf" title="RegisterTableModel::addRecord." alt="" coords="232,239,368,281"/>
+<area shape="rect" id="node7" href="$class_person_table_model.html#a4cac1b30aecba8739333cbcfb8d66515" title="PersonTableModel::insertRecords." alt="" coords="215,305,385,346"/>
+</map>

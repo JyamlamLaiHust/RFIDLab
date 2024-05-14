@@ -1,0 +1,331 @@
+\hypertarget{class_settings_dialog}{}\section{Settings\+Dialog Class Reference}
+\label{class_settings_dialog}\index{SettingsDialog@{SettingsDialog}}
+
+
+{\ttfamily \#include $<$settingsdialog.\+h$>$}
+
+
+
+Inheritance diagram for Settings\+Dialog\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{class_settings_dialog__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Settings\+Dialog\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{class_settings_dialog__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_settings_dialog_1_1_settings}{Settings}}
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_settings_dialog_a20ba98dff60a58a8dd732eb4d061ea3f}{apply\+Settings}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_settings_dialog_a9933956b777b2c0451e9119581cc22fb}{Settings\+Dialog}} (Q\+Widget $\ast$parent=0)
+\item 
+\mbox{\hyperlink{class_settings_dialog_ac48f54d4472902be0a3845a69167f068}{$\sim$\+Settings\+Dialog}} ()
+\item 
+\mbox{\hyperlink{struct_settings_dialog_1_1_settings}{Settings}} \mbox{\hyperlink{class_settings_dialog_aaffeca2603f381c3b7db7c8c934599fb}{settings}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_settings_dialog_aaffeca2603f381c3b7db7c8c934599fb}{Settings\+Dialog\+::settings}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_settings_dialog_a70f6f67b5f5e3af21d011fa90c2b2098}{show\+Port\+Info}} (int idx)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_settings_dialog_a70f6f67b5f5e3af21d011fa90c2b2098}{Settings\+Dialog\+::show\+Port\+Info}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_settings_dialog_aa0d7c1ec47555d438b86912af4830819}{apply}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_settings_dialog_aa0d7c1ec47555d438b86912af4830819}{Settings\+Dialog\+::apply}} 应用按钮点击事件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_settings_dialog_aae0cd05c0c0204e11d9e4703ecf7b0a4}{check\+Custom\+Baud\+Rate\+Policy}} (int idx)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_settings_dialog_aae0cd05c0c0204e11d9e4703ecf7b0a4}{Settings\+Dialog\+::check\+Custom\+Baud\+Rate\+Policy}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_settings_dialog_a5b561a34cba1fba972081978f3da0a4a}{check\+Custom\+Device\+Path\+Policy}} (int idx)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_settings_dialog_a5b561a34cba1fba972081978f3da0a4a}{Settings\+Dialog\+::check\+Custom\+Device\+Path\+Policy}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_settings_dialog_a216e718d94b9766dbce166b37ebdc87b}{on\+\_\+btn\+\_\+\+Refresh\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_settings_dialog_a216e718d94b9766dbce166b37ebdc87b}{Settings\+Dialog\+::on\+\_\+btn\+\_\+\+Refresh\+\_\+clicked}} 刷新按钮点击事件 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_settings_dialog_ac2a0ea7c05f7cb98e3bc2474981bc5e7}{fill\+Ports\+Parameters}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_settings_dialog_ac2a0ea7c05f7cb98e3bc2474981bc5e7}{Settings\+Dialog\+::fill\+Ports\+Parameters}} 串口参数信息 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_settings_dialog_a9e2b682d0cfe9f8a16b7912f495aa034}{fill\+Ports\+Info}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_settings_dialog_a9e2b682d0cfe9f8a16b7912f495aa034}{Settings\+Dialog\+::fill\+Ports\+Info}} 填充串口描述信息 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_settings_dialog_a349c9a5d2af7bb8001df096b43786d2d}{update\+Settings}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_settings_dialog_a349c9a5d2af7bb8001df096b43786d2d}{Settings\+Dialog\+::update\+Settings}} 更新串口配置 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Settings\+Dialog $\ast$ \mbox{\hyperlink{class_settings_dialog_aef76017ec1056d6e88e6bb48cdf73b0f}{ui}}
+\item 
+\mbox{\hyperlink{struct_settings_dialog_1_1_settings}{Settings}} \mbox{\hyperlink{class_settings_dialog_a9500689af503b7213b98d576ef8fa1e1}{current\+Settings}}
+\item 
+Q\+Int\+Validator $\ast$ \mbox{\hyperlink{class_settings_dialog_a925d4c1575508422a40fddb01c3eb1f4}{int\+Validator}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_settings_dialog_a9933956b777b2c0451e9119581cc22fb}\label{class_settings_dialog_a9933956b777b2c0451e9119581cc22fb}} 
+\index{SettingsDialog@{SettingsDialog}!SettingsDialog@{SettingsDialog}}
+\index{SettingsDialog@{SettingsDialog}!SettingsDialog@{SettingsDialog}}
+\subsubsection{\texorpdfstring{SettingsDialog()}{SettingsDialog()}}
+{\footnotesize\ttfamily Settings\+Dialog\+::\+Settings\+Dialog (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_settings_dialog_a9933956b777b2c0451e9119581cc22fb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_settings_dialog_ac48f54d4472902be0a3845a69167f068}\label{class_settings_dialog_ac48f54d4472902be0a3845a69167f068}} 
+\index{SettingsDialog@{SettingsDialog}!````~SettingsDialog@{$\sim$SettingsDialog}}
+\index{````~SettingsDialog@{$\sim$SettingsDialog}!SettingsDialog@{SettingsDialog}}
+\subsubsection{\texorpdfstring{$\sim$SettingsDialog()}{~SettingsDialog()}}
+{\footnotesize\ttfamily Settings\+Dialog\+::$\sim$\+Settings\+Dialog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_settings_dialog_aa0d7c1ec47555d438b86912af4830819}\label{class_settings_dialog_aa0d7c1ec47555d438b86912af4830819}} 
+\index{SettingsDialog@{SettingsDialog}!apply@{apply}}
+\index{apply@{apply}!SettingsDialog@{SettingsDialog}}
+\subsubsection{\texorpdfstring{apply}{apply}}
+{\footnotesize\ttfamily void Settings\+Dialog\+::apply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_settings_dialog_aa0d7c1ec47555d438b86912af4830819}{Settings\+Dialog\+::apply}} 应用按钮点击事件 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_settings_dialog_aa0d7c1ec47555d438b86912af4830819_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_settings_dialog_aa0d7c1ec47555d438b86912af4830819_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_settings_dialog_a20ba98dff60a58a8dd732eb4d061ea3f}\label{class_settings_dialog_a20ba98dff60a58a8dd732eb4d061ea3f}} 
+\index{SettingsDialog@{SettingsDialog}!applySettings@{applySettings}}
+\index{applySettings@{applySettings}!SettingsDialog@{SettingsDialog}}
+\subsubsection{\texorpdfstring{applySettings}{applySettings}}
+{\footnotesize\ttfamily void Settings\+Dialog\+::apply\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_settings_dialog_a20ba98dff60a58a8dd732eb4d061ea3f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_settings_dialog_aae0cd05c0c0204e11d9e4703ecf7b0a4}\label{class_settings_dialog_aae0cd05c0c0204e11d9e4703ecf7b0a4}} 
+\index{SettingsDialog@{SettingsDialog}!checkCustomBaudRatePolicy@{checkCustomBaudRatePolicy}}
+\index{checkCustomBaudRatePolicy@{checkCustomBaudRatePolicy}!SettingsDialog@{SettingsDialog}}
+\subsubsection{\texorpdfstring{checkCustomBaudRatePolicy}{checkCustomBaudRatePolicy}}
+{\footnotesize\ttfamily void Settings\+Dialog\+::check\+Custom\+Baud\+Rate\+Policy (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_settings_dialog_aae0cd05c0c0204e11d9e4703ecf7b0a4}{Settings\+Dialog\+::check\+Custom\+Baud\+Rate\+Policy}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & 索引值 监控是否选择了custom项(波特率) \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_settings_dialog_aae0cd05c0c0204e11d9e4703ecf7b0a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_settings_dialog_a5b561a34cba1fba972081978f3da0a4a}\label{class_settings_dialog_a5b561a34cba1fba972081978f3da0a4a}} 
+\index{SettingsDialog@{SettingsDialog}!checkCustomDevicePathPolicy@{checkCustomDevicePathPolicy}}
+\index{checkCustomDevicePathPolicy@{checkCustomDevicePathPolicy}!SettingsDialog@{SettingsDialog}}
+\subsubsection{\texorpdfstring{checkCustomDevicePathPolicy}{checkCustomDevicePathPolicy}}
+{\footnotesize\ttfamily void Settings\+Dialog\+::check\+Custom\+Device\+Path\+Policy (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_settings_dialog_a5b561a34cba1fba972081978f3da0a4a}{Settings\+Dialog\+::check\+Custom\+Device\+Path\+Policy}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & 索引值 监控是否选择了custom项(串口名) \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_settings_dialog_a5b561a34cba1fba972081978f3da0a4a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_settings_dialog_a9e2b682d0cfe9f8a16b7912f495aa034}\label{class_settings_dialog_a9e2b682d0cfe9f8a16b7912f495aa034}} 
+\index{SettingsDialog@{SettingsDialog}!fillPortsInfo@{fillPortsInfo}}
+\index{fillPortsInfo@{fillPortsInfo}!SettingsDialog@{SettingsDialog}}
+\subsubsection{\texorpdfstring{fillPortsInfo()}{fillPortsInfo()}}
+{\footnotesize\ttfamily void Settings\+Dialog\+::fill\+Ports\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_settings_dialog_a9e2b682d0cfe9f8a16b7912f495aa034}{Settings\+Dialog\+::fill\+Ports\+Info}} 填充串口描述信息 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_settings_dialog_a9e2b682d0cfe9f8a16b7912f495aa034_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_settings_dialog_ac2a0ea7c05f7cb98e3bc2474981bc5e7}\label{class_settings_dialog_ac2a0ea7c05f7cb98e3bc2474981bc5e7}} 
+\index{SettingsDialog@{SettingsDialog}!fillPortsParameters@{fillPortsParameters}}
+\index{fillPortsParameters@{fillPortsParameters}!SettingsDialog@{SettingsDialog}}
+\subsubsection{\texorpdfstring{fillPortsParameters()}{fillPortsParameters()}}
+{\footnotesize\ttfamily void Settings\+Dialog\+::fill\+Ports\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_settings_dialog_ac2a0ea7c05f7cb98e3bc2474981bc5e7}{Settings\+Dialog\+::fill\+Ports\+Parameters}} 串口参数信息 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_settings_dialog_ac2a0ea7c05f7cb98e3bc2474981bc5e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_settings_dialog_a216e718d94b9766dbce166b37ebdc87b}\label{class_settings_dialog_a216e718d94b9766dbce166b37ebdc87b}} 
+\index{SettingsDialog@{SettingsDialog}!on\_btn\_Refresh\_clicked@{on\_btn\_Refresh\_clicked}}
+\index{on\_btn\_Refresh\_clicked@{on\_btn\_Refresh\_clicked}!SettingsDialog@{SettingsDialog}}
+\subsubsection{\texorpdfstring{on\_btn\_Refresh\_clicked}{on\_btn\_Refresh\_clicked}}
+{\footnotesize\ttfamily void Settings\+Dialog\+::on\+\_\+btn\+\_\+\+Refresh\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_settings_dialog_a216e718d94b9766dbce166b37ebdc87b}{Settings\+Dialog\+::on\+\_\+btn\+\_\+\+Refresh\+\_\+clicked}} 刷新按钮点击事件 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_settings_dialog_a216e718d94b9766dbce166b37ebdc87b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_settings_dialog_aaffeca2603f381c3b7db7c8c934599fb}\label{class_settings_dialog_aaffeca2603f381c3b7db7c8c934599fb}} 
+\index{SettingsDialog@{SettingsDialog}!settings@{settings}}
+\index{settings@{settings}!SettingsDialog@{SettingsDialog}}
+\subsubsection{\texorpdfstring{settings()}{settings()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_settings_dialog_1_1_settings}{Settings\+Dialog\+::\+Settings}} Settings\+Dialog\+::settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{class_settings_dialog_aaffeca2603f381c3b7db7c8c934599fb}{Settings\+Dialog\+::settings}}. 
+
+\begin{DoxyReturn}{Returns}
+串口配置信息 作为一个常量返回当前串口配置 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_settings_dialog_aaffeca2603f381c3b7db7c8c934599fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_settings_dialog_a70f6f67b5f5e3af21d011fa90c2b2098}\label{class_settings_dialog_a70f6f67b5f5e3af21d011fa90c2b2098}} 
+\index{SettingsDialog@{SettingsDialog}!showPortInfo@{showPortInfo}}
+\index{showPortInfo@{showPortInfo}!SettingsDialog@{SettingsDialog}}
+\subsubsection{\texorpdfstring{showPortInfo}{showPortInfo}}
+{\footnotesize\ttfamily void Settings\+Dialog\+::show\+Port\+Info (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_settings_dialog_a70f6f67b5f5e3af21d011fa90c2b2098}{Settings\+Dialog\+::show\+Port\+Info}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & 选中的串口名的索引值 显示串口相关的详细信息 \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_settings_dialog_a70f6f67b5f5e3af21d011fa90c2b2098_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_settings_dialog_a349c9a5d2af7bb8001df096b43786d2d}\label{class_settings_dialog_a349c9a5d2af7bb8001df096b43786d2d}} 
+\index{SettingsDialog@{SettingsDialog}!updateSettings@{updateSettings}}
+\index{updateSettings@{updateSettings}!SettingsDialog@{SettingsDialog}}
+\subsubsection{\texorpdfstring{updateSettings()}{updateSettings()}}
+{\footnotesize\ttfamily void Settings\+Dialog\+::update\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_settings_dialog_a349c9a5d2af7bb8001df096b43786d2d}{Settings\+Dialog\+::update\+Settings}} 更新串口配置 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_settings_dialog_a349c9a5d2af7bb8001df096b43786d2d_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_settings_dialog_a9500689af503b7213b98d576ef8fa1e1}\label{class_settings_dialog_a9500689af503b7213b98d576ef8fa1e1}} 
+\index{SettingsDialog@{SettingsDialog}!currentSettings@{currentSettings}}
+\index{currentSettings@{currentSettings}!SettingsDialog@{SettingsDialog}}
+\subsubsection{\texorpdfstring{currentSettings}{currentSettings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_settings_dialog_1_1_settings}{Settings}} Settings\+Dialog\+::current\+Settings\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_settings_dialog_a925d4c1575508422a40fddb01c3eb1f4}\label{class_settings_dialog_a925d4c1575508422a40fddb01c3eb1f4}} 
+\index{SettingsDialog@{SettingsDialog}!intValidator@{intValidator}}
+\index{intValidator@{intValidator}!SettingsDialog@{SettingsDialog}}
+\subsubsection{\texorpdfstring{intValidator}{intValidator}}
+{\footnotesize\ttfamily Q\+Int\+Validator$\ast$ Settings\+Dialog\+::int\+Validator\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_settings_dialog_aef76017ec1056d6e88e6bb48cdf73b0f}\label{class_settings_dialog_aef76017ec1056d6e88e6bb48cdf73b0f}} 
+\index{SettingsDialog@{SettingsDialog}!ui@{ui}}
+\index{ui@{ui}!SettingsDialog@{SettingsDialog}}
+\subsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Settings\+Dialog$\ast$ Settings\+Dialog\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/pages/connect/\mbox{\hyperlink{settingsdialog_8h}{settingsdialog.\+h}}\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/pages/connect/\mbox{\hyperlink{settingsdialog_8cpp}{settingsdialog.\+cpp}}\end{DoxyCompactItemize}

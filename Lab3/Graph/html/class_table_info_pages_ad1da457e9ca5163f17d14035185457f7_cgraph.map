@@ -1,0 +1,9 @@
+<map id="TableInfoPages::currentAction" name="TableInfoPages::currentAction">
+<area shape="rect" id="node1" title="TableInfoPages::currentAction." alt="" coords="5,159,203,186"/>
+<area shape="rect" id="node2" href="$class_write_off_table_model.html#a188ceddedd586ee4b6eef04c37a20da3" title="WriteOffTableModel::restore 绑定表名" alt="" coords="292,5,428,47"/>
+<area shape="rect" id="node3" href="$class_table_info_pages.html#a36dc73fa99cf8cfb6139ff33a1cd9741" title="TableInfoPages::updateTableView." alt="" coords="251,71,469,98"/>
+<area shape="rect" id="node4" href="$class_register_table_model.html#ac5551b9d80a8b16c69007ecd39a0cbf9" title="RegisterTableModel::restore 绑定表名" alt="" coords="292,123,428,164"/>
+<area shape="rect" id="node5" href="$class_record_table_model.html#ae2ecb2c724b2141b50664525ad4cdfe7" title="RecordTableModel::restore 绑定表名" alt="" coords="264,189,456,215"/>
+<area shape="rect" id="node6" href="$class_person_table_model.html#a4abbde77bb6256c11d464d59c77878e4" title="PersonTableModel::restore 绑定表名" alt="" coords="264,239,456,266"/>
+<area shape="rect" id="node7" href="$class_recharge_table_model.html#a0747bbbc51e5061dad46178edfae4d85" title="RechargeTableModel::restore 绑定表名" alt="" coords="289,291,431,332"/>
+</map>

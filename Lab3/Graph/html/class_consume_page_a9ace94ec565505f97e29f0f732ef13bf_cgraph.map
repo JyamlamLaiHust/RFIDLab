@@ -1,0 +1,10 @@
+<map id="ConsumePage::on_btn_OK2_clicked" name="ConsumePage::on_btn_OK2_clicked">
+<area shape="rect" id="node1" title="ConsumePage::on_btn_OK2_clicked 超市消费结账按钮点击事件" alt="" coords="5,89,160,131"/>
+<area shape="rect" id="node2" href="$class_serial_port_thread.html#abbdd068503223fcd5f3d2376eb78c50e" title="SerialPortThread::serialPortIsOpen." alt="" coords="231,5,390,47"/>
+<area shape="rect" id="node3" href="$class_consume_page.html#a4b2cabc78b852bea679c71e0a8a1e459" title="ConsumePage::fillSendData." alt="" coords="218,71,403,98"/>
+<area shape="rect" id="node4" href="$class_consume_page.html#a35a81e758924ebde005e01f78eda143f" title=" " alt="" coords="208,122,413,149"/>
+<area shape="rect" id="node5" href="$class_consume_page.html#a26ad9f5afc48a91b04f6ba99f524dc44" title="ConsumePage::authentication 授权操作" alt="" coords="213,173,409,199"/>
+<area shape="rect" id="node6" href="$class_m1356_dll.html#ab86ae59233d587f4688470796cbb85b1" title=" " alt="" coords="461,147,672,174"/>
+<area shape="rect" id="node7" href="$class_serial_port_thread.html#a16e0dbd72535df1b954ed3c4598f633a" title="SerialPortThread::writeData." alt="" coords="476,198,657,225"/>
+<area shape="rect" id="node8" href="$tools_8cpp.html#a107fa26ed0cd09983e6bb5006221bf89" title="普通字符串转为16进制字符串" alt="" coords="720,198,871,225"/>
+</map>

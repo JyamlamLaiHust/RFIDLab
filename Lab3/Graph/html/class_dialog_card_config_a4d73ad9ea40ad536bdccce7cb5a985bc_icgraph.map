@@ -1,0 +1,5 @@
+<map id="DialogCardConfig::authentication" name="DialogCardConfig::authentication">
+<area shape="rect" id="node1" title="DialogCardConfig::authentication 授权" alt="" coords="212,46,423,73"/>
+<area shape="rect" id="node2" href="$class_dialog_card_config.html#a50f8d5a8eab6386e03a86094ae5098b7" title="DialogCardConfig::on_btn_Init_clicked 初始化按钮点击事件" alt="" coords="13,5,157,47"/>
+<area shape="rect" id="node3" href="$class_dialog_card_config.html#a1959f4e04b85a8366ca705e31a4db85c" title="DialogCardConfig::on_btn_MemData_clicked 查看内存数据" alt="" coords="5,71,164,112"/>
+</map>

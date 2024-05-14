@@ -1,0 +1,21 @@
+<map id="Sqlite::SelectBooks" name="Sqlite::SelectBooks">
+<area shape="rect" id="node1" title=" " alt="" coords="836,279,973,305"/>
+<area shape="rect" id="node2" href="$class_books_manage.html#a39c7bdd07e0af93379e1270becd8525c" title=" " alt="" coords="612,5,788,32"/>
+<area shape="rect" id="node5" href="$class_books_manage.html#ae8adc7f70a2e95f5a5991137e11a18ae" title=" " alt="" coords="626,57,774,98"/>
+<area shape="rect" id="node6" href="$class_books_manage.html#aba42cfe2129f1b92dab5a08e1f73ee07" title=" " alt="" coords="624,122,776,163"/>
+<area shape="rect" id="node7" href="$class_books_manage.html#ab2a76473efc3b68a9e1589cca6ab615d" title=" " alt="" coords="626,187,774,229"/>
+<area shape="rect" id="node8" href="$class_books_manage.html#a8388b6b8547cc759a9976c1a567aab0a" title=" " alt="" coords="629,253,771,280"/>
+<area shape="rect" id="node12" href="$class_borrow___return.html#afd3bfd00077c0704c8b26f8e4254e176" title=" " alt="" coords="621,304,779,331"/>
+<area shape="rect" id="node14" href="$class_record.html#ac08eeade2dbe9fd49ba7d508865f2ab1" title=" " alt="" coords="641,355,759,381"/>
+<area shape="rect" id="node15" href="$class_user_manage.html#a7058bbb981e4c6b3064c3e5e334ac700" title=" " alt="" coords="622,405,778,432"/>
+<area shape="rect" id="node18" href="$class_user_manage.html#a254765c27c79b94370dd9f1e44551355" title=" " alt="" coords="615,456,785,483"/>
+<area shape="rect" id="node19" href="$class_user_manage.html#ab7f81e5e1f3d9944c551401dba37693f" title=" " alt="" coords="613,507,787,533"/>
+<area shape="rect" id="node3" href="$class_books_manage.html#a0ee0a3e432c7789497c17758d1f82fdf" title=" " alt="" coords="408,97,564,124"/>
+<area shape="rect" id="node4" href="$class_books_manage.html#adc44f2312ab4d2cd48868ff923fa8861" title=" " alt="" coords="164,97,360,124"/>
+<area shape="rect" id="node9" href="$class_widget.html#a07120b41431597f8e2d0eb86098a6ba7" title=" " alt="" coords="409,253,563,280"/>
+<area shape="rect" id="node10" href="$class_widget.html#ac60c5a62bc3197fbc7ade8f40df70c70" title=" " alt="" coords="207,279,317,305"/>
+<area shape="rect" id="node11" href="$class_widget.html#a29531c7f141e461322981b3b579d4590" title=" " alt="" coords="5,279,116,305"/>
+<area shape="rect" id="node13" href="$class_widget.html#a0b1204d50863ef19c6ed3e39ab455d25" title=" " alt="" coords="426,304,546,331"/>
+<area shape="rect" id="node16" href="$class_user_manage.html#aa838d49f063bc0a081a1eb4d967c2da3" title=" " alt="" coords="413,456,559,483"/>
+<area shape="rect" id="node17" href="$class_user_manage.html#ae341d2b1a3a87f0603a2788f37517c4a" title=" " alt="" coords="174,456,350,483"/>
+</map>

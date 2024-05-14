@@ -1,0 +1,10 @@
+<map id="SettingsDialog::SettingsDialog" name="SettingsDialog::SettingsDialog">
+<area shape="rect" id="node1" title=" " alt="" coords="5,158,168,199"/>
+<area shape="rect" id="node2" href="$class_settings_dialog.html#aa0d7c1ec47555d438b86912af4830819" title="SettingsDialog::apply 应用按钮点击事件" alt="" coords="241,5,386,32"/>
+<area shape="rect" id="node3" href="$class_settings_dialog.html#a349c9a5d2af7bb8001df096b43786d2d" title="SettingsDialog::updateSettings 更新串口配置" alt="" coords="459,31,660,57"/>
+<area shape="rect" id="node4" href="$class_settings_dialog.html#a70f6f67b5f5e3af21d011fa90c2b2098" title="SettingsDialog::showPortInfo." alt="" coords="218,107,409,133"/>
+<area shape="rect" id="node5" href="$class_settings_dialog.html#aae0cd05c0c0204e11d9e4703ecf7b0a4" title="SettingsDialog::checkCustomBaudRatePolicy." alt="" coords="216,158,411,199"/>
+<area shape="rect" id="node6" href="$class_settings_dialog.html#a5b561a34cba1fba972081978f3da0a4a" title="SettingsDialog::checkCustomDevicePathPolicy." alt="" coords="216,223,411,265"/>
+<area shape="rect" id="node7" href="$class_settings_dialog.html#ac2a0ea7c05f7cb98e3bc2474981bc5e7" title="SettingsDialog::fillPortsParameters 串口参数信息" alt="" coords="234,289,393,330"/>
+<area shape="rect" id="node8" href="$class_settings_dialog.html#a9e2b682d0cfe9f8a16b7912f495aa034" title="SettingsDialog::fillPortsInfo 填充串口描述信息" alt="" coords="223,355,403,381"/>
+</map>

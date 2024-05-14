@@ -1,0 +1,4 @@
+<map id="DB_Close" name="DB_Close">
+<area shape="rect" id="node1" title="DB_Close 关闭数据库" alt="" coords="5,5,85,32"/>
+<area shape="rect" id="node2" href="$class_d_b_manager.html#abe9b0e3d863e27668b62a7fa43227fa5" title="DBManager::dbClose 关闭数据库" alt="" coords="133,5,279,32"/>
+</map>

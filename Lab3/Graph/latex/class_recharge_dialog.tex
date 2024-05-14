@@ -1,0 +1,360 @@
+\hypertarget{class_recharge_dialog}{}\section{Recharge\+Dialog Class Reference}
+\label{class_recharge_dialog}\index{RechargeDialog@{RechargeDialog}}
+
+
+{\ttfamily \#include $<$rechargedialog.\+h$>$}
+
+
+
+Inheritance diagram for Recharge\+Dialog\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{class_recharge_dialog__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Recharge\+Dialog\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recharge_dialog__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_recharge_dialog_adf95e380b531e5817063abac78cdd607}{on\+\_\+card\+Id\+Received}} (Q\+String tag\+Id)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recharge_dialog_adf95e380b531e5817063abac78cdd607}{Recharge\+Dialog\+::on\+\_\+card\+Id\+Received}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_recharge_dialog_a9048dce00d14b245f88e8059db81db63}{calc\+Ops}} (float)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_recharge_dialog_aadb3a8b39a5467cb746d639f8f018d39}{Recharge\+Dialog}} (Q\+Widget $\ast$parent=0, \mbox{\hyperlink{class_serial_port_thread}{Serial\+Port\+Thread}} $\ast$\mbox{\hyperlink{class_recharge_dialog_a9d33c6c98810ddf8958e6055aa6664af}{serial\+Port\+Thread}}=0)
+\item 
+\mbox{\hyperlink{class_recharge_dialog_ab46f1f766c86af5c9a443b1bc9514632}{$\sim$\+Recharge\+Dialog}} ()
+\item 
+void \mbox{\hyperlink{class_recharge_dialog_a2dedb3b3a01202645d6375e41282bb11}{authentication}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recharge_dialog_a2dedb3b3a01202645d6375e41282bb11}{Recharge\+Dialog\+::authentication}} 授权操作 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_recharge_dialog_a3a39227ec39401c1735b7280c2744a8c}{event\+Filter}} (Q\+Object $\ast$obj, Q\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recharge_dialog_a3a39227ec39401c1735b7280c2744a8c}{Recharge\+Dialog\+::event\+Filter}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_recharge_dialog_a39b9307ae35c1c2e7e95d255eb2fdc73}{on\+\_\+btn\+\_\+recharge\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recharge_dialog_a39b9307ae35c1c2e7e95d255eb2fdc73}{Recharge\+Dialog\+::on\+\_\+btn\+\_\+recharge\+\_\+clicked}} 充值按钮点击事件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_recharge_dialog_acead4cd4509b27f98895adc69b77c9fd}{on\+\_\+btn\+\_\+return\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recharge_dialog_acead4cd4509b27f98895adc69b77c9fd}{Recharge\+Dialog\+::on\+\_\+btn\+\_\+return\+\_\+clicked}} 返回按钮点击事件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_recharge_dialog_a39a0878875f9127332f474cac43d1ed3}{on\+\_\+btn\+\_\+clear\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recharge_dialog_a39a0878875f9127332f474cac43d1ed3}{Recharge\+Dialog\+::on\+\_\+btn\+\_\+clear\+\_\+clicked}} 清除按钮点击事件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_recharge_dialog_aafd9329cbf935615b90bb79350681f8b}{on\+\_\+btn\+\_\+inventory\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recharge_dialog_aafd9329cbf935615b90bb79350681f8b}{Recharge\+Dialog\+::on\+\_\+btn\+\_\+inventory\+\_\+clicked}} 识别按钮点击事件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_recharge_dialog_adfce62fdba02f8a9f105b646d86957aa}{on\+\_\+read\+Value}} (float)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_aee88a9a496e88620383622b4ab20e4c9}{Consume\+Page\+::on\+\_\+read\+Value}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_recharge_dialog_ae72f6af3e5f317cecafe239fe830853c}{on\+Decode\+Frame}} (Q\+Byte\+Array bytes)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recharge_dialog_ae72f6af3e5f317cecafe239fe830853c}{Recharge\+Dialog\+::on\+Decode\+Frame}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Recharge\+Dialog $\ast$ \mbox{\hyperlink{class_recharge_dialog_ab496c91dc8ba4fcc23c21e9f372af5a9}{ui}}
+\item 
+\mbox{\hyperlink{class_m1356_dll}{M1356\+Dll}} $\ast$ \mbox{\hyperlink{class_recharge_dialog_aef8fbfa57a02c02826e80fe9e44aec8d}{m1356dll}}
+\item 
+\mbox{\hyperlink{class_serial_port_thread}{Serial\+Port\+Thread}} $\ast$ \mbox{\hyperlink{class_recharge_dialog_a9d33c6c98810ddf8958e6055aa6664af}{serial\+Port\+Thread}}
+\item 
+Q\+Message\+Box $\ast$ \mbox{\hyperlink{class_recharge_dialog_ac967e41d74d36b918f944e500730fb85}{message\+Box}}
+\item 
+int \mbox{\hyperlink{class_recharge_dialog_a3ce5a3d189e8cb921bc2e777697cc80d}{current\+Ops}}
+\item 
+float \mbox{\hyperlink{class_recharge_dialog_aa55e140a13924b87db69fbc621c047fd}{last\+\_\+value}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_recharge_dialog_aadb3a8b39a5467cb746d639f8f018d39}\label{class_recharge_dialog_aadb3a8b39a5467cb746d639f8f018d39}} 
+\index{RechargeDialog@{RechargeDialog}!RechargeDialog@{RechargeDialog}}
+\index{RechargeDialog@{RechargeDialog}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{RechargeDialog()}{RechargeDialog()}}
+{\footnotesize\ttfamily Recharge\+Dialog\+::\+Recharge\+Dialog (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0},  }\item[{\mbox{\hyperlink{class_serial_port_thread}{Serial\+Port\+Thread}} $\ast$}]{serial\+Port\+Thread = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recharge_dialog_aadb3a8b39a5467cb746d639f8f018d39_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_recharge_dialog_ab46f1f766c86af5c9a443b1bc9514632}\label{class_recharge_dialog_ab46f1f766c86af5c9a443b1bc9514632}} 
+\index{RechargeDialog@{RechargeDialog}!````~RechargeDialog@{$\sim$RechargeDialog}}
+\index{````~RechargeDialog@{$\sim$RechargeDialog}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{$\sim$RechargeDialog()}{~RechargeDialog()}}
+{\footnotesize\ttfamily Recharge\+Dialog\+::$\sim$\+Recharge\+Dialog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_recharge_dialog_a2dedb3b3a01202645d6375e41282bb11}\label{class_recharge_dialog_a2dedb3b3a01202645d6375e41282bb11}} 
+\index{RechargeDialog@{RechargeDialog}!authentication@{authentication}}
+\index{authentication@{authentication}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{authentication()}{authentication()}}
+{\footnotesize\ttfamily void Recharge\+Dialog\+::authentication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_recharge_dialog_a2dedb3b3a01202645d6375e41282bb11}{Recharge\+Dialog\+::authentication}} 授权操作 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recharge_dialog_a2dedb3b3a01202645d6375e41282bb11_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recharge_dialog_a2dedb3b3a01202645d6375e41282bb11_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_recharge_dialog_a9048dce00d14b245f88e8059db81db63}\label{class_recharge_dialog_a9048dce00d14b245f88e8059db81db63}} 
+\index{RechargeDialog@{RechargeDialog}!calcOps@{calcOps}}
+\index{calcOps@{calcOps}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{calcOps}{calcOps}}
+{\footnotesize\ttfamily void Recharge\+Dialog\+::calc\+Ops (\begin{DoxyParamCaption}\item[{float}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recharge_dialog_a9048dce00d14b245f88e8059db81db63_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_recharge_dialog_a3a39227ec39401c1735b7280c2744a8c}\label{class_recharge_dialog_a3a39227ec39401c1735b7280c2744a8c}} 
+\index{RechargeDialog@{RechargeDialog}!eventFilter@{eventFilter}}
+\index{eventFilter@{eventFilter}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{eventFilter()}{eventFilter()}}
+{\footnotesize\ttfamily bool Recharge\+Dialog\+::event\+Filter (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{obj,  }\item[{Q\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_recharge_dialog_a3a39227ec39401c1735b7280c2744a8c}{Recharge\+Dialog\+::event\+Filter}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & 触发的对象 \\
+\hline
+{\em event} & 当前的事件 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+此处只在\+Recharge\+Dialog前面过滤,返回值含义未变 事件过滤器 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_recharge_dialog_a39a0878875f9127332f474cac43d1ed3}\label{class_recharge_dialog_a39a0878875f9127332f474cac43d1ed3}} 
+\index{RechargeDialog@{RechargeDialog}!on\_btn\_clear\_clicked@{on\_btn\_clear\_clicked}}
+\index{on\_btn\_clear\_clicked@{on\_btn\_clear\_clicked}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{on\_btn\_clear\_clicked}{on\_btn\_clear\_clicked}}
+{\footnotesize\ttfamily void Recharge\+Dialog\+::on\+\_\+btn\+\_\+clear\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_recharge_dialog_a39a0878875f9127332f474cac43d1ed3}{Recharge\+Dialog\+::on\+\_\+btn\+\_\+clear\+\_\+clicked}} 清除按钮点击事件 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_recharge_dialog_a39a0878875f9127332f474cac43d1ed3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_recharge_dialog_aafd9329cbf935615b90bb79350681f8b}\label{class_recharge_dialog_aafd9329cbf935615b90bb79350681f8b}} 
+\index{RechargeDialog@{RechargeDialog}!on\_btn\_inventory\_clicked@{on\_btn\_inventory\_clicked}}
+\index{on\_btn\_inventory\_clicked@{on\_btn\_inventory\_clicked}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{on\_btn\_inventory\_clicked}{on\_btn\_inventory\_clicked}}
+{\footnotesize\ttfamily void Recharge\+Dialog\+::on\+\_\+btn\+\_\+inventory\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_recharge_dialog_aafd9329cbf935615b90bb79350681f8b}{Recharge\+Dialog\+::on\+\_\+btn\+\_\+inventory\+\_\+clicked}} 识别按钮点击事件 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recharge_dialog_aafd9329cbf935615b90bb79350681f8b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_recharge_dialog_a39b9307ae35c1c2e7e95d255eb2fdc73}\label{class_recharge_dialog_a39b9307ae35c1c2e7e95d255eb2fdc73}} 
+\index{RechargeDialog@{RechargeDialog}!on\_btn\_recharge\_clicked@{on\_btn\_recharge\_clicked}}
+\index{on\_btn\_recharge\_clicked@{on\_btn\_recharge\_clicked}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{on\_btn\_recharge\_clicked}{on\_btn\_recharge\_clicked}}
+{\footnotesize\ttfamily void Recharge\+Dialog\+::on\+\_\+btn\+\_\+recharge\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_recharge_dialog_a39b9307ae35c1c2e7e95d255eb2fdc73}{Recharge\+Dialog\+::on\+\_\+btn\+\_\+recharge\+\_\+clicked}} 充值按钮点击事件 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recharge_dialog_a39b9307ae35c1c2e7e95d255eb2fdc73_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_recharge_dialog_acead4cd4509b27f98895adc69b77c9fd}\label{class_recharge_dialog_acead4cd4509b27f98895adc69b77c9fd}} 
+\index{RechargeDialog@{RechargeDialog}!on\_btn\_return\_clicked@{on\_btn\_return\_clicked}}
+\index{on\_btn\_return\_clicked@{on\_btn\_return\_clicked}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{on\_btn\_return\_clicked}{on\_btn\_return\_clicked}}
+{\footnotesize\ttfamily void Recharge\+Dialog\+::on\+\_\+btn\+\_\+return\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_recharge_dialog_acead4cd4509b27f98895adc69b77c9fd}{Recharge\+Dialog\+::on\+\_\+btn\+\_\+return\+\_\+clicked}} 返回按钮点击事件 
+
+\mbox{\Hypertarget{class_recharge_dialog_adf95e380b531e5817063abac78cdd607}\label{class_recharge_dialog_adf95e380b531e5817063abac78cdd607}} 
+\index{RechargeDialog@{RechargeDialog}!on\_cardIdReceived@{on\_cardIdReceived}}
+\index{on\_cardIdReceived@{on\_cardIdReceived}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{on\_cardIdReceived}{on\_cardIdReceived}}
+{\footnotesize\ttfamily void Recharge\+Dialog\+::on\+\_\+card\+Id\+Received (\begin{DoxyParamCaption}\item[{Q\+String}]{tag\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_recharge_dialog_adf95e380b531e5817063abac78cdd607}{Recharge\+Dialog\+::on\+\_\+card\+Id\+Received}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tag\+Id} & 卡号 接收到卡号时调用 \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recharge_dialog_adf95e380b531e5817063abac78cdd607_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_recharge_dialog_adfce62fdba02f8a9f105b646d86957aa}\label{class_recharge_dialog_adfce62fdba02f8a9f105b646d86957aa}} 
+\index{RechargeDialog@{RechargeDialog}!on\_readValue@{on\_readValue}}
+\index{on\_readValue@{on\_readValue}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{on\_readValue}{on\_readValue}}
+{\footnotesize\ttfamily void Recharge\+Dialog\+::on\+\_\+read\+Value (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_aee88a9a496e88620383622b4ab20e4c9}{Consume\+Page\+::on\+\_\+read\+Value}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & 卡内余额 读取卡内余额后调用 \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_recharge_dialog_adfce62fdba02f8a9f105b646d86957aa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_recharge_dialog_adfce62fdba02f8a9f105b646d86957aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_recharge_dialog_ae72f6af3e5f317cecafe239fe830853c}\label{class_recharge_dialog_ae72f6af3e5f317cecafe239fe830853c}} 
+\index{RechargeDialog@{RechargeDialog}!onDecodeFrame@{onDecodeFrame}}
+\index{onDecodeFrame@{onDecodeFrame}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{onDecodeFrame}{onDecodeFrame}}
+{\footnotesize\ttfamily void Recharge\+Dialog\+::on\+Decode\+Frame (\begin{DoxyParamCaption}\item[{Q\+Byte\+Array}]{bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_recharge_dialog_ae72f6af3e5f317cecafe239fe830853c}{Recharge\+Dialog\+::on\+Decode\+Frame}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & 接收到的数据 串口接收槽函数 \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recharge_dialog_ae72f6af3e5f317cecafe239fe830853c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recharge_dialog_ae72f6af3e5f317cecafe239fe830853c_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_recharge_dialog_a3ce5a3d189e8cb921bc2e777697cc80d}\label{class_recharge_dialog_a3ce5a3d189e8cb921bc2e777697cc80d}} 
+\index{RechargeDialog@{RechargeDialog}!currentOps@{currentOps}}
+\index{currentOps@{currentOps}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{currentOps}{currentOps}}
+{\footnotesize\ttfamily int Recharge\+Dialog\+::current\+Ops\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_recharge_dialog_aa55e140a13924b87db69fbc621c047fd}\label{class_recharge_dialog_aa55e140a13924b87db69fbc621c047fd}} 
+\index{RechargeDialog@{RechargeDialog}!last\_value@{last\_value}}
+\index{last\_value@{last\_value}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{last\_value}{last\_value}}
+{\footnotesize\ttfamily float Recharge\+Dialog\+::last\+\_\+value\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_recharge_dialog_aef8fbfa57a02c02826e80fe9e44aec8d}\label{class_recharge_dialog_aef8fbfa57a02c02826e80fe9e44aec8d}} 
+\index{RechargeDialog@{RechargeDialog}!m1356dll@{m1356dll}}
+\index{m1356dll@{m1356dll}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{m1356dll}{m1356dll}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_m1356_dll}{M1356\+Dll}}$\ast$ Recharge\+Dialog\+::m1356dll\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_recharge_dialog_ac967e41d74d36b918f944e500730fb85}\label{class_recharge_dialog_ac967e41d74d36b918f944e500730fb85}} 
+\index{RechargeDialog@{RechargeDialog}!messageBox@{messageBox}}
+\index{messageBox@{messageBox}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{messageBox}{messageBox}}
+{\footnotesize\ttfamily Q\+Message\+Box$\ast$ Recharge\+Dialog\+::message\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_recharge_dialog_a9d33c6c98810ddf8958e6055aa6664af}\label{class_recharge_dialog_a9d33c6c98810ddf8958e6055aa6664af}} 
+\index{RechargeDialog@{RechargeDialog}!serialPortThread@{serialPortThread}}
+\index{serialPortThread@{serialPortThread}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{serialPortThread}{serialPortThread}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_serial_port_thread}{Serial\+Port\+Thread}}$\ast$ Recharge\+Dialog\+::serial\+Port\+Thread\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_recharge_dialog_ab496c91dc8ba4fcc23c21e9f372af5a9}\label{class_recharge_dialog_ab496c91dc8ba4fcc23c21e9f372af5a9}} 
+\index{RechargeDialog@{RechargeDialog}!ui@{ui}}
+\index{ui@{ui}!RechargeDialog@{RechargeDialog}}
+\subsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Recharge\+Dialog$\ast$ Recharge\+Dialog\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/pages/recharge/\mbox{\hyperlink{rechargedialog_8h}{rechargedialog.\+h}}\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/pages/recharge/\mbox{\hyperlink{rechargedialog_8cpp}{rechargedialog.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,398 @@
+\hypertarget{class_serial_port_thread}{}\section{Serial\+Port\+Thread Class Reference}
+\label{class_serial_port_thread}\index{SerialPortThread@{SerialPortThread}}
+
+
+{\ttfamily \#include $<$serialportthread.\+h$>$}
+
+
+
+Inheritance diagram for Serial\+Port\+Thread\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_serial_port_thread__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Serial\+Port\+Thread\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_serial_port_thread__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_serial_port_thread_a1f0e27279ed5e305f0f71caec3a835f8}{on\+Error}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_serial_port_thread_a1f0e27279ed5e305f0f71caec3a835f8}{Serial\+Port\+Thread\+::on\+Error}} 当发送出错时发送错误信号 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_serial_port_thread_adfceb467826dc0f59d0eb66c1ba0a1a6}{stop\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_serial_port_thread_adfceb467826dc0f59d0eb66c1ba0a1a6}{Serial\+Port\+Thread\+::stop\+Timer}} 停止定时器 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_serial_port_thread_afe967fd379bdd7b5d7cb90292ff18c32}{send\+Msg}} (char $\ast$data, int frame\+Len)
+\item 
+void \mbox{\hyperlink{class_serial_port_thread_ac076c2d960a1464de8e88e703ad00dc5}{received\+Msg}} (Q\+Byte\+Array data)
+\item 
+void \mbox{\hyperlink{class_serial_port_thread_a7ba1cacdedbb7c158750553adbd13669}{wirte\+Msg\+Error}} (Q\+String msg)
+\item 
+void \mbox{\hyperlink{class_serial_port_thread_aa052196772f8d1a3066030c4b10eb18d}{has\+Response}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_serial_port_thread_aa842675091fa3c6bb2d840bf73a246ed}{Serial\+Port\+Thread}} (Q\+Object $\ast$parent=0)
+\item 
+\mbox{\hyperlink{class_serial_port_thread_acb85c5610387d944672514d3ed81c72f}{$\sim$\+Serial\+Port\+Thread}} ()
+\item 
+void \mbox{\hyperlink{class_serial_port_thread_a7f6a1a41be1727ce2549aa0d8e386340}{set\+Serial\+Port}} (Q\+Serial\+Port $\ast$serialport)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_serial_port_thread_a7f6a1a41be1727ce2549aa0d8e386340}{Serial\+Port\+Thread\+::set\+Serial\+Port}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_serial_port_thread_ae7403dd74cb71b0e925e933073020cd2}{stop\+Thread}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_serial_port_thread_ae7403dd74cb71b0e925e933073020cd2}{Serial\+Port\+Thread\+::stop\+Thread}} 停止串口线程 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_serial_port_thread_a0508026c05c1c2b2c1d2912be2162a9f}{set\+Retry\+Times}} (\mbox{\hyperlink{serialportthread_8h_a58c73f770d96826095f8f3824737f67b}{Read\+Retry\+Times}} times)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_serial_port_thread_a0508026c05c1c2b2c1d2912be2162a9f}{Serial\+Port\+Thread\+::set\+Retry\+Times}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_serial_port_thread_a16e0dbd72535df1b954ed3c4598f633a}{write\+Data}} (char $\ast$data, int frame\+Len, bool echo=true)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_serial_port_thread_a16e0dbd72535df1b954ed3c4598f633a}{Serial\+Port\+Thread\+::write\+Data}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_serial_port_thread_abbdd068503223fcd5f3d2376eb78c50e}{serial\+Port\+Is\+Open}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_serial_port_thread_abbdd068503223fcd5f3d2376eb78c50e}{Serial\+Port\+Thread\+::serial\+Port\+Is\+Open}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_serial_port_thread_ab0cafe85015c88354c9c5b8f7b3f1282}{run}} (void)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_serial_port_thread_ab0cafe85015c88354c9c5b8f7b3f1282}{Serial\+Port\+Thread\+::run}} 线程实体run. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_serial_port_thread_ac859512ec7787398c77158a2f63e9be0}{Stop}}
+\item 
+Q\+Serial\+Port $\ast$ \mbox{\hyperlink{class_serial_port_thread_a823a90c7a6917746e12265095172bfda}{serial\+Port}}
+\item 
+int \mbox{\hyperlink{class_serial_port_thread_aa113796646c46f083f54ef8f0190524f}{retry\+Times}}
+\item 
+Q\+Timer $\ast$ \mbox{\hyperlink{class_serial_port_thread_aa1f0f4cbedd58026fb8a050aa013bcfa}{timer}}
+\item 
+Q\+String \mbox{\hyperlink{class_serial_port_thread_a37b42e9f8f434b559c3c7fce579c4153}{Sending\+Msg}}
+\item 
+bool \mbox{\hyperlink{class_serial_port_thread_a913c351785f85b6c3cc90e3d6c067236}{serial\+Is\+Open}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_serial_port_thread_aa842675091fa3c6bb2d840bf73a246ed}\label{class_serial_port_thread_aa842675091fa3c6bb2d840bf73a246ed}} 
+\index{SerialPortThread@{SerialPortThread}!SerialPortThread@{SerialPortThread}}
+\index{SerialPortThread@{SerialPortThread}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{SerialPortThread()}{SerialPortThread()}}
+{\footnotesize\ttfamily Serial\+Port\+Thread\+::\+Serial\+Port\+Thread (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_thread_aa842675091fa3c6bb2d840bf73a246ed_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial_port_thread_acb85c5610387d944672514d3ed81c72f}\label{class_serial_port_thread_acb85c5610387d944672514d3ed81c72f}} 
+\index{SerialPortThread@{SerialPortThread}!````~SerialPortThread@{$\sim$SerialPortThread}}
+\index{````~SerialPortThread@{$\sim$SerialPortThread}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{$\sim$SerialPortThread()}{~SerialPortThread()}}
+{\footnotesize\ttfamily Serial\+Port\+Thread\+::$\sim$\+Serial\+Port\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_serial_port_thread_aa052196772f8d1a3066030c4b10eb18d}\label{class_serial_port_thread_aa052196772f8d1a3066030c4b10eb18d}} 
+\index{SerialPortThread@{SerialPortThread}!hasResponse@{hasResponse}}
+\index{hasResponse@{hasResponse}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{hasResponse}{hasResponse}}
+{\footnotesize\ttfamily void Serial\+Port\+Thread\+::has\+Response (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_thread_aa052196772f8d1a3066030c4b10eb18d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial_port_thread_a1f0e27279ed5e305f0f71caec3a835f8}\label{class_serial_port_thread_a1f0e27279ed5e305f0f71caec3a835f8}} 
+\index{SerialPortThread@{SerialPortThread}!onError@{onError}}
+\index{onError@{onError}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{onError}{onError}}
+{\footnotesize\ttfamily void Serial\+Port\+Thread\+::on\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_serial_port_thread_a1f0e27279ed5e305f0f71caec3a835f8}{Serial\+Port\+Thread\+::on\+Error}} 当发送出错时发送错误信号 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_thread_a1f0e27279ed5e305f0f71caec3a835f8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_thread_a1f0e27279ed5e305f0f71caec3a835f8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial_port_thread_ac076c2d960a1464de8e88e703ad00dc5}\label{class_serial_port_thread_ac076c2d960a1464de8e88e703ad00dc5}} 
+\index{SerialPortThread@{SerialPortThread}!receivedMsg@{receivedMsg}}
+\index{receivedMsg@{receivedMsg}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{receivedMsg}{receivedMsg}}
+{\footnotesize\ttfamily void Serial\+Port\+Thread\+::received\+Msg (\begin{DoxyParamCaption}\item[{Q\+Byte\+Array}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_thread_ac076c2d960a1464de8e88e703ad00dc5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial_port_thread_ab0cafe85015c88354c9c5b8f7b3f1282}\label{class_serial_port_thread_ab0cafe85015c88354c9c5b8f7b3f1282}} 
+\index{SerialPortThread@{SerialPortThread}!run@{run}}
+\index{run@{run}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Serial\+Port\+Thread\+::run (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_serial_port_thread_ab0cafe85015c88354c9c5b8f7b3f1282}{Serial\+Port\+Thread\+::run}} 线程实体run. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_serial_port_thread_ab0cafe85015c88354c9c5b8f7b3f1282_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial_port_thread_afe967fd379bdd7b5d7cb90292ff18c32}\label{class_serial_port_thread_afe967fd379bdd7b5d7cb90292ff18c32}} 
+\index{SerialPortThread@{SerialPortThread}!sendMsg@{sendMsg}}
+\index{sendMsg@{sendMsg}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{sendMsg}{sendMsg}}
+{\footnotesize\ttfamily void Serial\+Port\+Thread\+::send\+Msg (\begin{DoxyParamCaption}\item[{char $\ast$}]{data,  }\item[{int}]{frame\+Len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_thread_afe967fd379bdd7b5d7cb90292ff18c32_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial_port_thread_abbdd068503223fcd5f3d2376eb78c50e}\label{class_serial_port_thread_abbdd068503223fcd5f3d2376eb78c50e}} 
+\index{SerialPortThread@{SerialPortThread}!serialPortIsOpen@{serialPortIsOpen}}
+\index{serialPortIsOpen@{serialPortIsOpen}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{serialPortIsOpen()}{serialPortIsOpen()}}
+{\footnotesize\ttfamily bool Serial\+Port\+Thread\+::serial\+Port\+Is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_serial_port_thread_abbdd068503223fcd5f3d2376eb78c50e}{Serial\+Port\+Thread\+::serial\+Port\+Is\+Open}}. 
+
+\begin{DoxyReturn}{Returns}
+如果打开了返回true，否则返回false 判断串口是否打开 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_thread_abbdd068503223fcd5f3d2376eb78c50e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial_port_thread_a0508026c05c1c2b2c1d2912be2162a9f}\label{class_serial_port_thread_a0508026c05c1c2b2c1d2912be2162a9f}} 
+\index{SerialPortThread@{SerialPortThread}!setRetryTimes@{setRetryTimes}}
+\index{setRetryTimes@{setRetryTimes}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{setRetryTimes()}{setRetryTimes()}}
+{\footnotesize\ttfamily void Serial\+Port\+Thread\+::set\+Retry\+Times (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{serialportthread_8h_a58c73f770d96826095f8f3824737f67b}{Read\+Retry\+Times}}}]{times }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_serial_port_thread_a0508026c05c1c2b2c1d2912be2162a9f}{Serial\+Port\+Thread\+::set\+Retry\+Times}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em times} & 设置串口重复读取数据 \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_thread_a0508026c05c1c2b2c1d2912be2162a9f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial_port_thread_a7f6a1a41be1727ce2549aa0d8e386340}\label{class_serial_port_thread_a7f6a1a41be1727ce2549aa0d8e386340}} 
+\index{SerialPortThread@{SerialPortThread}!setSerialPort@{setSerialPort}}
+\index{setSerialPort@{setSerialPort}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{setSerialPort()}{setSerialPort()}}
+{\footnotesize\ttfamily void Serial\+Port\+Thread\+::set\+Serial\+Port (\begin{DoxyParamCaption}\item[{Q\+Serial\+Port $\ast$}]{serialport }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_serial_port_thread_a7f6a1a41be1727ce2549aa0d8e386340}{Serial\+Port\+Thread\+::set\+Serial\+Port}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em serialport} & 设置串口实体类 \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_thread_a7f6a1a41be1727ce2549aa0d8e386340_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial_port_thread_ae7403dd74cb71b0e925e933073020cd2}\label{class_serial_port_thread_ae7403dd74cb71b0e925e933073020cd2}} 
+\index{SerialPortThread@{SerialPortThread}!stopThread@{stopThread}}
+\index{stopThread@{stopThread}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{stopThread()}{stopThread()}}
+{\footnotesize\ttfamily void Serial\+Port\+Thread\+::stop\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_serial_port_thread_ae7403dd74cb71b0e925e933073020cd2}{Serial\+Port\+Thread\+::stop\+Thread}} 停止串口线程 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_thread_ae7403dd74cb71b0e925e933073020cd2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_thread_ae7403dd74cb71b0e925e933073020cd2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial_port_thread_adfceb467826dc0f59d0eb66c1ba0a1a6}\label{class_serial_port_thread_adfceb467826dc0f59d0eb66c1ba0a1a6}} 
+\index{SerialPortThread@{SerialPortThread}!stopTimer@{stopTimer}}
+\index{stopTimer@{stopTimer}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{stopTimer}{stopTimer}}
+{\footnotesize\ttfamily void Serial\+Port\+Thread\+::stop\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_serial_port_thread_adfceb467826dc0f59d0eb66c1ba0a1a6}{Serial\+Port\+Thread\+::stop\+Timer}} 停止定时器 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_thread_adfceb467826dc0f59d0eb66c1ba0a1a6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial_port_thread_a7ba1cacdedbb7c158750553adbd13669}\label{class_serial_port_thread_a7ba1cacdedbb7c158750553adbd13669}} 
+\index{SerialPortThread@{SerialPortThread}!wirteMsgError@{wirteMsgError}}
+\index{wirteMsgError@{wirteMsgError}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{wirteMsgError}{wirteMsgError}}
+{\footnotesize\ttfamily void Serial\+Port\+Thread\+::wirte\+Msg\+Error (\begin{DoxyParamCaption}\item[{Q\+String}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_thread_a7ba1cacdedbb7c158750553adbd13669_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial_port_thread_a16e0dbd72535df1b954ed3c4598f633a}\label{class_serial_port_thread_a16e0dbd72535df1b954ed3c4598f633a}} 
+\index{SerialPortThread@{SerialPortThread}!writeData@{writeData}}
+\index{writeData@{writeData}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{writeData()}{writeData()}}
+{\footnotesize\ttfamily void Serial\+Port\+Thread\+::write\+Data (\begin{DoxyParamCaption}\item[{char $\ast$}]{data,  }\item[{int}]{frame\+Len,  }\item[{bool}]{echo = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_serial_port_thread_a16e0dbd72535df1b954ed3c4598f633a}{Serial\+Port\+Thread\+::write\+Data}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 要发送的数据 \\
+\hline
+{\em frame\+Len} & 一帧数据的长度 \\
+\hline
+{\em echo} & 用于控制是否回显 发送数据 \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_thread_a16e0dbd72535df1b954ed3c4598f633a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_thread_a16e0dbd72535df1b954ed3c4598f633a_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_serial_port_thread_aa113796646c46f083f54ef8f0190524f}\label{class_serial_port_thread_aa113796646c46f083f54ef8f0190524f}} 
+\index{SerialPortThread@{SerialPortThread}!retryTimes@{retryTimes}}
+\index{retryTimes@{retryTimes}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{retryTimes}{retryTimes}}
+{\footnotesize\ttfamily int Serial\+Port\+Thread\+::retry\+Times\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_serial_port_thread_a37b42e9f8f434b559c3c7fce579c4153}\label{class_serial_port_thread_a37b42e9f8f434b559c3c7fce579c4153}} 
+\index{SerialPortThread@{SerialPortThread}!SendingMsg@{SendingMsg}}
+\index{SendingMsg@{SendingMsg}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{SendingMsg}{SendingMsg}}
+{\footnotesize\ttfamily Q\+String Serial\+Port\+Thread\+::\+Sending\+Msg\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_serial_port_thread_a913c351785f85b6c3cc90e3d6c067236}\label{class_serial_port_thread_a913c351785f85b6c3cc90e3d6c067236}} 
+\index{SerialPortThread@{SerialPortThread}!serialIsOpen@{serialIsOpen}}
+\index{serialIsOpen@{serialIsOpen}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{serialIsOpen}{serialIsOpen}}
+{\footnotesize\ttfamily bool Serial\+Port\+Thread\+::serial\+Is\+Open\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_serial_port_thread_a823a90c7a6917746e12265095172bfda}\label{class_serial_port_thread_a823a90c7a6917746e12265095172bfda}} 
+\index{SerialPortThread@{SerialPortThread}!serialPort@{serialPort}}
+\index{serialPort@{serialPort}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{serialPort}{serialPort}}
+{\footnotesize\ttfamily Q\+Serial\+Port$\ast$ Serial\+Port\+Thread\+::serial\+Port\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_serial_port_thread_ac859512ec7787398c77158a2f63e9be0}\label{class_serial_port_thread_ac859512ec7787398c77158a2f63e9be0}} 
+\index{SerialPortThread@{SerialPortThread}!Stop@{Stop}}
+\index{Stop@{Stop}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{Stop}{Stop}}
+{\footnotesize\ttfamily bool Serial\+Port\+Thread\+::\+Stop\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_serial_port_thread_aa1f0f4cbedd58026fb8a050aa013bcfa}\label{class_serial_port_thread_aa1f0f4cbedd58026fb8a050aa013bcfa}} 
+\index{SerialPortThread@{SerialPortThread}!timer@{timer}}
+\index{timer@{timer}!SerialPortThread@{SerialPortThread}}
+\subsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily Q\+Timer$\ast$ Serial\+Port\+Thread\+::timer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/serial\+Thread/\mbox{\hyperlink{serialportthread_8h}{serialportthread.\+h}}\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/serial\+Thread/\mbox{\hyperlink{serialportthread_8cpp}{serialportthread.\+cpp}}\end{DoxyCompactItemize}

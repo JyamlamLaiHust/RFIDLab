@@ -1,0 +1,8 @@
+<map id="RecordTableModel::bindTable" name="RecordTableModel::bindTable">
+<area shape="rect" id="node1" title="RecordTableModel::restore 绑定表名" alt="" coords="761,56,953,83"/>
+<area shape="rect" id="node2" href="$class_consume_page.html#aad2165e62407257cd5a061a75e3e8cd2" title="ConsumePage::onDecodeFrame." alt="" coords="503,5,713,32"/>
+<area shape="rect" id="node5" href="$class_table_info_pages.html#ad1da457e9ca5163f17d14035185457f7" title="TableInfoPages::currentAction." alt="" coords="509,56,707,83"/>
+<area shape="rect" id="node6" href="$class_write_off_person.html#a4ac5c022a769acb97dfb615a2fceb1f3" title="WriteOffPerson::on_btn_LogOff_clicked 注销按钮点击事件" alt="" coords="537,107,679,149"/>
+<area shape="rect" id="node3" href="$class_consume_page.html#add3af5a3661b2a7172bddb5fa81452a0" title="ConsumePage::handleConnect 处理信号与插槽的连接关系" alt="" coords="253,5,455,32"/>
+<area shape="rect" id="node4" href="$class_consume_page.html#a2215feb8cdf2b12d83d4b6ff9f567661" title=" " alt="" coords="5,5,205,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="SerialPortThread::stopThread" name="SerialPortThread::stopThread">
+<area shape="rect" id="node1" title="SerialPortThread::stopThread 停止串口线程" alt="" coords="5,5,197,32"/>
+<area shape="rect" id="node2" href="$class_serial_port_thread.html#adfceb467826dc0f59d0eb66c1ba0a1a6" title="SerialPortThread::stopTimer 停止定时器" alt="" coords="245,5,431,32"/>
+</map>

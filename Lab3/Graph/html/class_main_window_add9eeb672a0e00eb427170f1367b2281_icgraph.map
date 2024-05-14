@@ -1,0 +1,10 @@
+<map id="MainWindow::CheckLogin" name="MainWindow::CheckLogin">
+<area shape="rect" id="node1" title="MainWindow::CheckLogin." alt="" coords="697,107,868,133"/>
+<area shape="rect" id="node2" href="$class_main_window.html#a86aa997699ba4fdf4d7b258a412315e5" title="MainWindow::ChangePasswd 修改密码按钮点击事件" alt="" coords="456,5,649,32"/>
+<area shape="rect" id="node5" href="$class_main_window.html#af225d8bd24ccc47792010109b928f6ba" title="MainWindow::ExportTable 数据导出按钮点击事件" alt="" coords="467,56,639,83"/>
+<area shape="rect" id="node6" href="$class_main_window.html#acfa568cdc9d07d4a8cc9e1eda8fee0e1" title="MainWindow::Recharge 充值" alt="" coords="473,107,632,133"/>
+<area shape="rect" id="node7" href="$class_main_window.html#a6228fbb5ed376fb71633b797affc2e11" title="MainWindow::Register 注册按钮点击事件" alt="" coords="477,157,628,184"/>
+<area shape="rect" id="node8" href="$class_main_window.html#aae6b6877a9efd611b15d4e7601c3b45a" title="MainWindow::WriteOff 注销用户" alt="" coords="477,208,628,235"/>
+<area shape="rect" id="node3" href="$class_main_window.html#ad253da665707b1e03f610b2dea97976e" title="MainWindow::handConnect 连接槽函数" alt="" coords="229,107,408,133"/>
+<area shape="rect" id="node4" href="$class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db" title=" " alt="" coords="5,107,181,133"/>
+</map>

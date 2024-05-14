@@ -1,0 +1,7 @@
+<map id="WriteOffPerson::on_btn_Inventory_clicked" name="WriteOffPerson::on_btn_Inventory_clicked">
+<area shape="rect" id="node1" title="WriteOffPerson::on_btn_Inventory_clicked 识别按钮点击事件" alt="" coords="5,64,161,105"/>
+<area shape="rect" id="node2" href="$class_serial_port_thread.html#abbdd068503223fcd5f3d2376eb78c50e" title="SerialPortThread::serialPortIsOpen." alt="" coords="235,5,394,47"/>
+<area shape="rect" id="node3" href="$class_m1356_dll.html#ab86ae59233d587f4688470796cbb85b1" title=" " alt="" coords="209,71,420,98"/>
+<area shape="rect" id="node4" href="$class_serial_port_thread.html#a16e0dbd72535df1b954ed3c4598f633a" title="SerialPortThread::writeData." alt="" coords="224,122,405,149"/>
+<area shape="rect" id="node5" href="$tools_8cpp.html#a107fa26ed0cd09983e6bb5006221bf89" title="普通字符串转为16进制字符串" alt="" coords="468,122,619,149"/>
+</map>

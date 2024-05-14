@@ -1,0 +1,10 @@
+<map id="ConsumePage::authentication" name="ConsumePage::authentication">
+<area shape="rect" id="node1" title="ConsumePage::authentication 授权操作" alt="" coords="744,129,940,156"/>
+<area shape="rect" id="node2" href="$class_consume_page.html#aee88a9a496e88620383622b4ab20e4c9" title="ConsumePage::on_readValue." alt="" coords="503,5,696,32"/>
+<area shape="rect" id="node5" href="$class_consume_page.html#a5d3f29ff49ea73facf73e34267adf0ed" title="ConsumePage::on_btn_OK_clicked 食堂结账按钮点击事件" alt="" coords="522,57,677,98"/>
+<area shape="rect" id="node6" href="$class_consume_page.html#a9ace94ec565505f97e29f0f732ef13bf" title="ConsumePage::on_btn_OK2_clicked 超市消费结账按钮点击事件" alt="" coords="522,122,677,163"/>
+<area shape="rect" id="node7" href="$class_consume_page.html#aef47c443ac40ea430537571bae1328ff" title="ConsumePage::on_btn_OK1_clicked 教学楼结账按钮点击事件" alt="" coords="522,187,677,229"/>
+<area shape="rect" id="node8" href="$class_consume_page.html#a3d244573d28510df3c7b3ca0d6eb3843" title="ConsumePage::on_btn_OK3_clicked 其他结账按钮点击事件" alt="" coords="522,253,677,294"/>
+<area shape="rect" id="node3" href="$class_consume_page.html#add3af5a3661b2a7172bddb5fa81452a0" title="ConsumePage::handleConnect 处理信号与插槽的连接关系" alt="" coords="253,5,455,32"/>
+<area shape="rect" id="node4" href="$class_consume_page.html#a2215feb8cdf2b12d83d4b6ff9f567661" title=" " alt="" coords="5,5,205,32"/>
+</map>

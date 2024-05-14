@@ -1,0 +1,220 @@
+\hypertarget{class_registor_widget}{}\section{Registor\+Widget Class Reference}
+\label{class_registor_widget}\index{RegistorWidget@{RegistorWidget}}
+
+
+{\ttfamily \#include $<$registorwidget.\+h$>$}
+
+
+
+Inheritance diagram for Registor\+Widget\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_registor_widget__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Registor\+Widget\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_registor_widget__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_registor_widget_a7ad3194e0daa68d5498692065e52194a}{Registor\+Widget}} (Q\+Widget $\ast$parent=0, \mbox{\hyperlink{class_serial_port_thread}{Serial\+Port\+Thread}} $\ast$serial=0)
+\item 
+\mbox{\hyperlink{class_registor_widget_a066b7812f556e83709a410e8d092dd8f}{$\sim$\+Registor\+Widget}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_registor_widget_ae280a0ef976dd2835f4a33c60b67e8a9}{on\+\_\+btn\+\_\+\+Register\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_registor_widget_ae280a0ef976dd2835f4a33c60b67e8a9}{Registor\+Widget\+::on\+\_\+btn\+\_\+\+Register\+\_\+clicked}} 注册按钮点击事件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_registor_widget_aea14551286d02e5bdfcbd6d0114382fb}{on\+\_\+btn\+\_\+\+Reset\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_registor_widget_aea14551286d02e5bdfcbd6d0114382fb}{Registor\+Widget\+::on\+\_\+btn\+\_\+\+Reset\+\_\+clicked}} 重置按钮点击事件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_registor_widget_a4bbc6a6b1f22c708966d79a5947e36b1}{on\+\_\+btn\+\_\+\+Inventory\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_registor_widget_a4bbc6a6b1f22c708966d79a5947e36b1}{Registor\+Widget\+::on\+\_\+btn\+\_\+\+Inventory\+\_\+clicked}} 识别按钮点击事件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_registor_widget_adb55365b88e07391d6e8e7c639c68219}{on\+\_\+btn\+\_\+\+Refresh\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_registor_widget_adb55365b88e07391d6e8e7c639c68219}{Registor\+Widget\+::on\+\_\+btn\+\_\+\+Refresh\+\_\+clicked}} 刷新按钮点击事件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_registor_widget_a088f8bd641902d9be5eeacecd0cddcdc}{on\+\_\+combo\+Box\+\_\+\+User\+Type\+\_\+current\+Index\+Changed}} (const Q\+String \&arg1)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_registor_widget_a088f8bd641902d9be5eeacecd0cddcdc}{Registor\+Widget\+::on\+\_\+combo\+Box\+\_\+\+User\+Type\+\_\+current\+Index\+Changed}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_registor_widget_a7f2af14f69efa2bdc0d57f9957cc1dc1}{on\+\_\+tag\+Id\+Received}} (Q\+String tag\+Id)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_registor_widget_a7f2af14f69efa2bdc0d57f9957cc1dc1}{Registor\+Widget\+::on\+\_\+tag\+Id\+Received}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Registor\+Widget $\ast$ \mbox{\hyperlink{class_registor_widget_a906ebcf60a8e3e8d8c0c1b43dfada66b}{ui}}
+\item 
+Q\+Uuid $\ast$ \mbox{\hyperlink{class_registor_widget_a2deb7fe978f1bf51f42281d9145d553d}{uuid}}
+\item 
+\mbox{\hyperlink{class_serial_port_thread}{Serial\+Port\+Thread}} $\ast$ \mbox{\hyperlink{class_registor_widget_a445746b63d370fe0985a4bcd2630a5ac}{serial\+Thread}}
+\item 
+\mbox{\hyperlink{class_m1356_dll}{M1356\+Dll}} $\ast$ \mbox{\hyperlink{class_registor_widget_a16ed8e3d8167620e42aabffafdc8c130}{m1356dll}}
+\item 
+\mbox{\hyperlink{class_register_table_model}{Register\+Table\+Model}} $\ast$ \mbox{\hyperlink{class_registor_widget_a083fde394c89554d0f480f0df104ab3a}{register\+Table\+Model}}
+\item 
+\mbox{\hyperlink{class_person_table_model}{Person\+Table\+Model}} $\ast$ \mbox{\hyperlink{class_registor_widget_af9675545c6d70b926f564bae46d7c481}{person\+Table\+Model}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_registor_widget_a7ad3194e0daa68d5498692065e52194a}\label{class_registor_widget_a7ad3194e0daa68d5498692065e52194a}} 
+\index{RegistorWidget@{RegistorWidget}!RegistorWidget@{RegistorWidget}}
+\index{RegistorWidget@{RegistorWidget}!RegistorWidget@{RegistorWidget}}
+\subsubsection{\texorpdfstring{RegistorWidget()}{RegistorWidget()}}
+{\footnotesize\ttfamily Registor\+Widget\+::\+Registor\+Widget (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0},  }\item[{\mbox{\hyperlink{class_serial_port_thread}{Serial\+Port\+Thread}} $\ast$}]{serial = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_registor_widget_a066b7812f556e83709a410e8d092dd8f}\label{class_registor_widget_a066b7812f556e83709a410e8d092dd8f}} 
+\index{RegistorWidget@{RegistorWidget}!````~RegistorWidget@{$\sim$RegistorWidget}}
+\index{````~RegistorWidget@{$\sim$RegistorWidget}!RegistorWidget@{RegistorWidget}}
+\subsubsection{\texorpdfstring{$\sim$RegistorWidget()}{~RegistorWidget()}}
+{\footnotesize\ttfamily Registor\+Widget\+::$\sim$\+Registor\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_registor_widget_a4bbc6a6b1f22c708966d79a5947e36b1}\label{class_registor_widget_a4bbc6a6b1f22c708966d79a5947e36b1}} 
+\index{RegistorWidget@{RegistorWidget}!on\_btn\_Inventory\_clicked@{on\_btn\_Inventory\_clicked}}
+\index{on\_btn\_Inventory\_clicked@{on\_btn\_Inventory\_clicked}!RegistorWidget@{RegistorWidget}}
+\subsubsection{\texorpdfstring{on\_btn\_Inventory\_clicked}{on\_btn\_Inventory\_clicked}}
+{\footnotesize\ttfamily void Registor\+Widget\+::on\+\_\+btn\+\_\+\+Inventory\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_registor_widget_a4bbc6a6b1f22c708966d79a5947e36b1}{Registor\+Widget\+::on\+\_\+btn\+\_\+\+Inventory\+\_\+clicked}} 识别按钮点击事件 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_registor_widget_a4bbc6a6b1f22c708966d79a5947e36b1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_registor_widget_adb55365b88e07391d6e8e7c639c68219}\label{class_registor_widget_adb55365b88e07391d6e8e7c639c68219}} 
+\index{RegistorWidget@{RegistorWidget}!on\_btn\_Refresh\_clicked@{on\_btn\_Refresh\_clicked}}
+\index{on\_btn\_Refresh\_clicked@{on\_btn\_Refresh\_clicked}!RegistorWidget@{RegistorWidget}}
+\subsubsection{\texorpdfstring{on\_btn\_Refresh\_clicked}{on\_btn\_Refresh\_clicked}}
+{\footnotesize\ttfamily void Registor\+Widget\+::on\+\_\+btn\+\_\+\+Refresh\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_registor_widget_adb55365b88e07391d6e8e7c639c68219}{Registor\+Widget\+::on\+\_\+btn\+\_\+\+Refresh\+\_\+clicked}} 刷新按钮点击事件 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_registor_widget_adb55365b88e07391d6e8e7c639c68219_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_registor_widget_ae280a0ef976dd2835f4a33c60b67e8a9}\label{class_registor_widget_ae280a0ef976dd2835f4a33c60b67e8a9}} 
+\index{RegistorWidget@{RegistorWidget}!on\_btn\_Register\_clicked@{on\_btn\_Register\_clicked}}
+\index{on\_btn\_Register\_clicked@{on\_btn\_Register\_clicked}!RegistorWidget@{RegistorWidget}}
+\subsubsection{\texorpdfstring{on\_btn\_Register\_clicked}{on\_btn\_Register\_clicked}}
+{\footnotesize\ttfamily void Registor\+Widget\+::on\+\_\+btn\+\_\+\+Register\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_registor_widget_ae280a0ef976dd2835f4a33c60b67e8a9}{Registor\+Widget\+::on\+\_\+btn\+\_\+\+Register\+\_\+clicked}} 注册按钮点击事件 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_registor_widget_ae280a0ef976dd2835f4a33c60b67e8a9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_registor_widget_aea14551286d02e5bdfcbd6d0114382fb}\label{class_registor_widget_aea14551286d02e5bdfcbd6d0114382fb}} 
+\index{RegistorWidget@{RegistorWidget}!on\_btn\_Reset\_clicked@{on\_btn\_Reset\_clicked}}
+\index{on\_btn\_Reset\_clicked@{on\_btn\_Reset\_clicked}!RegistorWidget@{RegistorWidget}}
+\subsubsection{\texorpdfstring{on\_btn\_Reset\_clicked}{on\_btn\_Reset\_clicked}}
+{\footnotesize\ttfamily void Registor\+Widget\+::on\+\_\+btn\+\_\+\+Reset\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_registor_widget_aea14551286d02e5bdfcbd6d0114382fb}{Registor\+Widget\+::on\+\_\+btn\+\_\+\+Reset\+\_\+clicked}} 重置按钮点击事件 
+
+\mbox{\Hypertarget{class_registor_widget_a088f8bd641902d9be5eeacecd0cddcdc}\label{class_registor_widget_a088f8bd641902d9be5eeacecd0cddcdc}} 
+\index{RegistorWidget@{RegistorWidget}!on\_comboBox\_UserType\_currentIndexChanged@{on\_comboBox\_UserType\_currentIndexChanged}}
+\index{on\_comboBox\_UserType\_currentIndexChanged@{on\_comboBox\_UserType\_currentIndexChanged}!RegistorWidget@{RegistorWidget}}
+\subsubsection{\texorpdfstring{on\_comboBox\_UserType\_currentIndexChanged}{on\_comboBox\_UserType\_currentIndexChanged}}
+{\footnotesize\ttfamily void Registor\+Widget\+::on\+\_\+combo\+Box\+\_\+\+User\+Type\+\_\+current\+Index\+Changed (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{arg1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_registor_widget_a088f8bd641902d9be5eeacecd0cddcdc}{Registor\+Widget\+::on\+\_\+combo\+Box\+\_\+\+User\+Type\+\_\+current\+Index\+Changed}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg1} & 当前文本值 身份类型选择框文本值改变时调用 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_registor_widget_a7f2af14f69efa2bdc0d57f9957cc1dc1}\label{class_registor_widget_a7f2af14f69efa2bdc0d57f9957cc1dc1}} 
+\index{RegistorWidget@{RegistorWidget}!on\_tagIdReceived@{on\_tagIdReceived}}
+\index{on\_tagIdReceived@{on\_tagIdReceived}!RegistorWidget@{RegistorWidget}}
+\subsubsection{\texorpdfstring{on\_tagIdReceived}{on\_tagIdReceived}}
+{\footnotesize\ttfamily void Registor\+Widget\+::on\+\_\+tag\+Id\+Received (\begin{DoxyParamCaption}\item[{Q\+String}]{tag\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_registor_widget_a7f2af14f69efa2bdc0d57f9957cc1dc1}{Registor\+Widget\+::on\+\_\+tag\+Id\+Received}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tag\+Id} & 标签\+ID(卡号) 当读取到卡号时调用该方法 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_registor_widget_a16ed8e3d8167620e42aabffafdc8c130}\label{class_registor_widget_a16ed8e3d8167620e42aabffafdc8c130}} 
+\index{RegistorWidget@{RegistorWidget}!m1356dll@{m1356dll}}
+\index{m1356dll@{m1356dll}!RegistorWidget@{RegistorWidget}}
+\subsubsection{\texorpdfstring{m1356dll}{m1356dll}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_m1356_dll}{M1356\+Dll}}$\ast$ Registor\+Widget\+::m1356dll\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_registor_widget_af9675545c6d70b926f564bae46d7c481}\label{class_registor_widget_af9675545c6d70b926f564bae46d7c481}} 
+\index{RegistorWidget@{RegistorWidget}!personTableModel@{personTableModel}}
+\index{personTableModel@{personTableModel}!RegistorWidget@{RegistorWidget}}
+\subsubsection{\texorpdfstring{personTableModel}{personTableModel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_person_table_model}{Person\+Table\+Model}}$\ast$ Registor\+Widget\+::person\+Table\+Model\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_registor_widget_a083fde394c89554d0f480f0df104ab3a}\label{class_registor_widget_a083fde394c89554d0f480f0df104ab3a}} 
+\index{RegistorWidget@{RegistorWidget}!registerTableModel@{registerTableModel}}
+\index{registerTableModel@{registerTableModel}!RegistorWidget@{RegistorWidget}}
+\subsubsection{\texorpdfstring{registerTableModel}{registerTableModel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_register_table_model}{Register\+Table\+Model}}$\ast$ Registor\+Widget\+::register\+Table\+Model\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_registor_widget_a445746b63d370fe0985a4bcd2630a5ac}\label{class_registor_widget_a445746b63d370fe0985a4bcd2630a5ac}} 
+\index{RegistorWidget@{RegistorWidget}!serialThread@{serialThread}}
+\index{serialThread@{serialThread}!RegistorWidget@{RegistorWidget}}
+\subsubsection{\texorpdfstring{serialThread}{serialThread}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_serial_port_thread}{Serial\+Port\+Thread}}$\ast$ Registor\+Widget\+::serial\+Thread\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_registor_widget_a906ebcf60a8e3e8d8c0c1b43dfada66b}\label{class_registor_widget_a906ebcf60a8e3e8d8c0c1b43dfada66b}} 
+\index{RegistorWidget@{RegistorWidget}!ui@{ui}}
+\index{ui@{ui}!RegistorWidget@{RegistorWidget}}
+\subsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Registor\+Widget$\ast$ Registor\+Widget\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_registor_widget_a2deb7fe978f1bf51f42281d9145d553d}\label{class_registor_widget_a2deb7fe978f1bf51f42281d9145d553d}} 
+\index{RegistorWidget@{RegistorWidget}!uuid@{uuid}}
+\index{uuid@{uuid}!RegistorWidget@{RegistorWidget}}
+\subsubsection{\texorpdfstring{uuid}{uuid}}
+{\footnotesize\ttfamily Q\+Uuid$\ast$ Registor\+Widget\+::uuid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/pages/registor/\mbox{\hyperlink{registorwidget_8h}{registorwidget.\+h}}\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/pages/registor/\mbox{\hyperlink{registorwidget_8cpp}{registorwidget.\+cpp}}\end{DoxyCompactItemize}

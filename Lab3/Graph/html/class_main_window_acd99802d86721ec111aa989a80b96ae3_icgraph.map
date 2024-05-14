@@ -1,0 +1,9 @@
+<map id="MainWindow::sendCardId" name="MainWindow::sendCardId">
+<area shape="rect" id="node1" title=" " alt="" coords="733,68,903,95"/>
+<area shape="rect" id="node2" href="$class_main_window.html#ae449e932d7b98f64803ef7e1c9c7cb82" title="MainWindow::addWidgets 添加子页面" alt="" coords="233,5,404,32"/>
+<area shape="rect" id="node4" href="$class_main_window.html#acfa568cdc9d07d4a8cc9e1eda8fee0e1" title="MainWindow::Recharge 充值" alt="" coords="491,43,650,69"/>
+<area shape="rect" id="node6" href="$class_main_window.html#aae6b6877a9efd611b15d4e7601c3b45a" title="MainWindow::WriteOff 注销用户" alt="" coords="495,93,646,120"/>
+<area shape="rect" id="node7" href="$class_main_window.html#a13d0382dd96e94f56a05300323d278da" title="MainWindow::on_serialMsgreceived." alt="" coords="456,144,685,171"/>
+<area shape="rect" id="node3" href="$class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db" title=" " alt="" coords="5,43,181,69"/>
+<area shape="rect" id="node5" href="$class_main_window.html#ad253da665707b1e03f610b2dea97976e" title="MainWindow::handConnect 连接槽函数" alt="" coords="229,68,408,95"/>
+</map>

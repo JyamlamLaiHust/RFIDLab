@@ -1,0 +1,11 @@
+<map id="BooksManage::delete_books" name="BooksManage::delete_books">
+<area shape="rect" id="node1" title=" " alt="" coords="5,99,153,141"/>
+<area shape="rect" id="node2" href="$class_sqlite.html#a7c9c4f27369ce4566bce56614c3e11f0" title=" " alt="" coords="226,5,353,32"/>
+<area shape="rect" id="node4" href="$class_sqlite.html#addc1fbbdf661fd568535ddea8280fbd2" title=" " alt="" coords="221,56,358,83"/>
+<area shape="rect" id="node5" href="$class_sqlite.html#a8a83c22e036086edf84758fb0f6cfc56" title=" " alt="" coords="221,107,358,133"/>
+<area shape="rect" id="node8" href="$class_books_manage.html#aa5b813a7fb68aa61a143f84c87699c83" title=" " alt="" coords="206,157,373,184"/>
+<area shape="rect" id="node9" href="$class_books_manage.html#abbacf5e112bdee769aaa4d22c0e14744" title=" " alt="" coords="201,208,377,235"/>
+<area shape="rect" id="node3" href="$class_sqlite.html#a9a39cca147a504c82e98261707aa1e8d" title=" " alt="" coords="425,31,525,57"/>
+<area shape="rect" id="node6" href="$class_sqlite.html#a772711beeceff7a567192e19abccfed4" title=" " alt="" coords="425,107,525,133"/>
+<area shape="rect" id="node7" href="$class_sqlite.html#a3d4be952cdb19b674a80dacd78e2873a" title=" " alt="" coords="573,107,692,133"/>
+</map>

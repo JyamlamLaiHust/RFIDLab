@@ -1,0 +1,4 @@
+<map id="MainWindow::Register" name="MainWindow::Register">
+<area shape="rect" id="node1" title="MainWindow::Register 注册按钮点击事件" alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node2" href="$class_main_window.html#add9eeb672a0e00eb427170f1367b2281" title="MainWindow::CheckLogin." alt="" coords="204,5,375,32"/>
+</map>

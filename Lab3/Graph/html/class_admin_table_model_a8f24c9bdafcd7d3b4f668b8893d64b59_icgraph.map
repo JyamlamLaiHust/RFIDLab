@@ -1,0 +1,5 @@
+<map id="AdminTableModel::bindTable" name="AdminTableModel::bindTable">
+<area shape="rect" id="node1" title="PersonTableModel::bindTable 绑定表格" alt="" coords="221,46,409,73"/>
+<area shape="rect" id="node2" href="$class_change_password.html#a818333a3c3fbeb476314f5624016ba1e" title="ChangePassword::on_btn_Modify_clicked 修改按钮点击事件" alt="" coords="17,5,162,47"/>
+<area shape="rect" id="node3" href="$class_login_page.html#a71d6fe164abd33be5b8cbf54baef3a1e" title="LoginPage::on_btn_Login_clicked 登陆按钮点击事件" alt="" coords="5,71,173,112"/>
+</map>

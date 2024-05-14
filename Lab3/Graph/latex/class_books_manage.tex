@@ -1,0 +1,314 @@
+\hypertarget{class_books_manage}{}\section{Books\+Manage Class Reference}
+\label{class_books_manage}\index{BooksManage@{BooksManage}}
+
+
+{\ttfamily \#include $<$booksmanage.\+h$>$}
+
+
+
+Inheritance diagram for Books\+Manage\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{class_books_manage__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Books\+Manage\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{class_books_manage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_books_manage_a39c7bdd07e0af93379e1270becd8525c}{add\+\_\+books}} ()
+\item 
+void \mbox{\hyperlink{class_books_manage_ae8adc7f70a2e95f5a5991137e11a18ae}{delete\+\_\+books}} ()
+\item 
+void \mbox{\hyperlink{class_books_manage_aba42cfe2129f1b92dab5a08e1f73ee07}{updata\+\_\+books}} ()
+\item 
+void \mbox{\hyperlink{class_books_manage_ab2a76473efc3b68a9e1589cca6ab615d}{select\+\_\+books}} ()
+\item 
+void \mbox{\hyperlink{class_books_manage_a0269967278f32edfd3f14ccff0a41715}{get\+\_\+table\+\_\+line}} (int row, int col)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_books_manage_adc44f2312ab4d2cd48868ff923fa8861}{Books\+Manage}} (Q\+Widget $\ast$parent=0)
+\item 
+void \mbox{\hyperlink{class_books_manage_a0ee0a3e432c7789497c17758d1f82fdf}{Set\+Slot}} ()
+\item 
+void \mbox{\hyperlink{class_books_manage_abbacf5e112bdee769aaa4d22c0e14744}{Show\+Table}} (Q\+Sql\+Query query)
+\item 
+void \mbox{\hyperlink{class_books_manage_aa5b813a7fb68aa61a143f84c87699c83}{Clear\+Edit}} ()
+\item 
+void \mbox{\hyperlink{class_books_manage_a8388b6b8547cc759a9976c1a567aab0a}{Clear}} ()
+\item 
+void \mbox{\hyperlink{class_books_manage_a009c231a6f8976be927b7acfdc4d4591}{Set\+Card}} (Q\+String card\+ID)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Push\+Button $\ast$ \mbox{\hyperlink{class_books_manage_ad6d2668953bb202a37237227a97945b6}{Button}} \mbox{[}\mbox{\hyperlink{booksmanage_8h_a1f031c616a6edfa38e89dfb16a4f5a5e}{Button\+\_\+\+Count\+\_\+\+B\+O\+O\+KS}}\mbox{]}
+\item 
+Q\+Line\+Edit $\ast$ \mbox{\hyperlink{class_books_manage_aac41c654721ef320dd30c96cd7d5ec6c}{Edit}} \mbox{[}\mbox{\hyperlink{booksmanage_8h_a37e6a98d7cb44866bfdff08467fbbab1}{Edit\+\_\+\+Count\+\_\+\+B\+O\+O\+KS}}\mbox{]}
+\item 
+Q\+Label $\ast$ \mbox{\hyperlink{class_books_manage_ae5229988ac3199d79f55e0fd96439bd3}{Label}} \mbox{[}\mbox{\hyperlink{booksmanage_8h_a575ef603f6be7bd11518983b660df624}{Label\+\_\+\+Count\+\_\+\+B\+O\+O\+KS}}\mbox{]}
+\item 
+Q\+Table\+Widget $\ast$ \mbox{\hyperlink{class_books_manage_a0c82c7e6c92bc699d5f59af1e8a81d7a}{Table}}
+\item 
+\mbox{\hyperlink{class_sqlite}{Sqlite}} $\ast$ \mbox{\hyperlink{class_books_manage_a081e78f1eccbf607c3874a6c8c714983}{sql}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_books_manage_adc44f2312ab4d2cd48868ff923fa8861}\label{class_books_manage_adc44f2312ab4d2cd48868ff923fa8861}} 
+\index{BooksManage@{BooksManage}!BooksManage@{BooksManage}}
+\index{BooksManage@{BooksManage}!BooksManage@{BooksManage}}
+\subsubsection{\texorpdfstring{BooksManage()}{BooksManage()}}
+{\footnotesize\ttfamily Books\+Manage\+::\+Books\+Manage (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_books_manage_adc44f2312ab4d2cd48868ff923fa8861_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_books_manage_a39c7bdd07e0af93379e1270becd8525c}\label{class_books_manage_a39c7bdd07e0af93379e1270becd8525c}} 
+\index{BooksManage@{BooksManage}!add\_books@{add\_books}}
+\index{add\_books@{add\_books}!BooksManage@{BooksManage}}
+\subsubsection{\texorpdfstring{add\_books}{add\_books}}
+{\footnotesize\ttfamily void Books\+Manage\+::add\+\_\+books (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_books_manage_a39c7bdd07e0af93379e1270becd8525c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_books_manage_a39c7bdd07e0af93379e1270becd8525c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_books_manage_a8388b6b8547cc759a9976c1a567aab0a}\label{class_books_manage_a8388b6b8547cc759a9976c1a567aab0a}} 
+\index{BooksManage@{BooksManage}!Clear@{Clear}}
+\index{Clear@{Clear}!BooksManage@{BooksManage}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Books\+Manage\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_books_manage_a8388b6b8547cc759a9976c1a567aab0a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_books_manage_a8388b6b8547cc759a9976c1a567aab0a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_books_manage_aa5b813a7fb68aa61a143f84c87699c83}\label{class_books_manage_aa5b813a7fb68aa61a143f84c87699c83}} 
+\index{BooksManage@{BooksManage}!ClearEdit@{ClearEdit}}
+\index{ClearEdit@{ClearEdit}!BooksManage@{BooksManage}}
+\subsubsection{\texorpdfstring{ClearEdit()}{ClearEdit()}}
+{\footnotesize\ttfamily void Books\+Manage\+::\+Clear\+Edit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_books_manage_aa5b813a7fb68aa61a143f84c87699c83_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_books_manage_ae8adc7f70a2e95f5a5991137e11a18ae}\label{class_books_manage_ae8adc7f70a2e95f5a5991137e11a18ae}} 
+\index{BooksManage@{BooksManage}!delete\_books@{delete\_books}}
+\index{delete\_books@{delete\_books}!BooksManage@{BooksManage}}
+\subsubsection{\texorpdfstring{delete\_books}{delete\_books}}
+{\footnotesize\ttfamily void Books\+Manage\+::delete\+\_\+books (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_books_manage_ae8adc7f70a2e95f5a5991137e11a18ae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_books_manage_ae8adc7f70a2e95f5a5991137e11a18ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_books_manage_a0269967278f32edfd3f14ccff0a41715}\label{class_books_manage_a0269967278f32edfd3f14ccff0a41715}} 
+\index{BooksManage@{BooksManage}!get\_table\_line@{get\_table\_line}}
+\index{get\_table\_line@{get\_table\_line}!BooksManage@{BooksManage}}
+\subsubsection{\texorpdfstring{get\_table\_line}{get\_table\_line}}
+{\footnotesize\ttfamily void Books\+Manage\+::get\+\_\+table\+\_\+line (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_books_manage_a0269967278f32edfd3f14ccff0a41715_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_books_manage_ab2a76473efc3b68a9e1589cca6ab615d}\label{class_books_manage_ab2a76473efc3b68a9e1589cca6ab615d}} 
+\index{BooksManage@{BooksManage}!select\_books@{select\_books}}
+\index{select\_books@{select\_books}!BooksManage@{BooksManage}}
+\subsubsection{\texorpdfstring{select\_books}{select\_books}}
+{\footnotesize\ttfamily void Books\+Manage\+::select\+\_\+books (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_books_manage_ab2a76473efc3b68a9e1589cca6ab615d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_books_manage_ab2a76473efc3b68a9e1589cca6ab615d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_books_manage_a009c231a6f8976be927b7acfdc4d4591}\label{class_books_manage_a009c231a6f8976be927b7acfdc4d4591}} 
+\index{BooksManage@{BooksManage}!SetCard@{SetCard}}
+\index{SetCard@{SetCard}!BooksManage@{BooksManage}}
+\subsubsection{\texorpdfstring{SetCard()}{SetCard()}}
+{\footnotesize\ttfamily void Books\+Manage\+::\+Set\+Card (\begin{DoxyParamCaption}\item[{Q\+String}]{card\+ID }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_books_manage_a009c231a6f8976be927b7acfdc4d4591_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_books_manage_a0ee0a3e432c7789497c17758d1f82fdf}\label{class_books_manage_a0ee0a3e432c7789497c17758d1f82fdf}} 
+\index{BooksManage@{BooksManage}!SetSlot@{SetSlot}}
+\index{SetSlot@{SetSlot}!BooksManage@{BooksManage}}
+\subsubsection{\texorpdfstring{SetSlot()}{SetSlot()}}
+{\footnotesize\ttfamily void Books\+Manage\+::\+Set\+Slot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_books_manage_a0ee0a3e432c7789497c17758d1f82fdf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_books_manage_a0ee0a3e432c7789497c17758d1f82fdf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_books_manage_abbacf5e112bdee769aaa4d22c0e14744}\label{class_books_manage_abbacf5e112bdee769aaa4d22c0e14744}} 
+\index{BooksManage@{BooksManage}!ShowTable@{ShowTable}}
+\index{ShowTable@{ShowTable}!BooksManage@{BooksManage}}
+\subsubsection{\texorpdfstring{ShowTable()}{ShowTable()}}
+{\footnotesize\ttfamily void Books\+Manage\+::\+Show\+Table (\begin{DoxyParamCaption}\item[{Q\+Sql\+Query}]{query }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_books_manage_abbacf5e112bdee769aaa4d22c0e14744_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_books_manage_aba42cfe2129f1b92dab5a08e1f73ee07}\label{class_books_manage_aba42cfe2129f1b92dab5a08e1f73ee07}} 
+\index{BooksManage@{BooksManage}!updata\_books@{updata\_books}}
+\index{updata\_books@{updata\_books}!BooksManage@{BooksManage}}
+\subsubsection{\texorpdfstring{updata\_books}{updata\_books}}
+{\footnotesize\ttfamily void Books\+Manage\+::updata\+\_\+books (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_books_manage_aba42cfe2129f1b92dab5a08e1f73ee07_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_books_manage_aba42cfe2129f1b92dab5a08e1f73ee07_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_books_manage_ad6d2668953bb202a37237227a97945b6}\label{class_books_manage_ad6d2668953bb202a37237227a97945b6}} 
+\index{BooksManage@{BooksManage}!Button@{Button}}
+\index{Button@{Button}!BooksManage@{BooksManage}}
+\subsubsection{\texorpdfstring{Button}{Button}}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ Books\+Manage\+::\+Button\mbox{[}\mbox{\hyperlink{booksmanage_8h_a1f031c616a6edfa38e89dfb16a4f5a5e}{Button\+\_\+\+Count\+\_\+\+B\+O\+O\+KS}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_books_manage_aac41c654721ef320dd30c96cd7d5ec6c}\label{class_books_manage_aac41c654721ef320dd30c96cd7d5ec6c}} 
+\index{BooksManage@{BooksManage}!Edit@{Edit}}
+\index{Edit@{Edit}!BooksManage@{BooksManage}}
+\subsubsection{\texorpdfstring{Edit}{Edit}}
+{\footnotesize\ttfamily Q\+Line\+Edit$\ast$ Books\+Manage\+::\+Edit\mbox{[}\mbox{\hyperlink{booksmanage_8h_a37e6a98d7cb44866bfdff08467fbbab1}{Edit\+\_\+\+Count\+\_\+\+B\+O\+O\+KS}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_books_manage_ae5229988ac3199d79f55e0fd96439bd3}\label{class_books_manage_ae5229988ac3199d79f55e0fd96439bd3}} 
+\index{BooksManage@{BooksManage}!Label@{Label}}
+\index{Label@{Label}!BooksManage@{BooksManage}}
+\subsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily Q\+Label$\ast$ Books\+Manage\+::\+Label\mbox{[}\mbox{\hyperlink{booksmanage_8h_a575ef603f6be7bd11518983b660df624}{Label\+\_\+\+Count\+\_\+\+B\+O\+O\+KS}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_books_manage_a081e78f1eccbf607c3874a6c8c714983}\label{class_books_manage_a081e78f1eccbf607c3874a6c8c714983}} 
+\index{BooksManage@{BooksManage}!sql@{sql}}
+\index{sql@{sql}!BooksManage@{BooksManage}}
+\subsubsection{\texorpdfstring{sql}{sql}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sqlite}{Sqlite}}$\ast$ Books\+Manage\+::sql\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_books_manage_a0c82c7e6c92bc699d5f59af1e8a81d7a}\label{class_books_manage_a0c82c7e6c92bc699d5f59af1e8a81d7a}} 
+\index{BooksManage@{BooksManage}!Table@{Table}}
+\index{Table@{Table}!BooksManage@{BooksManage}}
+\subsubsection{\texorpdfstring{Table}{Table}}
+{\footnotesize\ttfamily Q\+Table\+Widget$\ast$ Books\+Manage\+::\+Table\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{booksmanage_8h}{booksmanage.\+h}}\item 
+\mbox{\hyperlink{booksmanage_8cpp}{booksmanage.\+cpp}}\end{DoxyCompactItemize}

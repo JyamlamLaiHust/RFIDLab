@@ -1,0 +1,20 @@
+<map id="UserManage::SetSlot" name="UserManage::SetSlot">
+<area shape="rect" id="node1" title=" " alt="" coords="5,208,152,235"/>
+<area shape="rect" id="node2" href="$class_user_manage.html#a7058bbb981e4c6b3064c3e5e334ac700" title=" " alt="" coords="213,107,369,133"/>
+<area shape="rect" id="node11" href="$class_user_manage.html#a254765c27c79b94370dd9f1e44551355" title=" " alt="" coords="206,157,377,184"/>
+<area shape="rect" id="node14" href="$class_user_manage.html#ab7f81e5e1f3d9944c551401dba37693f" title=" " alt="" coords="204,208,379,235"/>
+<area shape="rect" id="node17" href="$class_user_manage.html#aa6252c8286f24959ec4b938054328bf7" title=" " alt="" coords="206,259,377,285"/>
+<area shape="rect" id="node18" href="$class_user_manage.html#acf5b626b21868282ff4ad9dcccf8c765" title=" " alt="" coords="200,309,383,336"/>
+<area shape="rect" id="node3" href="$class_sqlite.html#addc1fbbdf661fd568535ddea8280fbd2" title=" " alt="" coords="445,157,583,184"/>
+<area shape="rect" id="node5" href="$class_sqlite.html#a950aea188ad2f7285032756cfe0ecc6d" title=" " alt="" coords="453,5,575,32"/>
+<area shape="rect" id="node8" href="$class_user_manage.html#afe9919891a0c86cb075ddb9bc12b2be6" title=" " alt="" coords="436,107,592,133"/>
+<area shape="rect" id="node9" href="$class_user_manage.html#aa0a2437c0e95fb846c0e5a237d848af2" title=" " alt="" coords="431,259,597,285"/>
+<area shape="rect" id="node10" href="$class_sqlite.html#a7c9c4f27369ce4566bce56614c3e11f0" title=" " alt="" coords="451,208,577,235"/>
+<area shape="rect" id="node4" href="$class_sqlite.html#a9a39cca147a504c82e98261707aa1e8d" title=" " alt="" coords="647,183,747,209"/>
+<area shape="rect" id="node6" href="$class_sqlite.html#a8d0c32df6db2b0ca13695cfa8780840e" title=" " alt="" coords="649,5,745,32"/>
+<area shape="rect" id="node7" href="$class_sqlite.html#a3d4be952cdb19b674a80dacd78e2873a" title=" " alt="" coords="797,56,916,83"/>
+<area shape="rect" id="node12" href="$class_sqlite.html#af2b581d800d01e1f1281d98ec1341ddd" title=" " alt="" coords="451,56,577,83"/>
+<area shape="rect" id="node13" href="$class_sqlite.html#a772711beeceff7a567192e19abccfed4" title=" " alt="" coords="647,56,747,83"/>
+<area shape="rect" id="node15" href="$class_sqlite.html#aba86a5371a532d0c7600f9a70c2d00a5" title=" " alt="" coords="449,309,579,336"/>
+<area shape="rect" id="node16" href="$class_sqlite.html#ae014031d1e0b0d9c412fb72ddc5a0043" title=" " alt="" coords="645,259,749,285"/>
+</map>

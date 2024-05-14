@@ -1,0 +1,4 @@
+<map id="SettingsDialog::on_btn_Refresh_clicked" name="SettingsDialog::on_btn_Refresh_clicked">
+<area shape="rect" id="node1" title="SettingsDialog::on_btn_Refresh_clicked 刷新按钮点击事件" alt="" coords="5,5,152,47"/>
+<area shape="rect" id="node2" href="$class_settings_dialog.html#a9e2b682d0cfe9f8a16b7912f495aa034" title="SettingsDialog::fillPortsInfo 填充串口描述信息" alt="" coords="200,13,380,39"/>
+</map>

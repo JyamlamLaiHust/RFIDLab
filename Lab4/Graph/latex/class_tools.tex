@@ -1,0 +1,155 @@
+\hypertarget{class_tools}{}\section{Tools Class Reference}
+\label{class_tools}\index{Tools@{Tools}}
+
+
+{\ttfamily \#include $<$tools.\+h$>$}
+
+
+
+Inheritance diagram for Tools\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_tools__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tools\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_tools__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tools_a812eaff6fdce0fe489279f72c06e83e3}{Tools}} (Q\+Object $\ast$parent=0)
+\item 
+Q\+String\+List \mbox{\hyperlink{class_tools_ac18eb440bd7a33e8e242df2cc4d4d4bc}{get\+Serial\+Name}} ()
+\item 
+Q\+String \mbox{\hyperlink{class_tools_a438ea9326a6ae735d51bc3508c430a3b}{Current\+Date\+Time}} ()
+\begin{DoxyCompactList}\small\item\em 获取当前日期和时间 \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{class_tools_af10c90501143838d9af896a60026668d}{Current\+Time}} ()
+\begin{DoxyCompactList}\small\item\em 获取当前的时间 \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{class_tools_a70173de28152ff05b140b9895de99e20}{Current\+M\+Time}} ()
+\begin{DoxyCompactList}\small\item\em 获取当前的时间 \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{class_tools_a89da3511a27330d893d495ddc6160a91}{Char\+Stringto\+Hex\+String}} (Q\+String space, const char $\ast$src, int len)
+\begin{DoxyCompactList}\small\item\em 普通字符串转为16进制字符串 \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{class_tools_ae4c5caed900acc0c2ca436929a753dff}{Char\+Stringto\+Hex\+String}} (Q\+String space, const char $\ast$src, int start, int end)
+\begin{DoxyCompactList}\small\item\em 普通字符串转为16进制字符串 \end{DoxyCompactList}\item 
+quint8 \mbox{\hyperlink{class_tools_a724c823ede8cd11880888f64b1a3c4df}{String\+To\+Hex}} (Q\+String string, quint8 $\ast$hex)
+\item 
+void \mbox{\hyperlink{class_tools_af6c4eaadfb21ee231cbc4d6384250629}{export\+\_\+table}} (const Q\+Abstract\+Item\+Model \&model)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String\+List $\ast$ \mbox{\hyperlink{class_tools_a2d01c59dccd50660c98f9ad7ee13f5d0}{list}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_tools_a812eaff6fdce0fe489279f72c06e83e3}\label{class_tools_a812eaff6fdce0fe489279f72c06e83e3}} 
+\index{Tools@{Tools}!Tools@{Tools}}
+\index{Tools@{Tools}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{Tools()}{Tools()}}
+{\footnotesize\ttfamily Tools\+::\+Tools (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tools_a89da3511a27330d893d495ddc6160a91}\label{class_tools_a89da3511a27330d893d495ddc6160a91}} 
+\index{Tools@{Tools}!CharStringtoHexString@{CharStringtoHexString}}
+\index{CharStringtoHexString@{CharStringtoHexString}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{CharStringtoHexString()}{CharStringtoHexString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Q\+String Tools\+::\+Char\+Stringto\+Hex\+String (\begin{DoxyParamCaption}\item[{Q\+String}]{space,  }\item[{const char $\ast$}]{src,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+
+
+普通字符串转为16进制字符串 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tools_a89da3511a27330d893d495ddc6160a91_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_tools_ae4c5caed900acc0c2ca436929a753dff}\label{class_tools_ae4c5caed900acc0c2ca436929a753dff}} 
+\index{Tools@{Tools}!CharStringtoHexString@{CharStringtoHexString}}
+\index{CharStringtoHexString@{CharStringtoHexString}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{CharStringtoHexString()}{CharStringtoHexString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Q\+String Tools\+::\+Char\+Stringto\+Hex\+String (\begin{DoxyParamCaption}\item[{Q\+String}]{space,  }\item[{const char $\ast$}]{src,  }\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})}
+
+
+
+普通字符串转为16进制字符串 
+
+\mbox{\Hypertarget{class_tools_a438ea9326a6ae735d51bc3508c430a3b}\label{class_tools_a438ea9326a6ae735d51bc3508c430a3b}} 
+\index{Tools@{Tools}!CurrentDateTime@{CurrentDateTime}}
+\index{CurrentDateTime@{CurrentDateTime}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{CurrentDateTime()}{CurrentDateTime()}}
+{\footnotesize\ttfamily Q\+String Tools\+::\+Current\+Date\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取当前日期和时间 
+
+\mbox{\Hypertarget{class_tools_a70173de28152ff05b140b9895de99e20}\label{class_tools_a70173de28152ff05b140b9895de99e20}} 
+\index{Tools@{Tools}!CurrentMTime@{CurrentMTime}}
+\index{CurrentMTime@{CurrentMTime}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{CurrentMTime()}{CurrentMTime()}}
+{\footnotesize\ttfamily Q\+String Tools\+::\+Current\+M\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取当前的时间 
+
+\mbox{\Hypertarget{class_tools_af10c90501143838d9af896a60026668d}\label{class_tools_af10c90501143838d9af896a60026668d}} 
+\index{Tools@{Tools}!CurrentTime@{CurrentTime}}
+\index{CurrentTime@{CurrentTime}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{CurrentTime()}{CurrentTime()}}
+{\footnotesize\ttfamily Q\+String Tools\+::\+Current\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取当前的时间 
+
+\mbox{\Hypertarget{class_tools_af6c4eaadfb21ee231cbc4d6384250629}\label{class_tools_af6c4eaadfb21ee231cbc4d6384250629}} 
+\index{Tools@{Tools}!export\_table@{export\_table}}
+\index{export\_table@{export\_table}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{export\_table()}{export\_table()}}
+{\footnotesize\ttfamily void Tools\+::export\+\_\+table (\begin{DoxyParamCaption}\item[{const Q\+Abstract\+Item\+Model \&}]{model }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tools_ac18eb440bd7a33e8e242df2cc4d4d4bc}\label{class_tools_ac18eb440bd7a33e8e242df2cc4d4d4bc}} 
+\index{Tools@{Tools}!getSerialName@{getSerialName}}
+\index{getSerialName@{getSerialName}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{getSerialName()}{getSerialName()}}
+{\footnotesize\ttfamily Q\+String\+List Tools\+::get\+Serial\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tools_a724c823ede8cd11880888f64b1a3c4df}\label{class_tools_a724c823ede8cd11880888f64b1a3c4df}} 
+\index{Tools@{Tools}!StringToHex@{StringToHex}}
+\index{StringToHex@{StringToHex}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{StringToHex()}{StringToHex()}}
+{\footnotesize\ttfamily quint8 Tools\+::\+String\+To\+Hex (\begin{DoxyParamCaption}\item[{Q\+String}]{string,  }\item[{quint8 $\ast$}]{hex }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_tools_a2d01c59dccd50660c98f9ad7ee13f5d0}\label{class_tools_a2d01c59dccd50660c98f9ad7ee13f5d0}} 
+\index{Tools@{Tools}!list@{list}}
+\index{list@{list}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{list}{list}}
+{\footnotesize\ttfamily Q\+String\+List$\ast$ Tools\+::list\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab4/900\+M/\mbox{\hyperlink{tools_8h}{tools.\+h}}\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab4/900\+M/\mbox{\hyperlink{tools_8cpp}{tools.\+cpp}}\end{DoxyCompactItemize}

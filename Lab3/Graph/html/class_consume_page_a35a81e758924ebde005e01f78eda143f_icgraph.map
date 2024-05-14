@@ -1,0 +1,7 @@
+<map id="ConsumePage::checkDataValid" name="ConsumePage::checkDataValid">
+<area shape="rect" id="node1" title=" " alt="" coords="208,111,413,138"/>
+<area shape="rect" id="node2" href="$class_consume_page.html#a5d3f29ff49ea73facf73e34267adf0ed" title="ConsumePage::on_btn_OK_clicked 食堂结账按钮点击事件" alt="" coords="5,5,160,47"/>
+<area shape="rect" id="node3" href="$class_consume_page.html#a9ace94ec565505f97e29f0f732ef13bf" title="ConsumePage::on_btn_OK2_clicked 超市消费结账按钮点击事件" alt="" coords="5,71,160,112"/>
+<area shape="rect" id="node4" href="$class_consume_page.html#aef47c443ac40ea430537571bae1328ff" title="ConsumePage::on_btn_OK1_clicked 教学楼结账按钮点击事件" alt="" coords="5,136,160,177"/>
+<area shape="rect" id="node5" href="$class_consume_page.html#a3d244573d28510df3c7b3ca0d6eb3843" title="ConsumePage::on_btn_OK3_clicked 其他结账按钮点击事件" alt="" coords="5,201,160,243"/>
+</map>

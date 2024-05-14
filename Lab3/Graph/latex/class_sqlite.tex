@@ -1,0 +1,469 @@
+\hypertarget{class_sqlite}{}\section{Sqlite Class Reference}
+\label{class_sqlite}\index{Sqlite@{Sqlite}}
+
+
+{\ttfamily \#include $<$sqlite.\+h$>$}
+
+
+
+Collaboration diagram for Sqlite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{class_sqlite__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sqlite_a8aef4e64531e1522f892c0c6ec69cdff}{Sqlite}} ()
+\item 
+bool \mbox{\hyperlink{class_sqlite_aa93509c1e19a7d486f4f38ff4bc78a89}{Connect}} ()
+\item 
+bool \mbox{\hyperlink{class_sqlite_a3d4be952cdb19b674a80dacd78e2873a}{Exec\+S\+QL}} (Q\+String cmd)
+\item 
+bool \mbox{\hyperlink{class_sqlite_a8d0c32df6db2b0ca13695cfa8780840e}{Insert}} (Q\+String table, Q\+String value)
+\item 
+bool \mbox{\hyperlink{class_sqlite_a772711beeceff7a567192e19abccfed4}{Delete}} (Q\+String table, Q\+String where)
+\item 
+bool \mbox{\hyperlink{class_sqlite_ae014031d1e0b0d9c412fb72ddc5a0043}{Updata}} (Q\+String table, Q\+String value, Q\+String where)
+\item 
+Q\+Sql\+Query \mbox{\hyperlink{class_sqlite_a9a39cca147a504c82e98261707aa1e8d}{Select}} (Q\+String table, Q\+String value, Q\+String where)
+\item 
+bool \mbox{\hyperlink{class_sqlite_a950aea188ad2f7285032756cfe0ecc6d}{Insert\+User}} (Q\+String card\+ID, Q\+String name, Q\+String gender, int age)
+\item 
+bool \mbox{\hyperlink{class_sqlite_a246c39ac5e6db51d8bf2fa60e2740d37}{Insert\+Books}} (Q\+String books\+ID, Q\+String name, Q\+String author, Q\+String publishing\+\_\+house, int count, int residue)
+\item 
+bool \mbox{\hyperlink{class_sqlite_a278f03d5b8e7f6dba8e97d3d5310c4b5}{Insert\+Record}} (Q\+String card\+ID, Q\+String books\+ID)
+\item 
+bool \mbox{\hyperlink{class_sqlite_af2b581d800d01e1f1281d98ec1341ddd}{Delete\+User}} (Q\+String card\+ID=N\+U\+LL, Q\+String name=N\+U\+LL, Q\+String gender=N\+U\+LL, int age=-\/1)
+\item 
+bool \mbox{\hyperlink{class_sqlite_a8a83c22e036086edf84758fb0f6cfc56}{Delete\+Books}} (Q\+String books\+ID=N\+U\+LL, Q\+String name=N\+U\+LL, Q\+String author=N\+U\+LL, Q\+String publishing\+\_\+house=N\+U\+LL, int count=-\/1, int residue=-\/1)
+\item 
+bool \mbox{\hyperlink{class_sqlite_aa120de86db20f42a61a5c2eae9ad6b89}{Delete\+Record}} (Q\+String card\+ID=N\+U\+LL, Q\+String books\+ID=N\+U\+LL)
+\item 
+bool \mbox{\hyperlink{class_sqlite_aba86a5371a532d0c7600f9a70c2d00a5}{Updata\+User}} (Q\+String card\+ID, Q\+String name, Q\+String gender, int age)
+\item 
+bool \mbox{\hyperlink{class_sqlite_a233ae80bda6616c5aacbffcc1dd80c8c}{Updata\+Books}} (Q\+String books\+ID, Q\+String name, Q\+String author, Q\+String publishing\+\_\+house, int count, int residue)
+\item 
+Q\+Sql\+Query \mbox{\hyperlink{class_sqlite_a7c9c4f27369ce4566bce56614c3e11f0}{Select\+User}} (Q\+String card\+ID=N\+U\+LL, Q\+String name=N\+U\+LL, Q\+String gender=N\+U\+LL, int age=-\/1)
+\item 
+Q\+Sql\+Query \mbox{\hyperlink{class_sqlite_addc1fbbdf661fd568535ddea8280fbd2}{Select\+Books}} (Q\+String books\+ID=N\+U\+LL, Q\+String name=N\+U\+LL, Q\+String author=N\+U\+LL, Q\+String publishing\+\_\+house=N\+U\+LL, int count=-\/1)
+\item 
+Q\+Sql\+Query \mbox{\hyperlink{class_sqlite_a3c012aa302538385ce05d0b0371a9860}{Select\+Record}} (Q\+String card\+ID=N\+U\+LL, Q\+String books\+ID=N\+U\+LL)
+\item 
+Q\+Sql\+Query \mbox{\hyperlink{class_sqlite_ab9e451e38960661c5a493948453b63c7}{Select\+Books\+Of\+Borrow}} (Q\+String card\+ID)
+\item 
+\mbox{\hyperlink{class_sqlite_adc35a543dca91edc3ffb90a3825dd54a}{$\sim$\+Sqlite}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Sql\+Database \mbox{\hyperlink{class_sqlite_afaaed0591ef0d92547dc5f049a22b3a6}{db}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sqlite_a8aef4e64531e1522f892c0c6ec69cdff}\label{class_sqlite_a8aef4e64531e1522f892c0c6ec69cdff}} 
+\index{Sqlite@{Sqlite}!Sqlite@{Sqlite}}
+\index{Sqlite@{Sqlite}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{Sqlite()}{Sqlite()}}
+{\footnotesize\ttfamily Sqlite\+::\+Sqlite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sqlite_adc35a543dca91edc3ffb90a3825dd54a}\label{class_sqlite_adc35a543dca91edc3ffb90a3825dd54a}} 
+\index{Sqlite@{Sqlite}!````~Sqlite@{$\sim$Sqlite}}
+\index{````~Sqlite@{$\sim$Sqlite}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{$\sim$Sqlite()}{~Sqlite()}}
+{\footnotesize\ttfamily Sqlite\+::$\sim$\+Sqlite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sqlite_aa93509c1e19a7d486f4f38ff4bc78a89}\label{class_sqlite_aa93509c1e19a7d486f4f38ff4bc78a89}} 
+\index{Sqlite@{Sqlite}!Connect@{Connect}}
+\index{Connect@{Connect}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{Connect()}{Connect()}}
+{\footnotesize\ttfamily bool Sqlite\+::\+Connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_sqlite_aa93509c1e19a7d486f4f38ff4bc78a89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sqlite_a772711beeceff7a567192e19abccfed4}\label{class_sqlite_a772711beeceff7a567192e19abccfed4}} 
+\index{Sqlite@{Sqlite}!Delete@{Delete}}
+\index{Delete@{Delete}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily bool Sqlite\+::\+Delete (\begin{DoxyParamCaption}\item[{Q\+String}]{table,  }\item[{Q\+String}]{where }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{class_sqlite_a772711beeceff7a567192e19abccfed4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_a772711beeceff7a567192e19abccfed4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sqlite_a8a83c22e036086edf84758fb0f6cfc56}\label{class_sqlite_a8a83c22e036086edf84758fb0f6cfc56}} 
+\index{Sqlite@{Sqlite}!DeleteBooks@{DeleteBooks}}
+\index{DeleteBooks@{DeleteBooks}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{DeleteBooks()}{DeleteBooks()}}
+{\footnotesize\ttfamily bool Sqlite\+::\+Delete\+Books (\begin{DoxyParamCaption}\item[{Q\+String}]{books\+ID = {\ttfamily NULL},  }\item[{Q\+String}]{name = {\ttfamily NULL},  }\item[{Q\+String}]{author = {\ttfamily NULL},  }\item[{Q\+String}]{publishing\+\_\+house = {\ttfamily NULL},  }\item[{int}]{count = {\ttfamily -\/1},  }\item[{int}]{residue = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_a8a83c22e036086edf84758fb0f6cfc56_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_a8a83c22e036086edf84758fb0f6cfc56_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sqlite_aa120de86db20f42a61a5c2eae9ad6b89}\label{class_sqlite_aa120de86db20f42a61a5c2eae9ad6b89}} 
+\index{Sqlite@{Sqlite}!DeleteRecord@{DeleteRecord}}
+\index{DeleteRecord@{DeleteRecord}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{DeleteRecord()}{DeleteRecord()}}
+{\footnotesize\ttfamily bool Sqlite\+::\+Delete\+Record (\begin{DoxyParamCaption}\item[{Q\+String}]{card\+ID = {\ttfamily NULL},  }\item[{Q\+String}]{books\+ID = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_aa120de86db20f42a61a5c2eae9ad6b89_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_aa120de86db20f42a61a5c2eae9ad6b89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sqlite_af2b581d800d01e1f1281d98ec1341ddd}\label{class_sqlite_af2b581d800d01e1f1281d98ec1341ddd}} 
+\index{Sqlite@{Sqlite}!DeleteUser@{DeleteUser}}
+\index{DeleteUser@{DeleteUser}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{DeleteUser()}{DeleteUser()}}
+{\footnotesize\ttfamily bool Sqlite\+::\+Delete\+User (\begin{DoxyParamCaption}\item[{Q\+String}]{card\+ID = {\ttfamily NULL},  }\item[{Q\+String}]{name = {\ttfamily NULL},  }\item[{Q\+String}]{gender = {\ttfamily NULL},  }\item[{int}]{age = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_af2b581d800d01e1f1281d98ec1341ddd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_af2b581d800d01e1f1281d98ec1341ddd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sqlite_a3d4be952cdb19b674a80dacd78e2873a}\label{class_sqlite_a3d4be952cdb19b674a80dacd78e2873a}} 
+\index{Sqlite@{Sqlite}!ExecSQL@{ExecSQL}}
+\index{ExecSQL@{ExecSQL}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{ExecSQL()}{ExecSQL()}}
+{\footnotesize\ttfamily bool Sqlite\+::\+Exec\+S\+QL (\begin{DoxyParamCaption}\item[{Q\+String}]{cmd }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_a3d4be952cdb19b674a80dacd78e2873a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sqlite_a8d0c32df6db2b0ca13695cfa8780840e}\label{class_sqlite_a8d0c32df6db2b0ca13695cfa8780840e}} 
+\index{Sqlite@{Sqlite}!Insert@{Insert}}
+\index{Insert@{Insert}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily bool Sqlite\+::\+Insert (\begin{DoxyParamCaption}\item[{Q\+String}]{table,  }\item[{Q\+String}]{value }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{class_sqlite_a8d0c32df6db2b0ca13695cfa8780840e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_a8d0c32df6db2b0ca13695cfa8780840e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sqlite_a246c39ac5e6db51d8bf2fa60e2740d37}\label{class_sqlite_a246c39ac5e6db51d8bf2fa60e2740d37}} 
+\index{Sqlite@{Sqlite}!InsertBooks@{InsertBooks}}
+\index{InsertBooks@{InsertBooks}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{InsertBooks()}{InsertBooks()}}
+{\footnotesize\ttfamily bool Sqlite\+::\+Insert\+Books (\begin{DoxyParamCaption}\item[{Q\+String}]{books\+ID,  }\item[{Q\+String}]{name,  }\item[{Q\+String}]{author,  }\item[{Q\+String}]{publishing\+\_\+house,  }\item[{int}]{count,  }\item[{int}]{residue }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_a246c39ac5e6db51d8bf2fa60e2740d37_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_a246c39ac5e6db51d8bf2fa60e2740d37_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sqlite_a278f03d5b8e7f6dba8e97d3d5310c4b5}\label{class_sqlite_a278f03d5b8e7f6dba8e97d3d5310c4b5}} 
+\index{Sqlite@{Sqlite}!InsertRecord@{InsertRecord}}
+\index{InsertRecord@{InsertRecord}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{InsertRecord()}{InsertRecord()}}
+{\footnotesize\ttfamily bool Sqlite\+::\+Insert\+Record (\begin{DoxyParamCaption}\item[{Q\+String}]{card\+ID,  }\item[{Q\+String}]{books\+ID }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_a278f03d5b8e7f6dba8e97d3d5310c4b5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_a278f03d5b8e7f6dba8e97d3d5310c4b5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sqlite_a950aea188ad2f7285032756cfe0ecc6d}\label{class_sqlite_a950aea188ad2f7285032756cfe0ecc6d}} 
+\index{Sqlite@{Sqlite}!InsertUser@{InsertUser}}
+\index{InsertUser@{InsertUser}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{InsertUser()}{InsertUser()}}
+{\footnotesize\ttfamily bool Sqlite\+::\+Insert\+User (\begin{DoxyParamCaption}\item[{Q\+String}]{card\+ID,  }\item[{Q\+String}]{name,  }\item[{Q\+String}]{gender,  }\item[{int}]{age }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_a950aea188ad2f7285032756cfe0ecc6d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_a950aea188ad2f7285032756cfe0ecc6d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sqlite_a9a39cca147a504c82e98261707aa1e8d}\label{class_sqlite_a9a39cca147a504c82e98261707aa1e8d}} 
+\index{Sqlite@{Sqlite}!Select@{Select}}
+\index{Select@{Select}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{Select()}{Select()}}
+{\footnotesize\ttfamily Q\+Sql\+Query Sqlite\+::\+Select (\begin{DoxyParamCaption}\item[{Q\+String}]{table,  }\item[{Q\+String}]{value,  }\item[{Q\+String}]{where }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_a9a39cca147a504c82e98261707aa1e8d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sqlite_addc1fbbdf661fd568535ddea8280fbd2}\label{class_sqlite_addc1fbbdf661fd568535ddea8280fbd2}} 
+\index{Sqlite@{Sqlite}!SelectBooks@{SelectBooks}}
+\index{SelectBooks@{SelectBooks}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{SelectBooks()}{SelectBooks()}}
+{\footnotesize\ttfamily Q\+Sql\+Query Sqlite\+::\+Select\+Books (\begin{DoxyParamCaption}\item[{Q\+String}]{books\+ID = {\ttfamily NULL},  }\item[{Q\+String}]{name = {\ttfamily NULL},  }\item[{Q\+String}]{author = {\ttfamily NULL},  }\item[{Q\+String}]{publishing\+\_\+house = {\ttfamily NULL},  }\item[{int}]{count = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_sqlite_addc1fbbdf661fd568535ddea8280fbd2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_addc1fbbdf661fd568535ddea8280fbd2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sqlite_ab9e451e38960661c5a493948453b63c7}\label{class_sqlite_ab9e451e38960661c5a493948453b63c7}} 
+\index{Sqlite@{Sqlite}!SelectBooksOfBorrow@{SelectBooksOfBorrow}}
+\index{SelectBooksOfBorrow@{SelectBooksOfBorrow}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{SelectBooksOfBorrow()}{SelectBooksOfBorrow()}}
+{\footnotesize\ttfamily Q\+Sql\+Query Sqlite\+::\+Select\+Books\+Of\+Borrow (\begin{DoxyParamCaption}\item[{Q\+String}]{card\+ID }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_sqlite_ab9e451e38960661c5a493948453b63c7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_ab9e451e38960661c5a493948453b63c7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sqlite_a3c012aa302538385ce05d0b0371a9860}\label{class_sqlite_a3c012aa302538385ce05d0b0371a9860}} 
+\index{Sqlite@{Sqlite}!SelectRecord@{SelectRecord}}
+\index{SelectRecord@{SelectRecord}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{SelectRecord()}{SelectRecord()}}
+{\footnotesize\ttfamily Q\+Sql\+Query Sqlite\+::\+Select\+Record (\begin{DoxyParamCaption}\item[{Q\+String}]{card\+ID = {\ttfamily NULL},  }\item[{Q\+String}]{books\+ID = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{class_sqlite_a3c012aa302538385ce05d0b0371a9860_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_a3c012aa302538385ce05d0b0371a9860_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sqlite_a7c9c4f27369ce4566bce56614c3e11f0}\label{class_sqlite_a7c9c4f27369ce4566bce56614c3e11f0}} 
+\index{Sqlite@{Sqlite}!SelectUser@{SelectUser}}
+\index{SelectUser@{SelectUser}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{SelectUser()}{SelectUser()}}
+{\footnotesize\ttfamily Q\+Sql\+Query Sqlite\+::\+Select\+User (\begin{DoxyParamCaption}\item[{Q\+String}]{card\+ID = {\ttfamily NULL},  }\item[{Q\+String}]{name = {\ttfamily NULL},  }\item[{Q\+String}]{gender = {\ttfamily NULL},  }\item[{int}]{age = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{class_sqlite_a7c9c4f27369ce4566bce56614c3e11f0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_a7c9c4f27369ce4566bce56614c3e11f0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sqlite_ae014031d1e0b0d9c412fb72ddc5a0043}\label{class_sqlite_ae014031d1e0b0d9c412fb72ddc5a0043}} 
+\index{Sqlite@{Sqlite}!Updata@{Updata}}
+\index{Updata@{Updata}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{Updata()}{Updata()}}
+{\footnotesize\ttfamily bool Sqlite\+::\+Updata (\begin{DoxyParamCaption}\item[{Q\+String}]{table,  }\item[{Q\+String}]{value,  }\item[{Q\+String}]{where }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{class_sqlite_ae014031d1e0b0d9c412fb72ddc5a0043_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_ae014031d1e0b0d9c412fb72ddc5a0043_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sqlite_a233ae80bda6616c5aacbffcc1dd80c8c}\label{class_sqlite_a233ae80bda6616c5aacbffcc1dd80c8c}} 
+\index{Sqlite@{Sqlite}!UpdataBooks@{UpdataBooks}}
+\index{UpdataBooks@{UpdataBooks}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{UpdataBooks()}{UpdataBooks()}}
+{\footnotesize\ttfamily bool Sqlite\+::\+Updata\+Books (\begin{DoxyParamCaption}\item[{Q\+String}]{books\+ID,  }\item[{Q\+String}]{name,  }\item[{Q\+String}]{author,  }\item[{Q\+String}]{publishing\+\_\+house,  }\item[{int}]{count,  }\item[{int}]{residue }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_a233ae80bda6616c5aacbffcc1dd80c8c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_a233ae80bda6616c5aacbffcc1dd80c8c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sqlite_aba86a5371a532d0c7600f9a70c2d00a5}\label{class_sqlite_aba86a5371a532d0c7600f9a70c2d00a5}} 
+\index{Sqlite@{Sqlite}!UpdataUser@{UpdataUser}}
+\index{UpdataUser@{UpdataUser}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{UpdataUser()}{UpdataUser()}}
+{\footnotesize\ttfamily bool Sqlite\+::\+Updata\+User (\begin{DoxyParamCaption}\item[{Q\+String}]{card\+ID,  }\item[{Q\+String}]{name,  }\item[{Q\+String}]{gender,  }\item[{int}]{age }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_aba86a5371a532d0c7600f9a70c2d00a5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sqlite_aba86a5371a532d0c7600f9a70c2d00a5_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sqlite_afaaed0591ef0d92547dc5f049a22b3a6}\label{class_sqlite_afaaed0591ef0d92547dc5f049a22b3a6}} 
+\index{Sqlite@{Sqlite}!db@{db}}
+\index{db@{db}!Sqlite@{Sqlite}}
+\subsubsection{\texorpdfstring{db}{db}}
+{\footnotesize\ttfamily Q\+Sql\+Database Sqlite\+::db\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{sqlite_8h}{sqlite.\+h}}\item 
+\mbox{\hyperlink{sqlite_8cpp}{sqlite.\+cpp}}\end{DoxyCompactItemize}

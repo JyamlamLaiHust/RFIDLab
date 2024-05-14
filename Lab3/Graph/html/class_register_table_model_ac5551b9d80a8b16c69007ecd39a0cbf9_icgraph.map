@@ -1,0 +1,9 @@
+<map id="RegisterTableModel::bindTable" name="RegisterTableModel::bindTable">
+<area shape="rect" id="node1" title="RegisterTableModel::restore 绑定表名" alt="" coords="280,155,416,197"/>
+<area shape="rect" id="node2" href="$class_consume_page.html#a10832a40b02705ec9c951673e1a7e6da" title="ConsumePage::on_cardIdReceived." alt="" coords="5,5,232,32"/>
+<area shape="rect" id="node3" href="$class_recharge_dialog.html#adf95e380b531e5817063abac78cdd607" title="RechargeDialog::on_cardIdReceived." alt="" coords="51,57,186,98"/>
+<area shape="rect" id="node4" href="$class_registor_widget.html#ae280a0ef976dd2835f4a33c60b67e8a9" title="RegistorWidget::on_btn_Register_clicked 注册按钮点击事件" alt="" coords="43,122,194,163"/>
+<area shape="rect" id="node5" href="$class_registor_widget.html#adb55365b88e07391d6e8e7c639c68219" title="RegistorWidget::on_btn_Refresh_clicked 刷新按钮点击事件" alt="" coords="45,187,192,229"/>
+<area shape="rect" id="node6" href="$class_table_info_pages.html#ad1da457e9ca5163f17d14035185457f7" title="TableInfoPages::currentAction." alt="" coords="20,253,217,280"/>
+<area shape="rect" id="node7" href="$class_write_off_person.html#a4ac5c022a769acb97dfb615a2fceb1f3" title="WriteOffPerson::on_btn_LogOff_clicked 注销按钮点击事件" alt="" coords="48,305,189,346"/>
+</map>

@@ -1,0 +1,170 @@
+\hypertarget{class_d_b_manager}{}\section{D\+B\+Manager Class Reference}
+\label{class_d_b_manager}\index{DBManager@{DBManager}}
+
+
+{\ttfamily \#include $<$dbmanager.\+h$>$}
+
+
+
+Inheritance diagram for D\+B\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{class_d_b_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for D\+B\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{class_d_b_manager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_b_manager_a96ceb14668a63d2b99e0b01c708776bb}{D\+B\+Manager}} (Q\+Object $\ast$parent=0)
+\item 
+void \mbox{\hyperlink{class_d_b_manager_abe9b0e3d863e27668b62a7fa43227fa5}{db\+Close}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_d_b_manager_abe9b0e3d863e27668b62a7fa43227fa5}{D\+B\+Manager\+::db\+Close}} 关闭数据库 \end{DoxyCompactList}\item 
+Q\+String\+List \mbox{\hyperlink{class_d_b_manager_a9b85dcef0c0b6481b874982c2eff50b2}{get\+Table\+Names}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_d_b_manager_a9b85dcef0c0b6481b874982c2eff50b2}{D\+B\+Manager\+::get\+Table\+Names}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_d_b_manager_a657d030abeeaa632bf2d1a60e04df1e3}{create\+DB}} (const Q\+String \&db\+Name)
+\begin{DoxyCompactList}\small\item\em Record\+Table\+Model\+::create\+DB. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_d_b_manager_a95518b4ffbf5b26550b18c7f7d1e471f}{table\+Exist}} (const Q\+String \&table\+Name)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_d_b_manager_a95518b4ffbf5b26550b18c7f7d1e471f}{D\+B\+Manager\+::table\+Exist}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Sql\+Database \mbox{\hyperlink{class_d_b_manager_a5399b255096671fc8a5dd3ebf2dd0507}{db}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_d_b_manager_a96ceb14668a63d2b99e0b01c708776bb}\label{class_d_b_manager_a96ceb14668a63d2b99e0b01c708776bb}} 
+\index{DBManager@{DBManager}!DBManager@{DBManager}}
+\index{DBManager@{DBManager}!DBManager@{DBManager}}
+\subsubsection{\texorpdfstring{DBManager()}{DBManager()}}
+{\footnotesize\ttfamily D\+B\+Manager\+::\+D\+B\+Manager (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d_b_manager_a96ceb14668a63d2b99e0b01c708776bb_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_b_manager_a657d030abeeaa632bf2d1a60e04df1e3}\label{class_d_b_manager_a657d030abeeaa632bf2d1a60e04df1e3}} 
+\index{DBManager@{DBManager}!createDB@{createDB}}
+\index{createDB@{createDB}!DBManager@{DBManager}}
+\subsubsection{\texorpdfstring{createDB()}{createDB()}}
+{\footnotesize\ttfamily bool D\+B\+Manager\+::create\+DB (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{db\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Record\+Table\+Model\+::create\+DB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Name} & 数据库名称 用于创建数据库 \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d_b_manager_a657d030abeeaa632bf2d1a60e04df1e3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_d_b_manager_abe9b0e3d863e27668b62a7fa43227fa5}\label{class_d_b_manager_abe9b0e3d863e27668b62a7fa43227fa5}} 
+\index{DBManager@{DBManager}!dbClose@{dbClose}}
+\index{dbClose@{dbClose}!DBManager@{DBManager}}
+\subsubsection{\texorpdfstring{dbClose()}{dbClose()}}
+{\footnotesize\ttfamily void D\+B\+Manager\+::db\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_d_b_manager_abe9b0e3d863e27668b62a7fa43227fa5}{D\+B\+Manager\+::db\+Close}} 关闭数据库 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_d_b_manager_abe9b0e3d863e27668b62a7fa43227fa5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_d_b_manager_a9b85dcef0c0b6481b874982c2eff50b2}\label{class_d_b_manager_a9b85dcef0c0b6481b874982c2eff50b2}} 
+\index{DBManager@{DBManager}!getTableNames@{getTableNames}}
+\index{getTableNames@{getTableNames}!DBManager@{DBManager}}
+\subsubsection{\texorpdfstring{getTableNames()}{getTableNames()}}
+{\footnotesize\ttfamily Q\+String\+List D\+B\+Manager\+::get\+Table\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_d_b_manager_a9b85dcef0c0b6481b874982c2eff50b2}{D\+B\+Manager\+::get\+Table\+Names}}. 
+
+\begin{DoxyReturn}{Returns}
+数据库表集合 获取数据库所有表的表名 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_d_b_manager_a9b85dcef0c0b6481b874982c2eff50b2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_d_b_manager_a95518b4ffbf5b26550b18c7f7d1e471f}\label{class_d_b_manager_a95518b4ffbf5b26550b18c7f7d1e471f}} 
+\index{DBManager@{DBManager}!tableExist@{tableExist}}
+\index{tableExist@{tableExist}!DBManager@{DBManager}}
+\subsubsection{\texorpdfstring{tableExist()}{tableExist()}}
+{\footnotesize\ttfamily bool D\+B\+Manager\+::table\+Exist (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{table\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_d_b_manager_a95518b4ffbf5b26550b18c7f7d1e471f}{D\+B\+Manager\+::table\+Exist}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+Name} & 表名 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+如果存在返回true，否则返回false 用于判断表是否存在 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d_b_manager_a95518b4ffbf5b26550b18c7f7d1e471f_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_d_b_manager_a5399b255096671fc8a5dd3ebf2dd0507}\label{class_d_b_manager_a5399b255096671fc8a5dd3ebf2dd0507}} 
+\index{DBManager@{DBManager}!db@{db}}
+\index{db@{db}!DBManager@{DBManager}}
+\subsubsection{\texorpdfstring{db}{db}}
+{\footnotesize\ttfamily Q\+Sql\+Database D\+B\+Manager\+::db\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/database/\mbox{\hyperlink{dbmanager_8h}{dbmanager.\+h}}\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/database/\mbox{\hyperlink{dbmanager_8cpp}{dbmanager.\+cpp}}\end{DoxyCompactItemize}

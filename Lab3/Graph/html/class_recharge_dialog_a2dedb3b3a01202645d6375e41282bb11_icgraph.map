@@ -1,0 +1,5 @@
+<map id="RechargeDialog::authentication" name="RechargeDialog::authentication">
+<area shape="rect" id="node1" title="RechargeDialog::authentication 授权操作" alt="" coords="205,46,408,73"/>
+<area shape="rect" id="node2" href="$class_recharge_dialog.html#a39b9307ae35c1c2e7e95d255eb2fdc73" title="RechargeDialog::on_btn_recharge_clicked 充值按钮点击事件" alt="" coords="5,5,157,47"/>
+<area shape="rect" id="node3" href="$class_recharge_dialog.html#adf95e380b531e5817063abac78cdd607" title="RechargeDialog::on_cardIdReceived." alt="" coords="14,71,149,112"/>
+</map>

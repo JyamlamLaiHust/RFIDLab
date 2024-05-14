@@ -1,0 +1,17 @@
+<map id="ConsumePage::handleConnect" name="ConsumePage::handleConnect">
+<area shape="rect" id="node1" title="ConsumePage::handleConnect 处理信号与插槽的连接关系" alt="" coords="5,97,207,123"/>
+<area shape="rect" id="node2" href="$class_consume_page.html#ad00cdadd4302bfb963b4e1c2487b7653" title="ConsumePage::updateTime 更新时间槽函数" alt="" coords="260,21,443,47"/>
+<area shape="rect" id="node4" href="$class_consume_page.html#a00810bb404e95cf82b060d366a127b23" title="ConsumePage::readCardId." alt="" coords="512,71,691,98"/>
+<area shape="rect" id="node9" href="$class_consume_page.html#aad2165e62407257cd5a061a75e3e8cd2" title="ConsumePage::onDecodeFrame." alt="" coords="496,173,707,199"/>
+<area shape="rect" id="node14" href="$class_consume_page.html#aee88a9a496e88620383622b4ab20e4c9" title="ConsumePage::on_readValue." alt="" coords="255,122,448,149"/>
+<area shape="rect" id="node3" href="$tools_8cpp.html#a8997e5cfa09ec239bd4c851065261274" title="获取当前日期和时间" alt="" coords="541,21,661,47"/>
+<area shape="rect" id="node5" href="$class_serial_port_thread.html#abbdd068503223fcd5f3d2376eb78c50e" title="SerialPortThread::serialPortIsOpen." alt="" coords="781,5,939,47"/>
+<area shape="rect" id="node6" href="$class_m1356_dll.html#ab86ae59233d587f4688470796cbb85b1" title=" " alt="" coords="755,122,965,149"/>
+<area shape="rect" id="node7" href="$class_serial_port_thread.html#a16e0dbd72535df1b954ed3c4598f633a" title="SerialPortThread::writeData." alt="" coords="769,71,951,98"/>
+<area shape="rect" id="node8" href="$tools_8cpp.html#a107fa26ed0cd09983e6bb5006221bf89" title="普通字符串转为16进制字符串" alt="" coords="1013,71,1164,98"/>
+<area shape="rect" id="node10" href="$class_m1356_dll.html#a40131e8263bd201208a37ec1826d5310" title=" " alt="" coords="765,224,955,265"/>
+<area shape="rect" id="node11" href="$tools_8cpp.html#a485150ce2280036069db9d4c633646cd" title="QSTRING_TO_HEX." alt="" coords="790,290,930,317"/>
+<area shape="rect" id="node12" href="$class_record_table_model.html#ae2ecb2c724b2141b50664525ad4cdfe7" title="RecordTableModel::restore 绑定表名" alt="" coords="764,341,956,367"/>
+<area shape="rect" id="node13" href="$class_record_table_model.html#a2dd9d26f03858e1393946baba8f14510" title="RecordTableModel::addRecord." alt="" coords="761,173,959,199"/>
+<area shape="rect" id="node15" href="$class_consume_page.html#a26ad9f5afc48a91b04f6ba99f524dc44" title="ConsumePage::authentication 授权操作" alt="" coords="503,122,699,149"/>
+</map>

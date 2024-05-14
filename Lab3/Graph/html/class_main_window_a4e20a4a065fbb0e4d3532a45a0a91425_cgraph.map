@@ -1,0 +1,7 @@
+<map id="MainWindow::closeEvent" name="MainWindow::closeEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,173,57"/>
+<area shape="rect" id="node2" href="$class_serial_port_thread.html#ae7403dd74cb71b0e925e933073020cd2" title="SerialPortThread::stopThread 停止串口线程" alt="" coords="221,5,413,32"/>
+<area shape="rect" id="node4" href="$database__api_8h.html#acede77d15daa26fcb23693b5801508fc" title="DB_Close 关闭数据库" alt="" coords="277,56,357,83"/>
+<area shape="rect" id="node3" href="$class_serial_port_thread.html#adfceb467826dc0f59d0eb66c1ba0a1a6" title="SerialPortThread::stopTimer 停止定时器" alt="" coords="461,5,647,32"/>
+<area shape="rect" id="node5" href="$class_d_b_manager.html#abe9b0e3d863e27668b62a7fa43227fa5" title="DBManager::dbClose 关闭数据库" alt="" coords="481,56,627,83"/>
+</map>

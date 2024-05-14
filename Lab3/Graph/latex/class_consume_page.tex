@@ -1,0 +1,687 @@
+\hypertarget{class_consume_page}{}\section{Consume\+Page Class Reference}
+\label{class_consume_page}\index{ConsumePage@{ConsumePage}}
+
+
+{\ttfamily \#include $<$consumepage.\+h$>$}
+
+
+
+Inheritance diagram for Consume\+Page\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_consume_page__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Consume\+Page\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_consume_page__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_consume_page_ad00cdadd4302bfb963b4e1c2487b7653}{update\+Time}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_ad00cdadd4302bfb963b4e1c2487b7653}{Consume\+Page\+::update\+Time}} 更新时间槽函数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_consume_page_a10832a40b02705ec9c951673e1a7e6da}{on\+\_\+card\+Id\+Received}} (Q\+String tag\+Id)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_a10832a40b02705ec9c951673e1a7e6da}{Consume\+Page\+::on\+\_\+card\+Id\+Received}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_consume_page_aad2165e62407257cd5a061a75e3e8cd2}{on\+Decode\+Frame}} (Q\+Byte\+Array bytes)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_aad2165e62407257cd5a061a75e3e8cd2}{Consume\+Page\+::on\+Decode\+Frame}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_consume_page_ac51abb2cb079fc3884f4999d6467ad1b}{calc\+Ops}} (float)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_consume_page_a2215feb8cdf2b12d83d4b6ff9f567661}{Consume\+Page}} (Q\+Widget $\ast$parent=0, \mbox{\hyperlink{class_serial_port_thread}{Serial\+Port\+Thread}} $\ast$\mbox{\hyperlink{class_consume_page_ae29d14c1d1d1ce6e6281a2dec3ade6a0}{serial\+Port\+Thread}}=0)
+\item 
+\mbox{\hyperlink{class_consume_page_a9a7b49db8398a51d064d8a96f6f78e61}{$\sim$\+Consume\+Page}} ()
+\item 
+void \mbox{\hyperlink{class_consume_page_a26ad9f5afc48a91b04f6ba99f524dc44}{authentication}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_a26ad9f5afc48a91b04f6ba99f524dc44}{Consume\+Page\+::authentication}} 授权操作 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_consume_page_a1c1ce4b09089b923deb0fd178418cb99}{event\+Filter}} (Q\+Object $\ast$obj, Q\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_a1c1ce4b09089b923deb0fd178418cb99}{Consume\+Page\+::event\+Filter}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_consume_page_a5d3f29ff49ea73facf73e34267adf0ed}{on\+\_\+btn\+\_\+\+O\+K\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_a5d3f29ff49ea73facf73e34267adf0ed}{Consume\+Page\+::on\+\_\+btn\+\_\+\+O\+K\+\_\+clicked}} 食堂结账按钮点击事件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_consume_page_a00810bb404e95cf82b060d366a127b23}{read\+Card\+Id}} (bool clicked)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_a00810bb404e95cf82b060d366a127b23}{Consume\+Page\+::read\+Card\+Id}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_consume_page_a2456c0a7ad27aa1d991c4a2d9a3334e1}{on\+\_\+combo\+Box\+\_\+supermarket\+\_\+current\+Index\+Changed}} (int index)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_a2456c0a7ad27aa1d991c4a2d9a3334e1}{Consume\+Page\+::on\+\_\+combo\+Box\+\_\+supermarket\+\_\+current\+Index\+Changed}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_consume_page_a9ace94ec565505f97e29f0f732ef13bf}{on\+\_\+btn\+\_\+\+O\+K2\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_a9ace94ec565505f97e29f0f732ef13bf}{Consume\+Page\+::on\+\_\+btn\+\_\+\+O\+K2\+\_\+clicked}} 超市消费结账按钮点击事件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_consume_page_aef47c443ac40ea430537571bae1328ff}{on\+\_\+btn\+\_\+\+O\+K1\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_aef47c443ac40ea430537571bae1328ff}{Consume\+Page\+::on\+\_\+btn\+\_\+\+O\+K1\+\_\+clicked}} 教学楼结账按钮点击事件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_consume_page_a3d244573d28510df3c7b3ca0d6eb3843}{on\+\_\+btn\+\_\+\+O\+K3\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_a3d244573d28510df3c7b3ca0d6eb3843}{Consume\+Page\+::on\+\_\+btn\+\_\+\+O\+K3\+\_\+clicked}} 其他结账按钮点击事件 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_consume_page_aee88a9a496e88620383622b4ab20e4c9}{on\+\_\+read\+Value}} (float value)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_aee88a9a496e88620383622b4ab20e4c9}{Consume\+Page\+::on\+\_\+read\+Value}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_consume_page_a56362bbe10626bb02c7cba7e11545274}{on\+\_\+combo\+Box\+\_\+food\+Name\+\_\+current\+Index\+Changed}} (int index)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_a56362bbe10626bb02c7cba7e11545274}{Consume\+Page\+::on\+\_\+combo\+Box\+\_\+food\+Name\+\_\+current\+Index\+Changed}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_consume_page_af5d7e2bc17a792db28f9e1dd205574e2}{on\+\_\+combo\+Box\+\_\+goods\+Name\+\_\+current\+Index\+Changed}} (int index)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_af5d7e2bc17a792db28f9e1dd205574e2}{Consume\+Page\+::on\+\_\+combo\+Box\+\_\+goods\+Name\+\_\+current\+Index\+Changed}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_consume_page_a6db19d3147a2143286022e5bca7dc3fa}{on\+\_\+combo\+Box\+\_\+cast\+Type\+\_\+current\+Index\+Changed}} (int index)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_a6db19d3147a2143286022e5bca7dc3fa}{Consume\+Page\+::on\+\_\+combo\+Box\+\_\+cast\+Type\+\_\+current\+Index\+Changed}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_consume_page_add3af5a3661b2a7172bddb5fa81452a0}{handle\+Connect}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_add3af5a3661b2a7172bddb5fa81452a0}{Consume\+Page\+::handle\+Connect}} 处理信号与插槽的连接关系 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_consume_page_a53f5ce5e4192a56330fac399aa43c199}{init\+Views}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_a53f5ce5e4192a56330fac399aa43c199}{Consume\+Page\+::init\+Views}} 初始化界面 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_consume_page_a4b2cabc78b852bea679c71e0a8a1e459}{fill\+Send\+Data}} (Q\+String time, Q\+String addr, Q\+String reader\+Id, Q\+String value, Q\+String card\+Id, Q\+String remark)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_consume_page_a4b2cabc78b852bea679c71e0a8a1e459}{Consume\+Page\+::fill\+Send\+Data}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_consume_page_a35a81e758924ebde005e01f78eda143f}{check\+Data\+Valid}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Consume\+Page $\ast$ \mbox{\hyperlink{class_consume_page_a985f62c214ee04ab5a32826a2c01670a}{ui}}
+\item 
+Q\+Timer $\ast$ \mbox{\hyperlink{class_consume_page_a2d862691698552503b8874e7b6ab6d78}{timer}}
+\item 
+Q\+Push\+Button $\ast$ \mbox{\hyperlink{class_consume_page_ae32203479a3c7899b8c84f9c8390522f}{current\+Enventory\+Button}}
+\item 
+\mbox{\hyperlink{class_m1356_dll}{M1356\+Dll}} $\ast$ \mbox{\hyperlink{class_consume_page_a92f39f3e65ef11f9a99dfe9821bc2042}{m1356dll}}
+\item 
+\mbox{\hyperlink{class_serial_port_thread}{Serial\+Port\+Thread}} $\ast$ \mbox{\hyperlink{class_consume_page_ae29d14c1d1d1ce6e6281a2dec3ade6a0}{serial\+Port\+Thread}}
+\item 
+Q\+String\+List \mbox{\hyperlink{class_consume_page_ad679cfb8a1b8af73fc6f196ea387f7f4}{supermarket\+Name}}
+\item 
+Q\+String\+List \mbox{\hyperlink{class_consume_page_aa6871eb3b3d2065e79daf26a1685fdd2}{food\+Name}}
+\item 
+Q\+String\+List \mbox{\hyperlink{class_consume_page_aede14bdd9eb4b1191a557059abf83062}{goods\+Name}}
+\item 
+Q\+String\+List \mbox{\hyperlink{class_consume_page_a1dd56d09c71504247793ba91be860270}{cast\+Name}}
+\item 
+Q\+String\+List \mbox{\hyperlink{class_consume_page_a9df3baec8176e9c23c9c80cdabaf7274}{supermarket\+Addr}}
+\item 
+Q\+String\+List \mbox{\hyperlink{class_consume_page_a7cfd5d301069ce79ad431d89201b1703}{cafeteria\+Addr}}
+\item 
+Q\+String\+List \mbox{\hyperlink{class_consume_page_afbdd27b55a3286494a4b5b460d7f76f6}{vendor\+Addr}}
+\item 
+Q\+String\+List \mbox{\hyperlink{class_consume_page_a5f32182a0c6a200572cbe6a3205cfa82}{cast\+Addr}}
+\item 
+int \mbox{\hyperlink{class_consume_page_aba7dff446b4145fe69ee3cc75c459d9d}{current\+Ops}}
+\item 
+\mbox{\hyperlink{struct_send_data__t}{Send\+Data\+\_\+t}} \mbox{\hyperlink{class_consume_page_a708a20eabb2c5c297efd86b6ab6b9e5d}{send\+Data}}
+\item 
+Q\+Message\+Box $\ast$ \mbox{\hyperlink{class_consume_page_a873e137bb91e921fb86363de0a298d2b}{message\+Box}}
+\item 
+float \mbox{\hyperlink{class_consume_page_ae863ea00b582389d2ab9e8472b84a18a}{last\+\_\+value}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_consume_page_a2215feb8cdf2b12d83d4b6ff9f567661}\label{class_consume_page_a2215feb8cdf2b12d83d4b6ff9f567661}} 
+\index{ConsumePage@{ConsumePage}!ConsumePage@{ConsumePage}}
+\index{ConsumePage@{ConsumePage}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{ConsumePage()}{ConsumePage()}}
+{\footnotesize\ttfamily Consume\+Page\+::\+Consume\+Page (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0},  }\item[{\mbox{\hyperlink{class_serial_port_thread}{Serial\+Port\+Thread}} $\ast$}]{serial\+Port\+Thread = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_a2215feb8cdf2b12d83d4b6ff9f567661_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_consume_page_a9a7b49db8398a51d064d8a96f6f78e61}\label{class_consume_page_a9a7b49db8398a51d064d8a96f6f78e61}} 
+\index{ConsumePage@{ConsumePage}!````~ConsumePage@{$\sim$ConsumePage}}
+\index{````~ConsumePage@{$\sim$ConsumePage}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{$\sim$ConsumePage()}{~ConsumePage()}}
+{\footnotesize\ttfamily Consume\+Page\+::$\sim$\+Consume\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_consume_page_a26ad9f5afc48a91b04f6ba99f524dc44}\label{class_consume_page_a26ad9f5afc48a91b04f6ba99f524dc44}} 
+\index{ConsumePage@{ConsumePage}!authentication@{authentication}}
+\index{authentication@{authentication}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{authentication()}{authentication()}}
+{\footnotesize\ttfamily void Consume\+Page\+::authentication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_consume_page_a26ad9f5afc48a91b04f6ba99f524dc44}{Consume\+Page\+::authentication}} 授权操作 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_a26ad9f5afc48a91b04f6ba99f524dc44_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_a26ad9f5afc48a91b04f6ba99f524dc44_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_consume_page_ac51abb2cb079fc3884f4999d6467ad1b}\label{class_consume_page_ac51abb2cb079fc3884f4999d6467ad1b}} 
+\index{ConsumePage@{ConsumePage}!calcOps@{calcOps}}
+\index{calcOps@{calcOps}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{calcOps}{calcOps}}
+{\footnotesize\ttfamily void Consume\+Page\+::calc\+Ops (\begin{DoxyParamCaption}\item[{float}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_ac51abb2cb079fc3884f4999d6467ad1b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_consume_page_a35a81e758924ebde005e01f78eda143f}\label{class_consume_page_a35a81e758924ebde005e01f78eda143f}} 
+\index{ConsumePage@{ConsumePage}!checkDataValid@{checkDataValid}}
+\index{checkDataValid@{checkDataValid}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{checkDataValid()}{checkDataValid()}}
+{\footnotesize\ttfamily bool Consume\+Page\+::check\+Data\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_a35a81e758924ebde005e01f78eda143f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_consume_page_a1c1ce4b09089b923deb0fd178418cb99}\label{class_consume_page_a1c1ce4b09089b923deb0fd178418cb99}} 
+\index{ConsumePage@{ConsumePage}!eventFilter@{eventFilter}}
+\index{eventFilter@{eventFilter}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{eventFilter()}{eventFilter()}}
+{\footnotesize\ttfamily bool Consume\+Page\+::event\+Filter (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{obj,  }\item[{Q\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_a1c1ce4b09089b923deb0fd178418cb99}{Consume\+Page\+::event\+Filter}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & 触发的对象 \\
+\hline
+{\em event} & 当前的事件 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+此处只在\+Q\+Widget前面过滤,返回值含义未变 事件过滤器 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_consume_page_a4b2cabc78b852bea679c71e0a8a1e459}\label{class_consume_page_a4b2cabc78b852bea679c71e0a8a1e459}} 
+\index{ConsumePage@{ConsumePage}!fillSendData@{fillSendData}}
+\index{fillSendData@{fillSendData}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{fillSendData()}{fillSendData()}}
+{\footnotesize\ttfamily void Consume\+Page\+::fill\+Send\+Data (\begin{DoxyParamCaption}\item[{Q\+String}]{time,  }\item[{Q\+String}]{addr,  }\item[{Q\+String}]{reader\+Id,  }\item[{Q\+String}]{value,  }\item[{Q\+String}]{card\+Id,  }\item[{Q\+String}]{remark }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_a4b2cabc78b852bea679c71e0a8a1e459}{Consume\+Page\+::fill\+Send\+Data}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & 时间 \\
+\hline
+{\em addr} & 地址 \\
+\hline
+{\em reader\+Id} & 读卡器\+ID \\
+\hline
+{\em value} & 金额 \\
+\hline
+{\em card\+Id} & 卡号 \\
+\hline
+{\em remark} & 备注信息 填充数据 \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_a4b2cabc78b852bea679c71e0a8a1e459_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_consume_page_add3af5a3661b2a7172bddb5fa81452a0}\label{class_consume_page_add3af5a3661b2a7172bddb5fa81452a0}} 
+\index{ConsumePage@{ConsumePage}!handleConnect@{handleConnect}}
+\index{handleConnect@{handleConnect}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{handleConnect()}{handleConnect()}}
+{\footnotesize\ttfamily void Consume\+Page\+::handle\+Connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_add3af5a3661b2a7172bddb5fa81452a0}{Consume\+Page\+::handle\+Connect}} 处理信号与插槽的连接关系 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_add3af5a3661b2a7172bddb5fa81452a0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_add3af5a3661b2a7172bddb5fa81452a0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_consume_page_a53f5ce5e4192a56330fac399aa43c199}\label{class_consume_page_a53f5ce5e4192a56330fac399aa43c199}} 
+\index{ConsumePage@{ConsumePage}!initViews@{initViews}}
+\index{initViews@{initViews}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{initViews()}{initViews()}}
+{\footnotesize\ttfamily void Consume\+Page\+::init\+Views (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_a53f5ce5e4192a56330fac399aa43c199}{Consume\+Page\+::init\+Views}} 初始化界面 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_a53f5ce5e4192a56330fac399aa43c199_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_consume_page_aef47c443ac40ea430537571bae1328ff}\label{class_consume_page_aef47c443ac40ea430537571bae1328ff}} 
+\index{ConsumePage@{ConsumePage}!on\_btn\_OK1\_clicked@{on\_btn\_OK1\_clicked}}
+\index{on\_btn\_OK1\_clicked@{on\_btn\_OK1\_clicked}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{on\_btn\_OK1\_clicked}{on\_btn\_OK1\_clicked}}
+{\footnotesize\ttfamily void Consume\+Page\+::on\+\_\+btn\+\_\+\+O\+K1\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_aef47c443ac40ea430537571bae1328ff}{Consume\+Page\+::on\+\_\+btn\+\_\+\+O\+K1\+\_\+clicked}} 教学楼结账按钮点击事件 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_aef47c443ac40ea430537571bae1328ff_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_consume_page_a9ace94ec565505f97e29f0f732ef13bf}\label{class_consume_page_a9ace94ec565505f97e29f0f732ef13bf}} 
+\index{ConsumePage@{ConsumePage}!on\_btn\_OK2\_clicked@{on\_btn\_OK2\_clicked}}
+\index{on\_btn\_OK2\_clicked@{on\_btn\_OK2\_clicked}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{on\_btn\_OK2\_clicked}{on\_btn\_OK2\_clicked}}
+{\footnotesize\ttfamily void Consume\+Page\+::on\+\_\+btn\+\_\+\+O\+K2\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_a9ace94ec565505f97e29f0f732ef13bf}{Consume\+Page\+::on\+\_\+btn\+\_\+\+O\+K2\+\_\+clicked}} 超市消费结账按钮点击事件 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_a9ace94ec565505f97e29f0f732ef13bf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_consume_page_a3d244573d28510df3c7b3ca0d6eb3843}\label{class_consume_page_a3d244573d28510df3c7b3ca0d6eb3843}} 
+\index{ConsumePage@{ConsumePage}!on\_btn\_OK3\_clicked@{on\_btn\_OK3\_clicked}}
+\index{on\_btn\_OK3\_clicked@{on\_btn\_OK3\_clicked}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{on\_btn\_OK3\_clicked}{on\_btn\_OK3\_clicked}}
+{\footnotesize\ttfamily void Consume\+Page\+::on\+\_\+btn\+\_\+\+O\+K3\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_a3d244573d28510df3c7b3ca0d6eb3843}{Consume\+Page\+::on\+\_\+btn\+\_\+\+O\+K3\+\_\+clicked}} 其他结账按钮点击事件 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_a3d244573d28510df3c7b3ca0d6eb3843_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_consume_page_a5d3f29ff49ea73facf73e34267adf0ed}\label{class_consume_page_a5d3f29ff49ea73facf73e34267adf0ed}} 
+\index{ConsumePage@{ConsumePage}!on\_btn\_OK\_clicked@{on\_btn\_OK\_clicked}}
+\index{on\_btn\_OK\_clicked@{on\_btn\_OK\_clicked}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{on\_btn\_OK\_clicked}{on\_btn\_OK\_clicked}}
+{\footnotesize\ttfamily void Consume\+Page\+::on\+\_\+btn\+\_\+\+O\+K\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_a5d3f29ff49ea73facf73e34267adf0ed}{Consume\+Page\+::on\+\_\+btn\+\_\+\+O\+K\+\_\+clicked}} 食堂结账按钮点击事件 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_a5d3f29ff49ea73facf73e34267adf0ed_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_consume_page_a10832a40b02705ec9c951673e1a7e6da}\label{class_consume_page_a10832a40b02705ec9c951673e1a7e6da}} 
+\index{ConsumePage@{ConsumePage}!on\_cardIdReceived@{on\_cardIdReceived}}
+\index{on\_cardIdReceived@{on\_cardIdReceived}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{on\_cardIdReceived}{on\_cardIdReceived}}
+{\footnotesize\ttfamily void Consume\+Page\+::on\+\_\+card\+Id\+Received (\begin{DoxyParamCaption}\item[{Q\+String}]{tag\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_a10832a40b02705ec9c951673e1a7e6da}{Consume\+Page\+::on\+\_\+card\+Id\+Received}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tag\+Id} & 卡号 接收到卡号时调用 \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_a10832a40b02705ec9c951673e1a7e6da_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_consume_page_a6db19d3147a2143286022e5bca7dc3fa}\label{class_consume_page_a6db19d3147a2143286022e5bca7dc3fa}} 
+\index{ConsumePage@{ConsumePage}!on\_comboBox\_castType\_currentIndexChanged@{on\_comboBox\_castType\_currentIndexChanged}}
+\index{on\_comboBox\_castType\_currentIndexChanged@{on\_comboBox\_castType\_currentIndexChanged}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{on\_comboBox\_castType\_currentIndexChanged}{on\_comboBox\_castType\_currentIndexChanged}}
+{\footnotesize\ttfamily void Consume\+Page\+::on\+\_\+combo\+Box\+\_\+cast\+Type\+\_\+current\+Index\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_a6db19d3147a2143286022e5bca7dc3fa}{Consume\+Page\+::on\+\_\+combo\+Box\+\_\+cast\+Type\+\_\+current\+Index\+Changed}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & 当前消费名的索引值 消费类别名发生改变时调用 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_consume_page_a56362bbe10626bb02c7cba7e11545274}\label{class_consume_page_a56362bbe10626bb02c7cba7e11545274}} 
+\index{ConsumePage@{ConsumePage}!on\_comboBox\_foodName\_currentIndexChanged@{on\_comboBox\_foodName\_currentIndexChanged}}
+\index{on\_comboBox\_foodName\_currentIndexChanged@{on\_comboBox\_foodName\_currentIndexChanged}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{on\_comboBox\_foodName\_currentIndexChanged}{on\_comboBox\_foodName\_currentIndexChanged}}
+{\footnotesize\ttfamily void Consume\+Page\+::on\+\_\+combo\+Box\+\_\+food\+Name\+\_\+current\+Index\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_a56362bbe10626bb02c7cba7e11545274}{Consume\+Page\+::on\+\_\+combo\+Box\+\_\+food\+Name\+\_\+current\+Index\+Changed}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & 当前文本的索引值 食物名称复选框文本值改变时调用 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_consume_page_af5d7e2bc17a792db28f9e1dd205574e2}\label{class_consume_page_af5d7e2bc17a792db28f9e1dd205574e2}} 
+\index{ConsumePage@{ConsumePage}!on\_comboBox\_goodsName\_currentIndexChanged@{on\_comboBox\_goodsName\_currentIndexChanged}}
+\index{on\_comboBox\_goodsName\_currentIndexChanged@{on\_comboBox\_goodsName\_currentIndexChanged}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{on\_comboBox\_goodsName\_currentIndexChanged}{on\_comboBox\_goodsName\_currentIndexChanged}}
+{\footnotesize\ttfamily void Consume\+Page\+::on\+\_\+combo\+Box\+\_\+goods\+Name\+\_\+current\+Index\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_af5d7e2bc17a792db28f9e1dd205574e2}{Consume\+Page\+::on\+\_\+combo\+Box\+\_\+goods\+Name\+\_\+current\+Index\+Changed}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & 当前商品名的索引值 商品名称发生改变时调用 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_consume_page_a2456c0a7ad27aa1d991c4a2d9a3334e1}\label{class_consume_page_a2456c0a7ad27aa1d991c4a2d9a3334e1}} 
+\index{ConsumePage@{ConsumePage}!on\_comboBox\_supermarket\_currentIndexChanged@{on\_comboBox\_supermarket\_currentIndexChanged}}
+\index{on\_comboBox\_supermarket\_currentIndexChanged@{on\_comboBox\_supermarket\_currentIndexChanged}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{on\_comboBox\_supermarket\_currentIndexChanged}{on\_comboBox\_supermarket\_currentIndexChanged}}
+{\footnotesize\ttfamily void Consume\+Page\+::on\+\_\+combo\+Box\+\_\+supermarket\+\_\+current\+Index\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_a2456c0a7ad27aa1d991c4a2d9a3334e1}{Consume\+Page\+::on\+\_\+combo\+Box\+\_\+supermarket\+\_\+current\+Index\+Changed}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & 当前文本的索引值 超市名称发生改变时调用 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_consume_page_aee88a9a496e88620383622b4ab20e4c9}\label{class_consume_page_aee88a9a496e88620383622b4ab20e4c9}} 
+\index{ConsumePage@{ConsumePage}!on\_readValue@{on\_readValue}}
+\index{on\_readValue@{on\_readValue}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{on\_readValue}{on\_readValue}}
+{\footnotesize\ttfamily void Consume\+Page\+::on\+\_\+read\+Value (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_aee88a9a496e88620383622b4ab20e4c9}{Consume\+Page\+::on\+\_\+read\+Value}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & 卡内余额 读取卡内余额后调用 \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_aee88a9a496e88620383622b4ab20e4c9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_aee88a9a496e88620383622b4ab20e4c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_consume_page_aad2165e62407257cd5a061a75e3e8cd2}\label{class_consume_page_aad2165e62407257cd5a061a75e3e8cd2}} 
+\index{ConsumePage@{ConsumePage}!onDecodeFrame@{onDecodeFrame}}
+\index{onDecodeFrame@{onDecodeFrame}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{onDecodeFrame}{onDecodeFrame}}
+{\footnotesize\ttfamily void Consume\+Page\+::on\+Decode\+Frame (\begin{DoxyParamCaption}\item[{Q\+Byte\+Array}]{bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_aad2165e62407257cd5a061a75e3e8cd2}{Consume\+Page\+::on\+Decode\+Frame}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & 接收到的数据 串口接收槽函数 \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_aad2165e62407257cd5a061a75e3e8cd2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_aad2165e62407257cd5a061a75e3e8cd2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_consume_page_a00810bb404e95cf82b060d366a127b23}\label{class_consume_page_a00810bb404e95cf82b060d366a127b23}} 
+\index{ConsumePage@{ConsumePage}!readCardId@{readCardId}}
+\index{readCardId@{readCardId}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{readCardId}{readCardId}}
+{\footnotesize\ttfamily void Consume\+Page\+::read\+Card\+Id (\begin{DoxyParamCaption}\item[{bool}]{clicked }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_a00810bb404e95cf82b060d366a127b23}{Consume\+Page\+::read\+Card\+Id}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clicked} & 无意义 识别按钮处理函数 \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_a00810bb404e95cf82b060d366a127b23_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_a00810bb404e95cf82b060d366a127b23_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_consume_page_ad00cdadd4302bfb963b4e1c2487b7653}\label{class_consume_page_ad00cdadd4302bfb963b4e1c2487b7653}} 
+\index{ConsumePage@{ConsumePage}!updateTime@{updateTime}}
+\index{updateTime@{updateTime}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{updateTime}{updateTime}}
+{\footnotesize\ttfamily void Consume\+Page\+::update\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_consume_page_ad00cdadd4302bfb963b4e1c2487b7653}{Consume\+Page\+::update\+Time}} 更新时间槽函数 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_consume_page_ad00cdadd4302bfb963b4e1c2487b7653_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_consume_page_ad00cdadd4302bfb963b4e1c2487b7653_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_consume_page_a7cfd5d301069ce79ad431d89201b1703}\label{class_consume_page_a7cfd5d301069ce79ad431d89201b1703}} 
+\index{ConsumePage@{ConsumePage}!cafeteriaAddr@{cafeteriaAddr}}
+\index{cafeteriaAddr@{cafeteriaAddr}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{cafeteriaAddr}{cafeteriaAddr}}
+{\footnotesize\ttfamily Q\+String\+List Consume\+Page\+::cafeteria\+Addr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_consume_page_a5f32182a0c6a200572cbe6a3205cfa82}\label{class_consume_page_a5f32182a0c6a200572cbe6a3205cfa82}} 
+\index{ConsumePage@{ConsumePage}!castAddr@{castAddr}}
+\index{castAddr@{castAddr}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{castAddr}{castAddr}}
+{\footnotesize\ttfamily Q\+String\+List Consume\+Page\+::cast\+Addr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_consume_page_a1dd56d09c71504247793ba91be860270}\label{class_consume_page_a1dd56d09c71504247793ba91be860270}} 
+\index{ConsumePage@{ConsumePage}!castName@{castName}}
+\index{castName@{castName}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{castName}{castName}}
+{\footnotesize\ttfamily Q\+String\+List Consume\+Page\+::cast\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_consume_page_ae32203479a3c7899b8c84f9c8390522f}\label{class_consume_page_ae32203479a3c7899b8c84f9c8390522f}} 
+\index{ConsumePage@{ConsumePage}!currentEnventoryButton@{currentEnventoryButton}}
+\index{currentEnventoryButton@{currentEnventoryButton}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{currentEnventoryButton}{currentEnventoryButton}}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ Consume\+Page\+::current\+Enventory\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_consume_page_aba7dff446b4145fe69ee3cc75c459d9d}\label{class_consume_page_aba7dff446b4145fe69ee3cc75c459d9d}} 
+\index{ConsumePage@{ConsumePage}!currentOps@{currentOps}}
+\index{currentOps@{currentOps}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{currentOps}{currentOps}}
+{\footnotesize\ttfamily int Consume\+Page\+::current\+Ops\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_consume_page_aa6871eb3b3d2065e79daf26a1685fdd2}\label{class_consume_page_aa6871eb3b3d2065e79daf26a1685fdd2}} 
+\index{ConsumePage@{ConsumePage}!foodName@{foodName}}
+\index{foodName@{foodName}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{foodName}{foodName}}
+{\footnotesize\ttfamily Q\+String\+List Consume\+Page\+::food\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_consume_page_aede14bdd9eb4b1191a557059abf83062}\label{class_consume_page_aede14bdd9eb4b1191a557059abf83062}} 
+\index{ConsumePage@{ConsumePage}!goodsName@{goodsName}}
+\index{goodsName@{goodsName}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{goodsName}{goodsName}}
+{\footnotesize\ttfamily Q\+String\+List Consume\+Page\+::goods\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_consume_page_ae863ea00b582389d2ab9e8472b84a18a}\label{class_consume_page_ae863ea00b582389d2ab9e8472b84a18a}} 
+\index{ConsumePage@{ConsumePage}!last\_value@{last\_value}}
+\index{last\_value@{last\_value}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{last\_value}{last\_value}}
+{\footnotesize\ttfamily float Consume\+Page\+::last\+\_\+value\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_consume_page_a92f39f3e65ef11f9a99dfe9821bc2042}\label{class_consume_page_a92f39f3e65ef11f9a99dfe9821bc2042}} 
+\index{ConsumePage@{ConsumePage}!m1356dll@{m1356dll}}
+\index{m1356dll@{m1356dll}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{m1356dll}{m1356dll}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_m1356_dll}{M1356\+Dll}}$\ast$ Consume\+Page\+::m1356dll\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_consume_page_a873e137bb91e921fb86363de0a298d2b}\label{class_consume_page_a873e137bb91e921fb86363de0a298d2b}} 
+\index{ConsumePage@{ConsumePage}!messageBox@{messageBox}}
+\index{messageBox@{messageBox}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{messageBox}{messageBox}}
+{\footnotesize\ttfamily Q\+Message\+Box$\ast$ Consume\+Page\+::message\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_consume_page_a708a20eabb2c5c297efd86b6ab6b9e5d}\label{class_consume_page_a708a20eabb2c5c297efd86b6ab6b9e5d}} 
+\index{ConsumePage@{ConsumePage}!sendData@{sendData}}
+\index{sendData@{sendData}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{sendData}{sendData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_send_data__t}{Send\+Data\+\_\+t}} Consume\+Page\+::send\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_consume_page_ae29d14c1d1d1ce6e6281a2dec3ade6a0}\label{class_consume_page_ae29d14c1d1d1ce6e6281a2dec3ade6a0}} 
+\index{ConsumePage@{ConsumePage}!serialPortThread@{serialPortThread}}
+\index{serialPortThread@{serialPortThread}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{serialPortThread}{serialPortThread}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_serial_port_thread}{Serial\+Port\+Thread}}$\ast$ Consume\+Page\+::serial\+Port\+Thread\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_consume_page_a9df3baec8176e9c23c9c80cdabaf7274}\label{class_consume_page_a9df3baec8176e9c23c9c80cdabaf7274}} 
+\index{ConsumePage@{ConsumePage}!supermarketAddr@{supermarketAddr}}
+\index{supermarketAddr@{supermarketAddr}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{supermarketAddr}{supermarketAddr}}
+{\footnotesize\ttfamily Q\+String\+List Consume\+Page\+::supermarket\+Addr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_consume_page_ad679cfb8a1b8af73fc6f196ea387f7f4}\label{class_consume_page_ad679cfb8a1b8af73fc6f196ea387f7f4}} 
+\index{ConsumePage@{ConsumePage}!supermarketName@{supermarketName}}
+\index{supermarketName@{supermarketName}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{supermarketName}{supermarketName}}
+{\footnotesize\ttfamily Q\+String\+List Consume\+Page\+::supermarket\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_consume_page_a2d862691698552503b8874e7b6ab6d78}\label{class_consume_page_a2d862691698552503b8874e7b6ab6d78}} 
+\index{ConsumePage@{ConsumePage}!timer@{timer}}
+\index{timer@{timer}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily Q\+Timer$\ast$ Consume\+Page\+::timer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_consume_page_a985f62c214ee04ab5a32826a2c01670a}\label{class_consume_page_a985f62c214ee04ab5a32826a2c01670a}} 
+\index{ConsumePage@{ConsumePage}!ui@{ui}}
+\index{ui@{ui}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Consume\+Page$\ast$ Consume\+Page\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_consume_page_afbdd27b55a3286494a4b5b460d7f76f6}\label{class_consume_page_afbdd27b55a3286494a4b5b460d7f76f6}} 
+\index{ConsumePage@{ConsumePage}!vendorAddr@{vendorAddr}}
+\index{vendorAddr@{vendorAddr}!ConsumePage@{ConsumePage}}
+\subsubsection{\texorpdfstring{vendorAddr}{vendorAddr}}
+{\footnotesize\ttfamily Q\+String\+List Consume\+Page\+::vendor\+Addr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/pages/consume/\mbox{\hyperlink{consumepage_8h}{consumepage.\+h}}\item 
+/home/hover/\+Desktop/\+Labs/\+H\+U\+S\+T\+\_\+\+R\+F\+I\+D\+\_\+\+Labs/\+Lab2/13.\+56\+M/14443/\+One\+\_\+\+Card\+\_\+\+System/pages/consume/\mbox{\hyperlink{consumepage_8cpp}{consumepage.\+cpp}}\end{DoxyCompactItemize}

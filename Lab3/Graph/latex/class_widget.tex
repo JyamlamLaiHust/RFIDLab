@@ -1,0 +1,378 @@
+\hypertarget{class_widget}{}\section{Widget Class Reference}
+\label{class_widget}\index{Widget@{Widget}}
+
+
+{\ttfamily \#include $<$widget.\+h$>$}
+
+
+
+Inheritance diagram for Widget\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_widget__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Widget\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_widget__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_widget_acceb5443a97ee9023250cda33f183bef}{Uhf\+\_\+\+Connect\+\_\+\+Button\+\_\+\+Click}} ()
+\item 
+void \mbox{\hyperlink{class_widget_a0186f9125495a90a0166280d932ae831}{Uhf\+\_\+\+Disconnect\+\_\+\+Button\+\_\+\+Click}} ()
+\item 
+void \mbox{\hyperlink{class_widget_a0b1204d50863ef19c6ed3e39ab455d25}{Get\+\_\+\+Info}} (Q\+Byte\+Array Info)
+\item 
+void \mbox{\hyperlink{class_widget_a349b456bf6a673058ef7449e44866e90}{Get\+\_\+\+User\+\_\+\+Info}} ()
+\item 
+void \mbox{\hyperlink{class_widget_a07120b41431597f8e2d0eb86098a6ba7}{Refresh\+Widget}} (int index)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_widget_a29531c7f141e461322981b3b579d4590}{Widget}} (Q\+Widget $\ast$parent=0)
+\item 
+void \mbox{\hyperlink{class_widget_a73ede9961382ea942361e9845fa11aa0}{Init\+\_\+\+Connect\+\_\+\+Operation\+\_\+\+Box}} ()
+\item 
+void \mbox{\hyperlink{class_widget_afb97de9294ffdbb2c64ed1f96aea9261}{get\+Serial\+Name}} (Q\+String\+List $\ast$list)
+\item 
+void \mbox{\hyperlink{class_widget_a5323ca5c4124c0d187a2f1398ef48844}{Set\+\_\+\+Title}} ()
+\item 
+void \mbox{\hyperlink{class_widget_ac611086a6f74fe7bab712f23ab7126d8}{Set\+\_\+\+Tab}} ()
+\item 
+void \mbox{\hyperlink{class_widget_ac60c5a62bc3197fbc7ade8f40df70c70}{set\+Slot}} ()
+\item 
+\mbox{\hyperlink{class_widget_aa24f66bcbaaec6d458b0980e8c8eae65}{$\sim$\+Widget}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Push\+Button $\ast$ \mbox{\hyperlink{class_widget_a61a0fc24c1e493f10809a38be1672b2f}{Connect\+\_\+\+Push\+Button}} \mbox{[}\mbox{\hyperlink{widget_8h_a8c7377d6ed6b5f2e3d196cda9bd66d91}{C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+U\+NT}}\mbox{]}
+\item 
+Q\+Combo\+Box $\ast$ \mbox{\hyperlink{class_widget_aa4932b7d383548bd1c3ef9fdc53b77b3}{Combo\+Box}} \mbox{[}\mbox{\hyperlink{widget_8h_a1d2dbe60aded23affb089e8fa1ea345f}{C\+O\+M\+B\+O\+B\+O\+X\+\_\+\+C\+O\+U\+NT}}\mbox{]}
+\item 
+Q\+Label $\ast$ \mbox{\hyperlink{class_widget_a4ee54afb0ebf24cd30a1a1471118abe4}{Title}}
+\item 
+Q\+Tab\+Widget $\ast$ \mbox{\hyperlink{class_widget_a27055a34cc856c2f2b8ddb704ac321fc}{Tab}}
+\item 
+Q\+Group\+Box $\ast$ \mbox{\hyperlink{class_widget_a51813d6ac9183c588f40b130d4e54cc9}{Connect\+Group\+Box}}
+\item 
+\mbox{\hyperlink{class_borrow___return}{Borrow\+\_\+\+Return}} $\ast$ \mbox{\hyperlink{class_widget_a53a21a665bf0bf478e56d2605dd48d90}{borrow\+\_\+return}}
+\item 
+\mbox{\hyperlink{class_record}{Record}} $\ast$ \mbox{\hyperlink{class_widget_add2a384a25f38b91a1e9cb30da7101b0}{record}}
+\item 
+\mbox{\hyperlink{class_user_manage}{User\+Manage}} $\ast$ \mbox{\hyperlink{class_widget_ab5466d1d1f1c9e475eb86b2644af7e4b}{user\+\_\+manage}}
+\item 
+\mbox{\hyperlink{class_books_manage}{Books\+Manage}} $\ast$ \mbox{\hyperlink{class_widget_a605a0b8528b41b051ff0b8ff4fee73ed}{books\+\_\+manage}}
+\item 
+\mbox{\hyperlink{class_sqlite}{Sqlite}} $\ast$ \mbox{\hyperlink{class_widget_acad204d397b66aa356c924b30b7965ec}{sql}}
+\item 
+\mbox{\hyperlink{class_u_h_f___thread}{U\+H\+F\+\_\+\+Thread}} $\ast$ \mbox{\hyperlink{class_widget_ae73de6c68cde3ec8fe6954c51407f57f}{uhf}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_widget_a29531c7f141e461322981b3b579d4590}\label{class_widget_a29531c7f141e461322981b3b579d4590}} 
+\index{Widget@{Widget}!Widget@{Widget}}
+\index{Widget@{Widget}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{Widget()}{Widget()}}
+{\footnotesize\ttfamily Widget\+::\+Widget (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_widget_a29531c7f141e461322981b3b579d4590_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_widget_aa24f66bcbaaec6d458b0980e8c8eae65}\label{class_widget_aa24f66bcbaaec6d458b0980e8c8eae65}} 
+\index{Widget@{Widget}!````~Widget@{$\sim$Widget}}
+\index{````~Widget@{$\sim$Widget}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{$\sim$Widget()}{~Widget()}}
+{\footnotesize\ttfamily Widget\+::$\sim$\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_widget_a0b1204d50863ef19c6ed3e39ab455d25}\label{class_widget_a0b1204d50863ef19c6ed3e39ab455d25}} 
+\index{Widget@{Widget}!Get\_Info@{Get\_Info}}
+\index{Get\_Info@{Get\_Info}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{Get\_Info}{Get\_Info}}
+{\footnotesize\ttfamily void Widget\+::\+Get\+\_\+\+Info (\begin{DoxyParamCaption}\item[{Q\+Byte\+Array}]{Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_widget_a0b1204d50863ef19c6ed3e39ab455d25_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_widget_a0b1204d50863ef19c6ed3e39ab455d25_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_widget_a349b456bf6a673058ef7449e44866e90}\label{class_widget_a349b456bf6a673058ef7449e44866e90}} 
+\index{Widget@{Widget}!Get\_User\_Info@{Get\_User\_Info}}
+\index{Get\_User\_Info@{Get\_User\_Info}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{Get\_User\_Info}{Get\_User\_Info}}
+{\footnotesize\ttfamily void Widget\+::\+Get\+\_\+\+User\+\_\+\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_widget_a349b456bf6a673058ef7449e44866e90_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_widget_a349b456bf6a673058ef7449e44866e90_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_widget_afb97de9294ffdbb2c64ed1f96aea9261}\label{class_widget_afb97de9294ffdbb2c64ed1f96aea9261}} 
+\index{Widget@{Widget}!getSerialName@{getSerialName}}
+\index{getSerialName@{getSerialName}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{getSerialName()}{getSerialName()}}
+{\footnotesize\ttfamily void Widget\+::get\+Serial\+Name (\begin{DoxyParamCaption}\item[{Q\+String\+List $\ast$}]{list }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_widget_afb97de9294ffdbb2c64ed1f96aea9261_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_widget_a73ede9961382ea942361e9845fa11aa0}\label{class_widget_a73ede9961382ea942361e9845fa11aa0}} 
+\index{Widget@{Widget}!Init\_Connect\_Operation\_Box@{Init\_Connect\_Operation\_Box}}
+\index{Init\_Connect\_Operation\_Box@{Init\_Connect\_Operation\_Box}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{Init\_Connect\_Operation\_Box()}{Init\_Connect\_Operation\_Box()}}
+{\footnotesize\ttfamily void Widget\+::\+Init\+\_\+\+Connect\+\_\+\+Operation\+\_\+\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_widget_a73ede9961382ea942361e9845fa11aa0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_widget_a73ede9961382ea942361e9845fa11aa0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_widget_a07120b41431597f8e2d0eb86098a6ba7}\label{class_widget_a07120b41431597f8e2d0eb86098a6ba7}} 
+\index{Widget@{Widget}!RefreshWidget@{RefreshWidget}}
+\index{RefreshWidget@{RefreshWidget}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{RefreshWidget}{RefreshWidget}}
+{\footnotesize\ttfamily void Widget\+::\+Refresh\+Widget (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_widget_a07120b41431597f8e2d0eb86098a6ba7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_widget_a07120b41431597f8e2d0eb86098a6ba7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_widget_ac611086a6f74fe7bab712f23ab7126d8}\label{class_widget_ac611086a6f74fe7bab712f23ab7126d8}} 
+\index{Widget@{Widget}!Set\_Tab@{Set\_Tab}}
+\index{Set\_Tab@{Set\_Tab}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{Set\_Tab()}{Set\_Tab()}}
+{\footnotesize\ttfamily void Widget\+::\+Set\+\_\+\+Tab (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_widget_ac611086a6f74fe7bab712f23ab7126d8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_widget_a5323ca5c4124c0d187a2f1398ef48844}\label{class_widget_a5323ca5c4124c0d187a2f1398ef48844}} 
+\index{Widget@{Widget}!Set\_Title@{Set\_Title}}
+\index{Set\_Title@{Set\_Title}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{Set\_Title()}{Set\_Title()}}
+{\footnotesize\ttfamily void Widget\+::\+Set\+\_\+\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{class_widget_a5323ca5c4124c0d187a2f1398ef48844_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_widget_ac60c5a62bc3197fbc7ade8f40df70c70}\label{class_widget_ac60c5a62bc3197fbc7ade8f40df70c70}} 
+\index{Widget@{Widget}!setSlot@{setSlot}}
+\index{setSlot@{setSlot}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{setSlot()}{setSlot()}}
+{\footnotesize\ttfamily void Widget\+::set\+Slot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_widget_ac60c5a62bc3197fbc7ade8f40df70c70_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_widget_ac60c5a62bc3197fbc7ade8f40df70c70_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_widget_acceb5443a97ee9023250cda33f183bef}\label{class_widget_acceb5443a97ee9023250cda33f183bef}} 
+\index{Widget@{Widget}!Uhf\_Connect\_Button\_Click@{Uhf\_Connect\_Button\_Click}}
+\index{Uhf\_Connect\_Button\_Click@{Uhf\_Connect\_Button\_Click}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{Uhf\_Connect\_Button\_Click}{Uhf\_Connect\_Button\_Click}}
+{\footnotesize\ttfamily void Widget\+::\+Uhf\+\_\+\+Connect\+\_\+\+Button\+\_\+\+Click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_widget_acceb5443a97ee9023250cda33f183bef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_widget_acceb5443a97ee9023250cda33f183bef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_widget_a0186f9125495a90a0166280d932ae831}\label{class_widget_a0186f9125495a90a0166280d932ae831}} 
+\index{Widget@{Widget}!Uhf\_Disconnect\_Button\_Click@{Uhf\_Disconnect\_Button\_Click}}
+\index{Uhf\_Disconnect\_Button\_Click@{Uhf\_Disconnect\_Button\_Click}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{Uhf\_Disconnect\_Button\_Click}{Uhf\_Disconnect\_Button\_Click}}
+{\footnotesize\ttfamily void Widget\+::\+Uhf\+\_\+\+Disconnect\+\_\+\+Button\+\_\+\+Click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_widget_a0186f9125495a90a0166280d932ae831_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_widget_a0186f9125495a90a0166280d932ae831_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_widget_a605a0b8528b41b051ff0b8ff4fee73ed}\label{class_widget_a605a0b8528b41b051ff0b8ff4fee73ed}} 
+\index{Widget@{Widget}!books\_manage@{books\_manage}}
+\index{books\_manage@{books\_manage}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{books\_manage}{books\_manage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_books_manage}{Books\+Manage}}$\ast$ Widget\+::books\+\_\+manage\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_widget_a53a21a665bf0bf478e56d2605dd48d90}\label{class_widget_a53a21a665bf0bf478e56d2605dd48d90}} 
+\index{Widget@{Widget}!borrow\_return@{borrow\_return}}
+\index{borrow\_return@{borrow\_return}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{borrow\_return}{borrow\_return}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_borrow___return}{Borrow\+\_\+\+Return}}$\ast$ Widget\+::borrow\+\_\+return\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_widget_aa4932b7d383548bd1c3ef9fdc53b77b3}\label{class_widget_aa4932b7d383548bd1c3ef9fdc53b77b3}} 
+\index{Widget@{Widget}!ComboBox@{ComboBox}}
+\index{ComboBox@{ComboBox}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{ComboBox}{ComboBox}}
+{\footnotesize\ttfamily Q\+Combo\+Box$\ast$ Widget\+::\+Combo\+Box\mbox{[}\mbox{\hyperlink{widget_8h_a1d2dbe60aded23affb089e8fa1ea345f}{C\+O\+M\+B\+O\+B\+O\+X\+\_\+\+C\+O\+U\+NT}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_widget_a61a0fc24c1e493f10809a38be1672b2f}\label{class_widget_a61a0fc24c1e493f10809a38be1672b2f}} 
+\index{Widget@{Widget}!Connect\_PushButton@{Connect\_PushButton}}
+\index{Connect\_PushButton@{Connect\_PushButton}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{Connect\_PushButton}{Connect\_PushButton}}
+{\footnotesize\ttfamily Q\+Push\+Button$\ast$ Widget\+::\+Connect\+\_\+\+Push\+Button\mbox{[}\mbox{\hyperlink{widget_8h_a8c7377d6ed6b5f2e3d196cda9bd66d91}{C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+C\+O\+U\+NT}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_widget_a51813d6ac9183c588f40b130d4e54cc9}\label{class_widget_a51813d6ac9183c588f40b130d4e54cc9}} 
+\index{Widget@{Widget}!ConnectGroupBox@{ConnectGroupBox}}
+\index{ConnectGroupBox@{ConnectGroupBox}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{ConnectGroupBox}{ConnectGroupBox}}
+{\footnotesize\ttfamily Q\+Group\+Box$\ast$ Widget\+::\+Connect\+Group\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_widget_add2a384a25f38b91a1e9cb30da7101b0}\label{class_widget_add2a384a25f38b91a1e9cb30da7101b0}} 
+\index{Widget@{Widget}!record@{record}}
+\index{record@{record}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{record}{record}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_record}{Record}}$\ast$ Widget\+::record\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_widget_acad204d397b66aa356c924b30b7965ec}\label{class_widget_acad204d397b66aa356c924b30b7965ec}} 
+\index{Widget@{Widget}!sql@{sql}}
+\index{sql@{sql}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{sql}{sql}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sqlite}{Sqlite}}$\ast$ Widget\+::sql\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_widget_a27055a34cc856c2f2b8ddb704ac321fc}\label{class_widget_a27055a34cc856c2f2b8ddb704ac321fc}} 
+\index{Widget@{Widget}!Tab@{Tab}}
+\index{Tab@{Tab}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{Tab}{Tab}}
+{\footnotesize\ttfamily Q\+Tab\+Widget$\ast$ Widget\+::\+Tab\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_widget_a4ee54afb0ebf24cd30a1a1471118abe4}\label{class_widget_a4ee54afb0ebf24cd30a1a1471118abe4}} 
+\index{Widget@{Widget}!Title@{Title}}
+\index{Title@{Title}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{Title}{Title}}
+{\footnotesize\ttfamily Q\+Label$\ast$ Widget\+::\+Title\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_widget_ae73de6c68cde3ec8fe6954c51407f57f}\label{class_widget_ae73de6c68cde3ec8fe6954c51407f57f}} 
+\index{Widget@{Widget}!uhf@{uhf}}
+\index{uhf@{uhf}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{uhf}{uhf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_u_h_f___thread}{U\+H\+F\+\_\+\+Thread}}$\ast$ Widget\+::uhf\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_widget_ab5466d1d1f1c9e475eb86b2644af7e4b}\label{class_widget_ab5466d1d1f1c9e475eb86b2644af7e4b}} 
+\index{Widget@{Widget}!user\_manage@{user\_manage}}
+\index{user\_manage@{user\_manage}!Widget@{Widget}}
+\subsubsection{\texorpdfstring{user\_manage}{user\_manage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_user_manage}{User\+Manage}}$\ast$ Widget\+::user\+\_\+manage\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{widget_8h}{widget.\+h}}\item 
+\mbox{\hyperlink{widget_8cpp}{widget.\+cpp}}\end{DoxyCompactItemize}

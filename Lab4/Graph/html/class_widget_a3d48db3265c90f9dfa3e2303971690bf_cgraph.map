@@ -1,0 +1,38 @@
+<map id="Widget::Init" name="Widget::Init">
+<area shape="rect" id="node1" title=" " alt="" coords="5,199,93,225"/>
+<area shape="rect" id="node2" href="$class_widget.html#a8499caa320e65f51b4ccf7d77ff82176" title=" " alt="" coords="174,5,293,32"/>
+<area shape="rect" id="node3" href="$class_widget.html#a2f0684dd82782945ee9dc918d9ac30a5" title=" " alt="" coords="164,56,303,83"/>
+<area shape="rect" id="node4" href="$class_widget.html#a73ede9961382ea942361e9845fa11aa0" title=" " alt="" coords="162,107,305,149"/>
+<area shape="rect" id="node6" href="$class_widget.html#a0565863c4d5f710fa6b503767027959b" title=" " alt="" coords="158,173,309,200"/>
+<area shape="rect" id="node7" href="$class_widget.html#a2fb10278c840ae57af473502a583ab20" title=" " alt="" coords="141,224,325,251"/>
+<area shape="rect" id="node8" href="$class_widget.html#a1b530946ccda60d3b1bd124360d93c4f" title=" " alt="" coords="150,275,317,301"/>
+<area shape="rect" id="node9" href="$class_widget.html#ac60c5a62bc3197fbc7ade8f40df70c70" title=" " alt="" coords="178,325,289,352"/>
+<area shape="rect" id="node36" href="$class_sqlite.html#af3e9ee9a4f73cfc86936a5cdee703c31" title=" " alt="" coords="179,376,288,403"/>
+<area shape="rect" id="node5" href="$class_widget.html#afb97de9294ffdbb2c64ed1f96aea9261" title=" " alt="" coords="385,31,540,57"/>
+<area shape="rect" id="node10" href="$class_widget.html#acceb5443a97ee9023250cda33f183bef" title=" " alt="" coords="390,234,535,275"/>
+<area shape="rect" id="node18" href="$class_widget.html#a0186f9125495a90a0166280d932ae831" title=" " alt="" coords="381,574,544,615"/>
+<area shape="rect" id="node20" href="$class_widget.html#aaa7751b71135c9c841b9036d25570134" title=" " alt="" coords="395,665,530,706"/>
+<area shape="rect" id="node22" href="$class_widget.html#aeec0c7444513091532005eef26048a91" title=" " alt="" coords="631,209,780,250"/>
+<area shape="rect" id="node24" href="$class_widget.html#a6ef0cb76aab26c216bdd0584d32bdd1d" title=" " alt="" coords="638,579,773,621"/>
+<area shape="rect" id="node26" href="$class_widget.html#a6fc213aa66cf58f876e117af46f6aa0a" title=" " alt="" coords="377,401,549,428"/>
+<area shape="rect" id="node27" href="$class_widget.html#a0e7b4792c1f760b129a08ac63107a018" title=" " alt="" coords="373,452,552,479"/>
+<area shape="rect" id="node28" href="$class_widget.html#a9dc8ecbea303faeb17e08ef888754cf9" title=" " alt="" coords="404,81,521,108"/>
+<area shape="rect" id="node29" href="$class_widget.html#a5ba1dc5f780dea723837e22b819a769e" title=" " alt="" coords="399,132,526,159"/>
+<area shape="rect" id="node30" href="$class_widget.html#a25fcbea5c404362947c24794373a0968" title=" " alt="" coords="403,351,523,377"/>
+<area shape="rect" id="node35" href="$class_widget.html#ab0e14fcdbe3b8a8541160d01f0eef979" title=" " alt="" coords="399,183,526,209"/>
+<area shape="rect" id="node11" href="$class_u_h_f___thread.html#a8a872370902a9eb489a836ab28d8044c" title=" " alt="" coords="609,56,802,83"/>
+<area shape="rect" id="node12" href="$class_u_h_f___thread.html#a8fc7d9ed28c737bc95cc33fc780b8bc2" title=" " alt="" coords="625,107,786,133"/>
+<area shape="rect" id="node14" href="$class_u_h_f___thread.html#a5c1a49f76f8e3a29fb009b7d638e5488" title=" " alt="" coords="615,157,795,184"/>
+<area shape="rect" id="node16" href="$class_widget.html#a426f2aea1215a9b0120eb56e986ce1e9" title=" " alt="" coords="635,376,775,403"/>
+<area shape="rect" id="node13" href="$class_m900_dll.html#a1dc3932fe303c73e955cb116b404e197" title=" " alt="" coords="861,107,1020,133"/>
+<area shape="rect" id="node15" href="$class_m900_dll.html#a0f47f84947ac9f5bdd7080319663eb31" title=" " alt="" coords="859,157,1023,184"/>
+<area shape="rect" id="node17" href="$class_sqlite.html#ae5ba200378ca9bddfe57e2f8421ce949" title=" " alt="" coords="891,351,990,377"/>
+<area shape="rect" id="node19" href="$class_u_h_f___thread.html#a4d29770cacd38ec97148b8642df794b8" title=" " alt="" coords="600,645,811,672"/>
+<area shape="rect" id="node21" href="$class_regist___widget.html#a1493d37070ac8d626fafa8239be147a7" title=" " alt="" coords="638,697,773,738"/>
+<area shape="rect" id="node23" href="$class_sqlite.html#ae7d3c48b92d42ea9f55b9e8880a8052a" title=" " alt="" coords="873,220,1008,247"/>
+<area shape="rect" id="node25" href="$class_sqlite.html#a30cc57d4645d2e63b3b3ee07f6ab1c94" title=" " alt="" coords="901,503,981,529"/>
+<area shape="rect" id="node31" href="$class_widget.html#a9288c149d01aec945f48b6f064f3c7dd" title=" " alt="" coords="642,427,769,453"/>
+<area shape="rect" id="node33" href="$class_widget.html#a28a22d7c79dd5af8dbe573ace468d61e" title=" " alt="" coords="637,275,774,301"/>
+<area shape="rect" id="node32" href="$class_sqlite.html#a128a3fe0ff3ab22960d5e5ec1b5591c3" title=" " alt="" coords="877,427,1004,453"/>
+<area shape="rect" id="node34" href="$class_sqlite.html#a4120092c96b9000b83a299d60635f2a3" title=" " alt="" coords="868,275,1013,301"/>
+</map>
