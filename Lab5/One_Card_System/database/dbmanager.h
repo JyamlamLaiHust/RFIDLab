@@ -10,6 +10,12 @@
 #include <QDebug>
 #include "database_api.h"
 #include "persontablemodel.h"
+
+#include "cardtablemodel.h"
+#include "customertablemodel.h"
+#include "custormerroomtablemodel.h"
+#include "roomtablemodel.h"
+
 #include "recordtablemodel.h"
 #include "writeofftablemodel.h"
 #include "registertablemodel.h"

@@ -9,6 +9,10 @@
 #define TABLE_NAME_WRITEOFF "table_WriteOff"
 #define TABLE_NAME_RECORD   "table_Records"
 #define TABLE_NAME_RECHARGE "table_Recharge"
+#define TABLE_NAME_CARD "table_Card"
+#define TABLE_NAME_CUSTOMER "table_Customer"
+#define TABLE_NAME_CUSTOMERROOM "table_CustomRoom"
+#define TABLE_NAME_ROOM "table_Room"
 
 //***************外部API接口*****************//
 extern void DB_Init();//DB初始化

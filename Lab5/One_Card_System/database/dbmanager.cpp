@@ -1,4 +1,5 @@
 #include "dbmanager.h"
+
 /**************************************
  *作者: jianghj@up-tech.com
  *日期: 2016-09-20
@@ -8,6 +9,27 @@ DBManager::DBManager(QObject *parent) : QObject(parent)
 {
     if(this->createDB(DATABASE_NAME))               //create DB by DB name
     {
+        if(!this->tableExist(TABLE_NAME_CARD))    //op CardTableModel
+        {
+            CardTableModel card;
+            card.createTable();
+        }
+        if(!this->tableExist(TABLE_NAME_CUSTOMER))    //op PersonTableModel
+        {
+            CustomerTableModel customer;
+            customer.createTable();
+        }
+        if(!this->tableExist(TABLE_NAME_CUSTOMERROOM))    //op PersonTableModel
+        {
+            CustomerRoomTableModel customerRoom;
+            customerRoom.createTable();
+        }
+        if(!this->tableExist(TABLE_NAME_ROOM))    //op PersonTableModel
+        {
+            RoomTableModel room;
+            room.createTable();
+        }
+
         if(!this->tableExist(TABLE_NAME_PERSON))    //op PersonTableModel
         {
             PersonTableModel p;
