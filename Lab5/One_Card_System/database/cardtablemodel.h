@@ -24,10 +24,11 @@ public:
     explicit CardTableModel(QObject *parent = 0);
     void createTable();//创建表
     void bindTable(void);//绑定表
-    int findRecordById(const QString cardId);//根据用户Id查询记录
+    int findRecordByCardId(const QString cardId);//根据用户Id查询记录
+    int findRecordByRoomId(const QString roomId);//根据用户Id查询记录
     QSqlRecord findRecordByName(const QString customerName);//根据用户名查询记录
     //插入记录
-    bool insertRecords(QString cardId, QString customerName, QString telephoneNumber, QString isUse);
+    bool insertRecords(QString number, QString cardId, QString roomId, QDateTime checkInTime, QDateTime checkOutTime, bool isUse);
     //删除记录
     bool deleteRecords(int row);
 

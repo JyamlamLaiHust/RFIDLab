@@ -41,10 +41,13 @@ void RegistorWidget::on_btn_Register_clicked()
     QString userName = ui->lineEdit_Name->text();
     QString idCard = ui->lineEdit_IdCard->text();
     QString roomType = ui->comboBox_RoomType->currentText();
-    QString liveTime = ui->comboBox_Time->currentText();
+    QDateTime checkInTime = ui->dateTimeEdit_checkInTime->dateTime();
+    QDateTime checkOutTime = ui->dateTimeEdit_checkOutTime->dateTime();
     QString personRemark = ui->textEdit_PersonMark->toPlainText();
     QString cardRemark = ui->textEdit_CardMark->toPlainText();
     QString cardId = ui->lineEdit_CardId->text();
+    QString roomId = ui->lineEdit_RoomId->text();
+
     message.setStandardButtons(QMessageBox::Yes);
     message.setWindowTitle(tr("温馨提示"));
     message.setIcon(QMessageBox::Warning);
@@ -67,40 +70,57 @@ void RegistorWidget::on_btn_Register_clicked()
         message.exec();
         return;
     }
-    QString personId = uuid->createUuid().toString();
+
+    QString number = uuid->createUuid().toString();
     QString time = CurrentDateTime();
-    RegisterTableModel *registerTableModel =  new RegisterTableModel(this);
-    registerTableModel->bindTable();
-    PersonTableModel *personTableModel =  new PersonTableModel(this);
-    personTableModel->bindTable();
-    if(registerTableModel->findRecord(cardId) != -1)
+
+//    RegisterTableModel *registerTableModel =  new RegisterTableModel(this);
+//    registerTableModel->bindTable();
+
+    CardTableModel *cardTable = new CardTableModel(this);
+    cardTable->bindTable();
+
+    if(cardTable->findRecordByCardId(cardId) != -1)
     {
         message.setText(tr("此卡已经注册，请换张卡再试!"));
         message.exec();
-        delete registerTableModel;
+        delete cardTable;
         return ;
     }
 
-    if(!registerTableModel->addRecord(cardId,personId,time,cardRemark))
+    if(cardTable->findRecordByRoomId(roomId) != -1)
+    {
+        message.setText(tr("此房号有人入住，请更换房号再试!"));
+        message.exec();
+        delete cardTable;
+        return ;
+    }
+
+
+    if(!cardTable->insertRecords(number, cardId, roomId, checkInTime, checkOutTime, true))
     {
         message.setText(tr("卡号信息保存失败，请重试!"));
         message.exec();
-        delete registerTableModel;
+        delete cardTable;
         return ;
     }
-    if(!personTableModel->insertRecords(personId,userName,roomType,personRemark))
-    {
-        message.setText(tr("人员信息保存失败，请重试!"));
-        message.exec();
-        delete personTableModel;
-        return ;
-    }
-    DialogCardConfig *dcc = new DialogCardConfig(this,serialThread);
-    dcc->setWindowTitle(tr("初始化卡"));
-    dcc->exec();
-    delete dcc;
-    delete registerTableModel;
-    delete personTableModel;
+
+//    PersonTableModel *personTableModel =  new PersonTableModel(this);
+//    personTableModel->bindTable();
+
+//    if(!personTableModel->insertRecords(personId,userName,roomType,personRemark))
+//    {
+//        message.setText(tr("人员信息保存失败，请重试!"));
+//        message.exec();
+//        delete personTableModel;
+//        return ;
+//    }
+
+//    DialogCardConfig *dcc = new DialogCardConfig(this,serialThread);
+//    dcc->setWindowTitle(tr("初始化卡"));
+//    dcc->exec();
+//    delete dcc;
+    delete cardTable;
 }
 /**
  * @brief RegistorWidget::on_btn_Reset_clicked
@@ -113,6 +133,7 @@ void RegistorWidget::on_btn_Reset_clicked()
     ui->textEdit_CardMark->clear();
     ui->lineEdit_CardId->clear();
 }
+
 /**
  * @brief RegistorWidget::on_btn_Inventory_clicked
  * 识别按钮点击事件
@@ -139,9 +160,11 @@ void RegistorWidget::on_btn_Inventory_clicked()
  */
 void RegistorWidget::on_btn_Refresh_clicked()
 {
-    registerTableModel = new RegisterTableModel(this);
-    registerTableModel->bindTable();
-    ui->tableView->setModel(registerTableModel);
+//    registerTableModel = new RegisterTableModel(this);
+//    registerTableModel->bindTable();
+    cardTableModel = new CardTableModel(this);
+    cardTableModel->bindTable();
+    ui->tableView->setModel(cardTableModel);
     ui->tableView->setEditTriggers(QTableView::NoEditTriggers);
     ui->tableView->resizeColumnsToContents();
     ui->tableView->horizontalHeader()->setStretchLastSection(true);

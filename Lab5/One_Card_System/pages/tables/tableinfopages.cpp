@@ -43,7 +43,6 @@ void TableInfoPages::on_btn_Query_clicked()
         QString str = "时间 Between '" + startTimeStr + "' and '" + endTimeStr + "'";
         currentModel->setFilter(str);
         updateTableView(currentModel);
-
     }
         break;
     case 1: //根据卡号进行筛选查询
@@ -57,11 +56,11 @@ void TableInfoPages::on_btn_Query_clicked()
         break;
     case 2://根据姓名进行筛选查询
     {
-        QString personName = ui->lineEdit_2->text();
-        QString str =  tr("姓名 = '%1'").arg(personName);
+        QString customerName = ui->lineEdit_2->text();
+        QString str =  tr("姓名 = '%1'").arg(customerName);
         currentModel->setFilter(str);
         updateTableView(currentModel);
-        qDebug() << personName;
+        qDebug() << customerName;
     }
         break;
     default:
@@ -75,50 +74,61 @@ void TableInfoPages::on_btn_Query_clicked()
  */
 void TableInfoPages::currentAction(QAction *action)
 {
-    if(action->text() == tr("注销记录"))
+    if(action->text() == tr("退房记录"))
     {
         WriteOffTableModel *writeOffTableModel = new WriteOffTableModel(this);
         writeOffTableModel->bindTable();
         updateTableView(writeOffTableModel);
+
         ui->comboBox->clear();
         ui->comboBox->addItem("时间");
         ui->comboBox->addItem("卡号");
     }
-    else if(action->text() == tr("注册记录"))
+    else if(action->text() == tr("入住记录"))
     {
-        RegisterTableModel *registerTableModel = new RegisterTableModel(this);
-        registerTableModel->bindTable();
-        updateTableView(registerTableModel);
+//        RegisterTableModel *registerTableModel = new RegisterTableModel(this);
+//        registerTableModel->bindTable();
+        CardTableModel *cardTableModel = new CardTableModel(this);
+        cardTableModel->bindTable();
+
+        updateTableView(cardTableModel);
         ui->comboBox->clear();
         ui->comboBox->addItem("时间");
         ui->comboBox->addItem("卡号");
     }
-    else if(action->text() == tr("消费记录"))
+
+    else if(action->text() == tr("刷卡记录"))
     {
-        RecordTableModel *recordTableModel = new RecordTableModel(this);
-        recordTableModel->bindTable();
-        updateTableView(recordTableModel);
+//        RecordTableModel *recordTableModel = new RecordTableModel(this);
+//        recordTableModel->bindTable();
+        CustomerRoomTableModel *customerRoomTableModel = new CustomerRoomTableModel(this);
+        customerRoomTableModel->bindTable();
+        updateTableView(customerRoomTableModel);
+
         ui->comboBox->clear();
-        ui->comboBox->addItem("时间");
         ui->comboBox->addItem("卡号");
     }
-    else if(action->text() == tr("人员信息"))
+    else if(action->text() == tr("客人信息"))
     {
-        PersonTableModel *personTableModel = new PersonTableModel(this);
-        personTableModel->bindTable();
-        updateTableView(personTableModel);
+//        PersonTableModel *personTableModel = new PersonTableModel(this);
+//        personTableModel->bindTable();
+//        updateTableView(personTableModel);
+        CustomerTableModel *customerTableModel = new CustomerTableModel(this);
+        customerTableModel->bindTable();
+        updateTableView(customerTableModel);
         ui->comboBox->clear();
+        ui->comboBox->addItem("卡号");
         ui->comboBox->addItem("姓名");
     }
-    else if(action->text() == tr("充值记录"))
-    {
-        RechargeTableModel *rechargTableModel = new RechargeTableModel(this);
-        rechargTableModel->bindTable();
-        updateTableView(rechargTableModel);
-        ui->comboBox->clear();
-        ui->comboBox->addItem("时间");
-        ui->comboBox->addItem("卡号");
-    }
+//    else if(action->text() == tr("充值记录"))
+//    {
+//        RechargeTableModel *rechargTableModel = new RechargeTableModel(this);
+//        rechargTableModel->bindTable();
+//        updateTableView(rechargTableModel);
+//        ui->comboBox->clear();
+//        ui->comboBox->addItem("时间");
+//        ui->comboBox->addItem("卡号");
+//    }
 }
 /**
  * @brief TableInfoPages::updateTableView

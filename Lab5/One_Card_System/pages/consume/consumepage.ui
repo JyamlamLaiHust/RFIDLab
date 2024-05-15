@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>759</width>
-    <height>545</height>
+    <width>768</width>
+    <height>590</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,7 +23,7 @@
       </font>
      </property>
      <property name="title">
-      <string>消费模拟</string>
+      <string>刷卡模拟</string>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_9">
       <item>
@@ -56,7 +56,7 @@
            </font>
           </property>
           <property name="title">
-           <string>食堂</string>
+           <string>电梯</string>
           </property>
           <layout class="QGridLayout" name="gridLayout_9" columnstretch="3,2">
            <item row="0" column="0">
@@ -333,7 +333,7 @@
            </font>
           </property>
           <property name="title">
-           <string>教学楼</string>
+           <string/>
           </property>
           <layout class="QGridLayout" name="gridLayout_10" columnstretch="3,2">
            <item row="0" column="0">

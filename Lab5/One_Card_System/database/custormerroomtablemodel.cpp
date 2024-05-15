@@ -10,7 +10,7 @@
 CustomerRoomTableModel::CustomerRoomTableModel(QObject *parent) : QSqlTableModel(parent)
 {
     tableName = TABLE_NAME_CUSTOMERROOM;
-    header<<QObject::trUtf8("卡号")<<QObject::trUtf8("打开时间");
+    header<<QObject::trUtf8("卡号")<<QObject::trUtf8("刷卡时间");
 }
 
 /**
@@ -80,12 +80,12 @@ int CustomerRoomTableModel::findRecordById(const QString cardId)
  * @return 成功返回true，失败返回false
  * 向表格中插入记录
  */
-bool CustomerRoomTableModel::insertRecords(QString cardId, QString openTime)
+bool CustomerRoomTableModel::insertRecords(QString cardId, QString Time)
 {
     QSqlQuery query;
     QString str;
     str  = tr("insert into ") + tableName + tr(" values( \"%1\" , \"%2\" ) ")
-           .arg(cardId).arg(openTime);
+           .arg(cardId).arg(Time);
     qDebug()<<"Sql: " << str.toUtf8().data();
     return query.exec(str);
 }

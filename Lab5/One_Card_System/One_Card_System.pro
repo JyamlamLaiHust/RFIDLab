@@ -34,7 +34,11 @@ SOURCES += main.cpp\
     pages/consume/consumepage.cpp \
     pages/registor/dialogcardconfig.cpp \
     pages/recharge/rechargedialog.cpp \
-    database/rechargetablemodel.cpp
+    database/rechargetablemodel.cpp \
+    database/customertablemodel.cpp \
+    database/custormerroomtablemodel.cpp \
+    database/roomtablemodel.cpp \
+    database/cardtablemodel.cpp
 
 HEADERS  += mainwindow.h \
     database/database_api.h \
@@ -60,7 +64,11 @@ HEADERS  += mainwindow.h \
     pages/consume/consumepage.h \
     pages/registor/dialogcardconfig.h \
     pages/recharge/rechargedialog.h \
-    database/rechargetablemodel.h
+    database/rechargetablemodel.h \
+    database/customertablemodel.h \
+    database/custormerroomtablemodel.h \
+    database/roomtablemodel.h \
+    database/cardtablemodel.h
 
 FORMS    += mainwindow.ui \
     pages/welcom/mainpage.ui \

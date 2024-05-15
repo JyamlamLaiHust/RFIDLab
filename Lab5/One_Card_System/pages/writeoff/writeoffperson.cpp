@@ -28,9 +28,12 @@ void WriteOffPerson::on_btn_LogOff_clicked()
     QString cardId = ui->lineEdit_CardId->text();
     QString logOffMark = ui->textEdit_Mark->toPlainText();
     QString currentTime = CurrentDateTime();
-    //注册表的model
-    RegisterTableModel *registerTable = new RegisterTableModel(this);
-    registerTable->bindTable();
+    //卡表的model
+    CardTableModel *cardTable = new CardTableModel(this);
+    cardTable->bindTable();
+//    RegisterTableModel *registerTable = new RegisterTableModel(this);
+//    registerTable->bindTable();
+
     //注销表的model
     WriteOffTableModel *writeOffTable = new WriteOffTableModel(this);
     writeOffTable->bindTable();
@@ -46,14 +49,14 @@ void WriteOffPerson::on_btn_LogOff_clicked()
     message.setWindowTitle(tr("温馨提示"));
     message.setIcon(QMessageBox::Warning);
 
-    int row = registerTable->findRecord(cardId);
+    int row = cardTable->findRecordByCardId(cardId);
     if(row >= 0)
     {
-        QSqlRecord record = registerTable->record(row);
+        QSqlRecord record = cardTable->record(row);
         QString PersonId = record.value(1).toString();
         int recordId = personTable->findRecordById(PersonId);
         personTable->deleteRecords(recordId);
-        registerTable->deleteRecord(cardId);
+        cardTable->deleteRecords(row);
         recordTable->deleteByTagId(cardId);
         if(writeOffTable->findRecord(cardId) >= 0)
         {
@@ -61,7 +64,7 @@ void WriteOffPerson::on_btn_LogOff_clicked()
         }else {
             writeOffTable->addRecords(cardId,currentTime,logOffMark);
         }
-        message.setText(tr("注销成功！"));
+        message.setText(tr("已退房！"));
         message.exec();
     }
     else

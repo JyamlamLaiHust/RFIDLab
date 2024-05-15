@@ -59,7 +59,7 @@
      <x>0</x>
      <y>0</y>
      <width>780</width>
-     <height>21</height>
+     <height>17</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
@@ -239,7 +239,7 @@
     </iconset>
    </property>
    <property name="text">
-    <string>消费记录</string>
+    <string>刷卡记录</string>
    </property>
    <property name="statusTip">
     <string>查询消费记录表</string>
@@ -251,7 +251,7 @@
     </font>
    </property>
    <property name="visible">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
   </action>
   <action name="action_writeofftable">
@@ -261,7 +261,7 @@
     </iconset>
    </property>
    <property name="text">
-    <string>注销记录</string>
+    <string>退房记录</string>
    </property>
    <property name="statusTip">
     <string>查询注销表</string>
@@ -283,7 +283,7 @@
     </iconset>
    </property>
    <property name="text">
-    <string>注册记录</string>
+    <string>入住记录</string>
    </property>
    <property name="statusTip">
     <string>查询注册表</string>
@@ -315,6 +315,9 @@
      <family>Times New Roman</family>
      <pointsize>10</pointsize>
     </font>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
    </property>
   </action>
   <action name="actionAsdf_7">
@@ -413,7 +416,7 @@
     </iconset>
    </property>
    <property name="text">
-    <string>消费模拟</string>
+    <string>刷卡模拟</string>
    </property>
    <property name="statusTip">
     <string>模拟一些消费场景</string>
@@ -425,7 +428,7 @@
     </font>
    </property>
    <property name="visible">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
   </action>
   <action name="action_mainPage">

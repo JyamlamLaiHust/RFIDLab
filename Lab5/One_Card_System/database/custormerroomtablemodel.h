@@ -28,7 +28,7 @@ public:
     int findRecordById(const QString cardId);//根据用户Id查询记录
 //    QSqlRecord findRecordByName(const QString userName);//根据用户名查询记录
     //插入记录
-    bool insertRecords(QString cardId, QString openTime);
+    bool insertRecords(QString cardId, QString time);
     //删除记录
     bool deleteRecords(int row);
 

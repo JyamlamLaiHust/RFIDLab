@@ -46,6 +46,8 @@ private:
 
     M1356Dll *m1356dll;//13.56MHz模块库类
 
+    CardTableModel *cardTableModel; // 房间表的model
+
     RegisterTableModel *registerTableModel;//注册表的model
 
     PersonTableModel *personTableModel;//人员表的model

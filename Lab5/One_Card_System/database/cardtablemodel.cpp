@@ -1,6 +1,6 @@
 #include "cardtablemodel.h"
-
 #include "database/database_api.h"
+#include <QDateTime>
 #include <QSqlRecord>
 #include <QSqlField>
 /**************************************
@@ -12,7 +12,8 @@ CardTableModel::CardTableModel(QObject *parent) : QSqlTableModel(parent)
 {
     tableName = TABLE_NAME_CARD;
     header<<QObject::trUtf8("序号")<<QObject::trUtf8("卡号")<<
-            QObject::trUtf8("房间号")<< QObject::trUtf8("状态标志");
+            QObject::trUtf8("房间号")<< QObject::trUtf8("入住时间")<<
+            QObject::trUtf8("退房时间")<< QObject::trUtf8("状态标志");
 }
 
 /**
@@ -28,7 +29,9 @@ void CardTableModel::createTable()
     str += header.at(0) + tr(" varchar PRIMARY KEY not null, ");
     str += header.at(1) + tr(" varchar, ");
     str += header.at(2) + tr(" varchar, ");
-    str += header.at(3) + tr(" varchar) ");
+    str += header.at(3) + tr(" datetime, ");
+    str += header.at(4) + tr(" datetime, ");
+    str += header.at(5) + tr(" varchar)");
     qDebug()<<"Sql: " << str.toUtf8().data();
     bool ret = query.exec(str);
     if(ret == true){
@@ -53,42 +56,55 @@ void CardTableModel::bindTable(void)
  * @return QSqlRecord型记录集
  * 根据人员编号查找记录
  */
-int CardTableModel::findRecordById(const QString cardId)
+int CardTableModel::findRecordByCardId(const QString cardId)
 {
     int count = rowCount();
     for(int row=0; row < count; row++){
-        if(data(index(row, 0)).toString() == cardId)
+        if(data(index(row, 1)).toString() == cardId)
             return row;
     }
     return -1;
 }
-/**
- * @brief CardTableModel::findRecord
- * @param customerName 姓名
- * @return QSqlRecord型记录集
- * 根据人员编号查找记录
- */
-QSqlRecord CardTableModel::findRecordByName(const QString customerName)
+
+int CardTableModel::findRecordByRoomId(const QString roomId)
 {
-    setFilter(QObject::tr("姓名= '%1'").arg(customerName)); //根据姓名进行筛选
-    select();
-    return record();
+    int count = rowCount();
+    for(int row=0; row < count; row++){
+        if(data(index(row, 2)).toString() == roomId)
+            return row;
+    }
+    return -1;
 }
+
+///**
+// * @brief CardTableModel::findRecord
+// * @param customerName 姓名
+// * @return QSqlRecord型记录集
+// * 根据人员编号查找记录
+// */
+//QSqlRecord CardTableModel::findRecordByName(const QString customerName)
+//{
+//    setFilter(QObject::tr("姓名= '%1'").arg(customerName)); //根据姓名进行筛选
+//    select();
+//    return record();
+//}
 /**
  * @brief CardTableModel::insertRecords
+ * @param number 序号
  * @param cardId 卡号
- * @param customerName 姓名
- * @param telephoneNumber 手机号
- * @param isUse 是否激活
+ * @param roomId 房间号
+ * @param isUse 状态标志
  * @return 成功返回true，失败返回false
  * 向表格中插入记录
  */
-bool CardTableModel::insertRecords(QString cardId, QString customerName, QString telephoneNumber, QString isUse)
+bool CardTableModel::insertRecords(QString number, QString cardId, QString roomId, QDateTime checkInTime, QDateTime checkOutTime, bool isUse)
 {
     QSqlQuery query;
     QString str;
-    str  = tr("insert into ") + tableName + tr(" values( \"%1\" , \"%2\" , \"%3\" , \"%4\" ) ")
-           .arg(cardId).arg(customerName).arg(telephoneNumber).arg(isUse);
+    str  = tr("insert into ") + tableName + tr(" values( \"%1\" , \"%2\" , \"%3\" , \"%4\", \"%5\" , \"%6\" ) ")
+           .arg(number).arg(cardId).arg(roomId).arg(checkInTime.toString("yyyy-MM-dd hh:mm:ss"))
+            .arg(checkOutTime.toString("yyyy-MM-dd hh:mm:ss")).arg(isUse);
+
     qDebug()<<"Sql: " << str.toUtf8().data();
     return query.exec(str);
 }
