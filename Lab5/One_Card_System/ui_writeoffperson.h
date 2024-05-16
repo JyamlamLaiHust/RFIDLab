@@ -32,7 +32,7 @@ public:
     QVBoxLayout *verticalLayout_2;
     QHBoxLayout *horizontalLayout;
     QLabel *label;
-    QLineEdit *lineEdit_CardId;
+    QLineEdit *lineEdit_RoomId;
     QPushButton *btn_Inventory;
     QHBoxLayout *horizontalLayout_2;
     QLabel *label_2;
@@ -63,11 +63,11 @@ public:
 
         horizontalLayout->addWidget(label);
 
-        lineEdit_CardId = new QLineEdit(WriteOffPerson);
-        lineEdit_CardId->setObjectName(QStringLiteral("lineEdit_CardId"));
-        lineEdit_CardId->setFont(font);
+        lineEdit_RoomId = new QLineEdit(WriteOffPerson);
+        lineEdit_RoomId->setObjectName(QStringLiteral("lineEdit_RoomId"));
+        lineEdit_RoomId->setFont(font);
 
-        horizontalLayout->addWidget(lineEdit_CardId);
+        horizontalLayout->addWidget(lineEdit_RoomId);
 
         btn_Inventory = new QPushButton(WriteOffPerson);
         btn_Inventory->setObjectName(QStringLiteral("btn_Inventory"));
@@ -132,7 +132,7 @@ public:
     void retranslateUi(QDialog *WriteOffPerson)
     {
         WriteOffPerson->setWindowTitle(QApplication::translate("WriteOffPerson", "Dialog", Q_NULLPTR));
-        label->setText(QApplication::translate("WriteOffPerson", "\345\215\241\345\217\267\357\274\232", Q_NULLPTR));
+        label->setText(QApplication::translate("WriteOffPerson", "\346\210\277\345\217\267\357\274\232", Q_NULLPTR));
         btn_Inventory->setText(QApplication::translate("WriteOffPerson", "\350\257\206\345\210\253", Q_NULLPTR));
         label_2->setText(QApplication::translate("WriteOffPerson", "\345\216\237\345\233\240\357\274\232", Q_NULLPTR));
         btn_LogOff->setText(QApplication::translate("WriteOffPerson", "\351\200\200\346\210\277", Q_NULLPTR));

@@ -26,6 +26,9 @@ public:
     void bindTable(void);//绑定表
     int findRecordById(const QString cardId);//根据用户Id查询记录
     QSqlRecord findRecordByName(const QString customerName);//根据用户名查询记录
+    QString findNameByTagId(const QString tagId);
+    QString findInUseByTagId(const QString tagId);
+    QString findTelephoneNumberByTagId(const QString tagId);
     //插入记录
     bool insertRecords(QString cardId, QString customerName, QString telephoneNumber, QString isUse);
     //删除记录

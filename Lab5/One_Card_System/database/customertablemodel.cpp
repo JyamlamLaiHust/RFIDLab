@@ -100,3 +100,41 @@ bool CustomerTableModel::deleteRecords(int row)
     return removeRow(row);
 }
 
+/**
+ * @brief CustomerTableModel::findNameByTagId
+ * @param tagId 卡号
+ * @return 与卡号关联的姓名
+ * 根据卡号查找关联的姓名
+ */
+QString CustomerTableModel::findNameByTagId(const QString tagId)
+{
+    int row = findRecordById(tagId);
+    if (row != -1) {
+        return data(index(row, 1)).toString(); // 返回姓名，假设姓名在第二列
+    }
+    return QString(); // 如果未找到对应的记录，返回空字符串
+}
+
+/**
+ * @brief CustomerTableModel::findNameByTagId
+ * @param tagId 卡号
+ * @return 与卡号关联的姓名
+ * 根据卡号查找关联的姓名
+ */
+QString CustomerTableModel::findInUseByTagId(const QString tagId)
+{
+    int row = findRecordById(tagId);
+    if (row != -1) {
+        return data(index(row, 2)).toString(); // 返回姓名，假设姓名在第二列
+    }
+    return QString(); // 如果未找到对应的记录，返回空字符串
+}
+
+QString CustomerTableModel::findTelephoneNumberByTagId(const QString tagId)
+{
+    int row = findRecordById(tagId);
+    if (row != -1) {
+        return data(index(row, 3)).toString(); // 返回姓名，假设姓名在第二列
+    }
+    return QString(); // 如果未找到对应的记录，返回空字符串
+}

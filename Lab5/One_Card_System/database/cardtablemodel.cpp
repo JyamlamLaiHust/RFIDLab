@@ -118,3 +118,24 @@ bool CardTableModel::deleteRecords(int row)
 {
     return removeRow(row);
 }
+
+QString CardTableModel::findRoomIdByTagId(const QString tagId)
+{
+    int row = findRecordByCardId(tagId);
+    if (row != -1) {
+        return data(index(row, 2)).toString();
+    }
+    return QString(); // 如果未找到对应的记录，返回空字符串
+}
+
+QDateTime CardTableModel::findCheckOutTimeByTagId(const QString tagId)
+{
+    int row = findRecordByCardId(tagId);
+    if (row != -1) {
+        QVariant timeData = data(index(row, 4)); // 获取时间数据，假设在第五列
+        if (timeData.isValid()) {
+            return timeData.toDateTime(); // 转换为 QDateTime 类型并返回
+        }
+    }
+    return QDateTime(); // 如果未找到对应的记录，返回空字符串
+}

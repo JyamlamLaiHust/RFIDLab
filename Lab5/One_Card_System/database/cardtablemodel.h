@@ -26,12 +26,14 @@ public:
     void bindTable(void);//绑定表
     int findRecordByCardId(const QString cardId);//根据用户Id查询记录
     int findRecordByRoomId(const QString roomId);//根据用户Id查询记录
+
     QSqlRecord findRecordByName(const QString customerName);//根据用户名查询记录
     //插入记录
     bool insertRecords(QString number, QString cardId, QString roomId, QDateTime checkInTime, QDateTime checkOutTime, bool isUse);
     //删除记录
     bool deleteRecords(int row);
-
+    QString findRoomIdByTagId(const QString tagId);
+    QDateTime findCheckOutTimeByTagId(const QString tagId);
 signals:
 
 public slots:

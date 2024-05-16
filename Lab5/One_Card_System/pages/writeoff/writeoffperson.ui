@@ -27,12 +27,12 @@
           </font>
          </property>
          <property name="text">
-          <string>卡号：</string>
+          <string>房号：</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_CardId">
+        <widget class="QLineEdit" name="lineEdit_RoomId">
          <property name="font">
           <font>
            <family>Times New Roman</family>

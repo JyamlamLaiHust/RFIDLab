@@ -12,7 +12,8 @@ WriteOffPerson::WriteOffPerson(QWidget *parent,SerialPortThread *serialPortThrea
 {
     ui->setupUi(this);
     this->serialPortThread = serialPortThread;
-    ui->lineEdit_CardId->setReadOnly(true);
+//    ui->lineEdit_CardId->setReadOnly(true);
+//    ui->lineEdit_RoomId->text();
 }
 
 WriteOffPerson::~WriteOffPerson()
@@ -25,39 +26,68 @@ WriteOffPerson::~WriteOffPerson()
  */
 void WriteOffPerson::on_btn_LogOff_clicked()
 {
-    QString cardId = ui->lineEdit_CardId->text();
+    QString roomId = ui->lineEdit_RoomId->text();
     QString logOffMark = ui->textEdit_Mark->toPlainText();
     QString currentTime = CurrentDateTime();
+
     //卡表的model
     CardTableModel *cardTable = new CardTableModel(this);
     cardTable->bindTable();
+
 //    RegisterTableModel *registerTable = new RegisterTableModel(this);
 //    registerTable->bindTable();
 
     //注销表的model
     WriteOffTableModel *writeOffTable = new WriteOffTableModel(this);
     writeOffTable->bindTable();
+
     //人员信息表的model
     PersonTableModel *personTable = new PersonTableModel(this);
     personTable->bindTable();
-    //记录表的model
-    RecordTableModel *recordTable = new RecordTableModel(this);
-    recordTable->bindTable();
+
+    CustomerTableModel *customerTable = new CustomerTableModel(this);
+    customerTable->bindTable();
+
+    CustomerRoomTableModel *customerRoomTable = new CustomerRoomTableModel(this);
+    customerRoomTable->bindTable();
+
+//    //记录表的model
+//    RecordTableModel *recordTable = new RecordTableModel(this);
+//    recordTable->bindTable();
+
+    RoomTableModel *roomTable = new RoomTableModel(this);
+    roomTable->bindTable();
 
     QMessageBox message;
     message.setStandardButtons(QMessageBox::Yes);
     message.setWindowTitle(tr("温馨提示"));
     message.setIcon(QMessageBox::Warning);
 
-    int row = cardTable->findRecordByCardId(cardId);
+    int row = cardTable->findRecordByRoomId(roomId);
+
     if(row >= 0)
     {
         QSqlRecord record = cardTable->record(row);
-        QString PersonId = record.value(1).toString();
-        int recordId = personTable->findRecordById(PersonId);
-        personTable->deleteRecords(recordId);
+        QString cardId = record.value(1).toString();
+        QString roomId = record.value(2).toString();
+
         cardTable->deleteRecords(row);
-        recordTable->deleteByTagId(cardId);
+
+//        QString PersonId = record.value(1).toString();
+//        int recordId = personTable->findRecordById(PersonId);
+//        personTable->deleteRecords(recordId);
+
+        int customerId = customerTable->findRecordById(cardId);
+        customerTable->deleteRecords(customerId);
+
+        int customerRoomId = customerRoomTable->findRecordById(cardId);
+        customerRoomTable->deleteRecords(customerRoomId);
+
+        int roomRecordId = roomTable->findRecordById(roomId);
+        roomTable->deleteRecords(roomRecordId);
+
+//        recordTable->deleteByTagId(cardId);
+
         if(writeOffTable->findRecord(cardId) >= 0)
         {
             writeOffTable->updateRecords(cardId,currentTime,logOffMark);
@@ -105,11 +135,11 @@ void WriteOffPerson::on_btn_Inventory_clicked()
     serialPortThread->writeData((char *)(p + 2 ),frameLen);
     delete m1356dll;
 }
-/**
- * @brief RegistorWidget::on_tagIdReceived
- * @param tagId 标签ID
- * 接收到卡号时调用
- */
-void WriteOffPerson::on_tagIdReceived(QString tagId){
-      ui->lineEdit_CardId->setText(tagId);
- }
+///**
+// * @brief RegistorWidget::on_tagIdReceived
+// * @param tagId 标签ID
+// * 接收到卡号时调用
+// */
+//void WriteOffPerson::on_tagIdReceived(QString tagId){
+//      ui->lineEdit_CardId->setText(tagId);
+// }

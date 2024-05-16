@@ -78,7 +78,7 @@ private: //functions
 
     void initViews();//初始化View
 
-    void fillSendData(QString time,QString addr,QString readerId,
+    void fillSendData(QString time,QString readerId,
                       QString value,QString cardId,QString remark);//填充消费信息
 
     bool checkDataValid();//监测数据合法性

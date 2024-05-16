@@ -83,7 +83,7 @@ void WriteOffPerson::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 0: _t->on_btn_LogOff_clicked(); break;
         case 1: _t->on_btn_Return_clicked(); break;
         case 2: _t->on_btn_Inventory_clicked(); break;
-        case 3: _t->on_tagIdReceived((*reinterpret_cast< QString(*)>(_a[1]))); break;
+//        case 3: _t->on_tagIdReceived((*reinterpret_cast< QString(*)>(_a[1]))); break;
         default: ;
         }
     }

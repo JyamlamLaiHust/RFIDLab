@@ -40,21 +40,20 @@ ConsumePage::~ConsumePage()
  */
 void ConsumePage::initViews()
 {
-    supermarketName << tr("物美")<<tr("华联")<<tr("永辉")<<tr("家乐福")
-                    <<tr("西苑超市")<<tr("新华超市")<<tr("美廉美");
-    supermarketAddr << "五教旁" << "男生7舍前面"<<"行知食堂对面"<<"体育馆旁"
-                    << "女生6舍后面"<< "图书馆旁" << "高尔夫球场旁";
+    supermarketName << tr("方便面")<<tr("口香糖")<<tr("冰可乐");
+//    supermarketAddr << "五教旁" << "男生7舍前面"<<"行知食堂对面"<<"体育馆旁"
+//                    << "女生6舍后面"<< "图书馆旁" << "高尔夫球场旁";
 
-    foodName <<"兰州拉面"<<"土耳其烤肉饭"<<"麻辣烫"<<"2楼套餐"<<"酸辣粉"<<
-               "小火锅"<< "山西刀削面"<<"照烧鸡腿饭";
-    cafeteriaAddr << "美娜食堂1楼" << "学生食堂2楼" << "教师食堂" << "学生食堂1楼"
-                  << "美娜食堂2楼" << "学生食堂3楼" << "鑫源餐厅" << "行知食堂";
+//    foodName <<"兰州拉面"<<"土耳其烤肉饭"<<"麻辣烫"<<"2楼套餐"<<"酸辣粉"<<
+//               "小火锅"<< "山西刀削面"<<"照烧鸡腿饭";
+//    cafeteriaAddr << "美娜食堂1楼" << "学生食堂2楼" << "教师食堂" << "学生食堂1楼"
+//                  << "美娜食堂2楼" << "学生食堂3楼" << "鑫源餐厅" << "行知食堂";
 
-    goodsName << "脉动" << "雪碧" << "农夫山泉" << "怡宝" << "冰红茶" << "可口可乐" << "王老吉";
-    vendorAddr<<"一教1楼"<<"三教2楼"<<"五教1楼"<<"四教5楼"<<"一教3楼"<<"一教4楼"<<"五教3楼";
+    goodsName << "跑步机" << "哑铃" << "杠铃" << "卧推机" << "有氧步台" << "健身自行车" << "拉力器";
+    vendorAddr<<"难度1"<<"难度2"<<"难度3"<<"难度4"<<"难度5"<<"难度6"<<"难度7";
 
-    castName<<"微机费"<<"暖气费"<<"电费"<<"洗衣费"<<"开水交费"<<"饮用水交费"<<"图书馆交费";
-    castAddr <<"计算机学院401"<<"图书馆601"<<"宿舍101"<<"综合楼102"<<"宿舍104"<<"小卖部"<<"图书馆101";
+    castName<<"洗衣机"<<"烘干机"<<"洗鞋机";
+    castAddr <<"10分钟"<<"20分钟"<<"30分钟"<<"40分钟";
 
     ui->comboBox_castType->clear();
     ui->comboBox_castType->addItems(castName);
@@ -62,22 +61,27 @@ void ConsumePage::initViews()
     ui->comboBox_goodsName->clear();
     ui->comboBox_goodsName->addItems(goodsName);
 
-    ui->comboBox_foodName->clear();
-    ui->comboBox_foodName->addItems(foodName);
+//    ui->comboBox_foodName->clear();
+//    ui->comboBox_foodName->addItems(foodName);
+
 
     ui->comboBox_supermarket->clear();
     ui->comboBox_supermarket->addItems(supermarketName);
 
     ui->label_Tips->installEventFilter(this);
-    ui->lineEdit_ReadId->setReadOnly(true);
+    ui->lineEdit_customerName->setReadOnly(true);
+    ui->lineEdit_roomId->setReadOnly(true);
+
+    ui->lineEdit_telephoneNumber->setReadOnly(true);
+
     ui->lineEdit_ReadId1->setReadOnly(true);
     ui->lineEdit_ReadId2->setReadOnly(true);
     ui->lineEdit_ReadId3->setReadOnly(true);
 
     QRegExp rx("^[1-9]{1,3}\\.[0-9]{1,2}");
     QRegExpValidator *validator = new QRegExpValidator(rx, this);
-    ui->lineEdit_value->setValidator(validator);
-    ui->lineEdit_value->installEventFilter(this);
+//    ui->lineEdit_value->setValidator(validator);
+//    ui->lineEdit_value->installEventFilter(this);
     ui->lineEdit_value1->setValidator(validator);
     ui->lineEdit_value1->installEventFilter(this);
     ui->lineEdit_value2->setValidator(validator);
@@ -122,7 +126,7 @@ bool ConsumePage::eventFilter(QObject *obj, QEvent *event)
             ui->label_Tips->clear();
         }
     }
-    else if(obj == ui->lineEdit_value ||
+    else if(
             obj == ui->lineEdit_value1||
             obj == ui->lineEdit_value2||
             obj == ui->lineEdit_value3)
@@ -187,18 +191,49 @@ void ConsumePage::readCardId(bool clicked)
  */
 void ConsumePage::on_cardIdReceived(QString tagId)
 {
-    bool flag = false;
-    RegisterTableModel *model = new RegisterTableModel(this);
-    model->bindTable();
-    model->findRecord(tagId);
-    if(model->findRecord(tagId) == -1)
+    bool flag = false; // 判断是否已经注册
+    bool timeOut = false; // 判断是否已经超时
+
+//    RegisterTableModel *model = new RegisterTableModel(this);
+//    model->bindTable();
+
+    CardTableModel *cardTableModel = new CardTableModel(this);
+    cardTableModel->bindTable();
+
+    cardTableModel->findRecordByCardId(tagId);
+
+    CustomerTableModel *customerTableModel = new CustomerTableModel(this);
+    customerTableModel->bindTable();
+
+    QDateTime checkOutTime = cardTableModel->findCheckOutTimeByTagId(tagId);
+
+    if(customerTableModel->findRecordById(tagId) == -1)
         flag = true;
+
+    QDateTime currentDateTime = QDateTime::currentDateTime();
+    if(currentDateTime > checkOutTime)
+    {
+        timeOut = true;
+    }
+
+    QString customerName = customerTableModel->findNameByTagId(tagId); // 使用之前编写的函数获取姓名
+    QString inUse = customerTableModel->findInUseByTagId(tagId);
+    QString telephoneNumber = customerTableModel->findTelephoneNumberByTagId(tagId);
+    QString roomId = cardTableModel->findRoomIdByTagId(tagId);
+
     if(currentEnventoryButton == ui->btn_Enventory)
     {
         ui->lineEdit_tagId->setText(tagId);
+        ui->lineEdit_customerName->setText(customerName);
+//        ui->lineEdit_InUse->setText(inUse);
+
         if(flag)
         {
             messageBox->setText("该卡未注册,不能使用,谢谢!");
+            messageBox->exec();
+            ui->btn_OK->setEnabled(false);
+        } else if(timeOut) {
+            messageBox->setText("您好！您没有权限进入此房间，请到前台办理续费！");
             messageBox->exec();
             ui->btn_OK->setEnabled(false);
         }
@@ -213,6 +248,10 @@ void ConsumePage::on_cardIdReceived(QString tagId)
             messageBox->setText("该卡未注册,不能使用,谢谢!");
             messageBox->exec();
             ui->btn_OK1->setEnabled(false);
+        } else if(timeOut) {
+            messageBox->setText("您好！您没有权限进入健身房，请到前台办理续费！");
+            messageBox->exec();
+            ui->btn_OK->setEnabled(false);
         }
         else
             ui->btn_OK1->setEnabled(true);
@@ -237,6 +276,10 @@ void ConsumePage::on_cardIdReceived(QString tagId)
             messageBox->setText("该卡未注册,不能使用,谢谢!");
             messageBox->exec();
             ui->btn_OK3->setEnabled(false);
+        } else if(timeOut) {
+            messageBox->setText("您好！您没有权限进入洗衣服，请到前台办理续费！");
+            messageBox->exec();
+            ui->btn_OK->setEnabled(false);
         }
         else
             ui->btn_OK3->setEnabled(true);
@@ -352,8 +395,8 @@ void ConsumePage::on_btn_OK_clicked()
         QMessageBox::warning(this,tr("温馨提示"),tr("请先连接读卡器后再试！"),QMessageBox::Yes);
         return;
     }
-    fillSendData(ui->lineEdit_time1->text(),ui->lineEdit_addr->text(),
-                 ui->lineEdit_ReadId->text(),ui->lineEdit_value->text(),
+    fillSendData(ui->lineEdit_time1->text(),
+                 ui->lineEdit_customerName->text(),ui->lineEdit_telephoneNumber->text(),
                  ui->lineEdit_tagId->text(),ui->remark->toPlainText());
     if(this->checkDataValid())
     {
@@ -372,7 +415,7 @@ void ConsumePage::on_btn_OK2_clicked()
         QMessageBox::warning(this,tr("温馨提示"),tr("请先连接读卡器后再试！"),QMessageBox::Yes);
         return;
     }
-    fillSendData(ui->lineEdit_time3->text(),ui->lineEdit_addr2->text(),
+    fillSendData(ui->lineEdit_time3->text(),
                  ui->lineEdit_ReadId2->text(),ui->lineEdit_value2->text(),
                  ui->lineEdit_tagId2->text(),ui->remark2->toPlainText());
     if(this->checkDataValid())
@@ -392,7 +435,7 @@ void ConsumePage::on_btn_OK1_clicked()
         QMessageBox::warning(this,tr("温馨提示"),tr("请先连接读卡器后再试！"),QMessageBox::Yes);
         return;
     }
-    fillSendData(ui->lineEdit_time2->text(),ui->lineEdit_addr1->text(),
+    fillSendData(ui->lineEdit_time2->text(),/*ui->lineEdit_addr1->text(),*/
                  ui->lineEdit_ReadId1->text(),ui->lineEdit_value1->text(),
                  ui->lineEdit_tagId1->text(),ui->remark1->toPlainText());
     if(this->checkDataValid())
@@ -412,7 +455,7 @@ void ConsumePage::on_btn_OK3_clicked()
         QMessageBox::warning(this,tr("温馨提示"),tr("请先连接读卡器后再试！"),QMessageBox::Yes);
         return;
     }
-    fillSendData(ui->lineEdit_time4->text(),ui->lineEdit_addr3->text(),
+    fillSendData(ui->lineEdit_time4->text(),/*ui->lineEdit_addr3->text(),*/
                  ui->lineEdit_ReadId3->text(),ui->lineEdit_value3->text(),
                  ui->lineEdit_tagId3->text(),ui->remark3->toPlainText());
     if(this->checkDataValid())
@@ -431,11 +474,11 @@ void ConsumePage::on_btn_OK3_clicked()
  * @param remark 备注信息
  * 填充数据
  */
-void ConsumePage::fillSendData(QString time,QString addr,QString readerId,
+void ConsumePage::fillSendData(QString time,QString readerId,
                                QString value,QString cardId,QString remark)
 {
     sendData.time = time;
-    sendData.addr = addr;
+//    sendData.addr = addr;
     sendData.readerId = readerId;
     sendData.value = value.toFloat();
     sendData.cardId = cardId;
@@ -443,6 +486,7 @@ void ConsumePage::fillSendData(QString time,QString addr,QString readerId,
         remark = tr("商家没给您备注");
     sendData.remark = remark;
 }
+
 bool ConsumePage::checkDataValid()
 {
     if(sendData.cardId.length() < 2 )
@@ -484,20 +528,20 @@ void ConsumePage::authentication()
  */
 void ConsumePage::on_comboBox_foodName_currentIndexChanged(int index)
 {
-    QString addr = cafeteriaAddr.at(index);
-    ui->lineEdit_addr->setText(addr + foodName.at(index));
-    ui->lineEdit_ReadId->setText(tr("E9A39FE5") + QString::number(index,16));
+//    QString addr = cafeteriaAddr.at(index);
+//    ui->lineEdit_InUse->setText(addr + foodName.at(index));
+    ui->lineEdit_customerName->setText(tr("E9A39FE5") + QString::number(index,16));
 }
 /**
- * @brief ConsumePage::on_comboBox_supermarket_currentIndexChanged
- * @param index 当前文本的索引值
- * 超市名称发生改变时调用
- */
+// * @brief ConsumePage::on_comboBox_supermarket_currentIndexChanged
+// * @param index 当前文本的索引值
+// * 超市名称发生改变时调用
+// */
 void ConsumePage::on_comboBox_supermarket_currentIndexChanged(int index)
 {
-    QString addr = supermarketAddr.at(index);
-    ui->lineEdit_addr2->setText(addr + supermarketName.at(index));
-    ui->lineEdit_ReadId2->setText(tr("x8D85") + QString::number(index,16));
+//    QString addr = supermarketAddr.at(index);
+//    ui->lineEdit_addr2->setText(addr + supermarketName.at(index));
+    ui->lineEdit_ReadId2->setText(tr("E3") + QString::number(index,16));
 }
 /**
  * @brief ConsumePage::on_comboBox_goodsName_currentIndexChanged
@@ -506,8 +550,8 @@ void ConsumePage::on_comboBox_supermarket_currentIndexChanged(int index)
  */
 void ConsumePage::on_comboBox_goodsName_currentIndexChanged(int index)
 {
-    QString addr = vendorAddr.at(index);
-    ui->lineEdit_addr1->setText(addr + goodsName.at(index));
+//    QString addr = vendorAddr.at(index);
+//    ui->lineEdit_addr1->setText(addr + goodsName.at(index));
     ui->lineEdit_ReadId1->setText(tr("E69599E5") + QString::number(index,16));
 }
 /**
@@ -517,7 +561,7 @@ void ConsumePage::on_comboBox_goodsName_currentIndexChanged(int index)
  */
 void ConsumePage::on_comboBox_castType_currentIndexChanged(int index)
 {
-    QString addr = castAddr.at(index);
-    ui->lineEdit_addr3->setText(addr + castName.at(index));
+//    QString addr = castAddr.at(index);
+//    ui->lineEdit_addr3->setText(addr + castName.at(index));
     ui->lineEdit_ReadId3->setText(tr("E4BAA4E8") + QString::number(index,16));
 }
