@@ -39,7 +39,7 @@ void RegistorWidget::on_btn_Register_clicked()
 {
     QMessageBox message;
     QString userName = ui->lineEdit_Name->text();
-    QString userType = ui->comboBox_UserType->currentText();
+    QString userType = ui->comboBox_RoomType->currentText();
     QString personRemark = ui->textEdit_PersonMark->toPlainText();
     QString cardRemark = ui->textEdit_CardMark->toPlainText();
     QString cardId = ui->lineEdit_CardId->text();
@@ -153,7 +153,7 @@ void RegistorWidget::on_comboBox_UserType_currentIndexChanged(const QString &arg
 {
     if(arg1 == tr("custom"))
     {
-        ui->comboBox_UserType->setEditable(true);
-        ui->comboBox_UserType->clearEditText();
+        ui->comboBox_RoomType->setEditable(true);
+        ui->comboBox_RoomType->clearEditText();
     }
 }
