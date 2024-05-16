@@ -16,7 +16,7 @@ Lab 1 到 Lab 4 都可以按照实验手册上面的步骤一步一步做，此�
 
 Lab 5 我要做的是酒店管理系统，由Lab2中的校园一卡通换皮改造而成。
 
-![Hotel Management System](assets/Hotel Management System.png)
+![Hotel Management System](assets/Hotel_Management_System.png)
 
 另外一个题目是图书管理系统，难度我认为会相对低一些，原因有两个：一是Lab3的完成度会相比Lab2更加高一些，二是github上面有学长/学姐已经摆了图书管理系统的代码，大家也可以站在巨人的肩膀上。
 
