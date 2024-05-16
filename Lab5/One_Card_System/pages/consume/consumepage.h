@@ -65,7 +65,7 @@ private slots:
 
     void on_btn_OK3_clicked();//结账按钮点击槽4
 
-    void on_readValue(float value);//读取卡内余额信息处理槽
+    void on_readValue(float value, QString cardId);//读取卡内余额信息处理槽
 
     void on_comboBox_foodName_currentIndexChanged(int index);//食物名称索引发生改变时的接收槽
 

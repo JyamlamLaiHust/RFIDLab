@@ -697,7 +697,7 @@ public:
         label_5->setText(QApplication::translate("ConsumePage", "\346\227\266\351\227\264\357\274\232", Q_NULLPTR));
         lineEdit_time1->setText(QString());
         label_7->setText(QApplication::translate("ConsumePage", "\345\215\241\345\217\267\357\274\232", Q_NULLPTR));
-        label_2->setText(QApplication::translate("ConsumePage", "\346\211\213\346\234\272\345\217\267\357\274\232", Q_NULLPTR));
+        label_2->setText(QApplication::translate("ConsumePage", "\350\272\253\344\273\275\350\257\201\345\217\267\357\274\232", Q_NULLPTR));
         label_6->setText(QApplication::translate("ConsumePage", "\345\244\207\346\263\250", Q_NULLPTR));
         btn_Cancel->setText(QApplication::translate("ConsumePage", "\345\217\226\346\266\210", Q_NULLPTR));
         btn_OK->setText(QApplication::translate("ConsumePage", "\345\274\200\351\227\250", Q_NULLPTR));

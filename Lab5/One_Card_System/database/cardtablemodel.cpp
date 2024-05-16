@@ -12,7 +12,7 @@ CardTableModel::CardTableModel(QObject *parent) : QSqlTableModel(parent)
 {
     tableName = TABLE_NAME_CARD;
     header<<QObject::trUtf8("序号")<<QObject::trUtf8("卡号")<<
-            QObject::trUtf8("房间号")<< QObject::trUtf8("入住时间")<<
+            QObject::trUtf8("房间号")<< QObject::trUtf8("时间")<<
             QObject::trUtf8("退房时间")<< QObject::trUtf8("状态标志");
 }
 

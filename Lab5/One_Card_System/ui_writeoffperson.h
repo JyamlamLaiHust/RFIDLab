@@ -71,6 +71,7 @@ public:
 
         btn_Inventory = new QPushButton(WriteOffPerson);
         btn_Inventory->setObjectName(QStringLiteral("btn_Inventory"));
+        btn_Inventory->setEnabled(false);
         btn_Inventory->setFont(font);
 
         horizontalLayout->addWidget(btn_Inventory);

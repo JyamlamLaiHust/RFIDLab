@@ -215,7 +215,7 @@
                 </font>
                </property>
                <property name="text">
-                <string>手机号：</string>
+                <string>身份证号：</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>

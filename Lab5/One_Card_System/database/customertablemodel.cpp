@@ -10,7 +10,7 @@
 CustomerTableModel::CustomerTableModel(QObject *parent) : QSqlTableModel(parent)
 {
     tableName = TABLE_NAME_CUSTOMER;
-    header<<QObject::trUtf8("卡号")<<QObject::trUtf8("姓名")<<QObject::trUtf8("手机号")<<QObject::trUtf8("是否激活");
+    header<<QObject::trUtf8("卡号")<<QObject::trUtf8("姓名")<<QObject::trUtf8("身份证")<<QObject::trUtf8("是否激活");
 }
 
 /**
@@ -134,7 +134,7 @@ QString CustomerTableModel::findTelephoneNumberByTagId(const QString tagId)
 {
     int row = findRecordById(tagId);
     if (row != -1) {
-        return data(index(row, 3)).toString(); // 返回姓名，假设姓名在第二列
+        return data(index(row, 2)).toString(); // 返回姓名，假设姓名在第二列
     }
     return QString(); // 如果未找到对应的记录，返回空字符串
 }

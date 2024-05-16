@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_ConsumePage_t {
-    QByteArrayData data[21];
-    char stringdata0[363];
+    QByteArrayData data[22];
+    char stringdata0[370];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -49,9 +49,10 @@ QT_MOC_LITERAL(14, 182, 18), // "on_btn_OK1_clicked"
 QT_MOC_LITERAL(15, 201, 18), // "on_btn_OK3_clicked"
 QT_MOC_LITERAL(16, 220, 12), // "on_readValue"
 QT_MOC_LITERAL(17, 233, 5), // "value"
-QT_MOC_LITERAL(18, 239, 40), // "on_comboBox_foodName_currentI..."
-QT_MOC_LITERAL(19, 280, 41), // "on_comboBox_goodsName_current..."
-QT_MOC_LITERAL(20, 322, 40) // "on_comboBox_castType_currentI..."
+QT_MOC_LITERAL(18, 239, 6), // "cardId"
+QT_MOC_LITERAL(19, 246, 40), // "on_comboBox_foodName_currentI..."
+QT_MOC_LITERAL(20, 287, 41), // "on_comboBox_goodsName_current..."
+QT_MOC_LITERAL(21, 329, 40) // "on_comboBox_castType_currentI..."
 
     },
     "ConsumePage\0calcOps\0\0updateTime\0"
@@ -60,7 +61,7 @@ QT_MOC_LITERAL(20, 322, 40) // "on_comboBox_castType_currentI..."
     "clicked\0on_comboBox_supermarket_currentIndexChanged\0"
     "index\0on_btn_OK2_clicked\0on_btn_OK1_clicked\0"
     "on_btn_OK3_clicked\0on_readValue\0value\0"
-    "on_comboBox_foodName_currentIndexChanged\0"
+    "cardId\0on_comboBox_foodName_currentIndexChanged\0"
     "on_comboBox_goodsName_currentIndexChanged\0"
     "on_comboBox_castType_currentIndexChanged"
 };
@@ -92,10 +93,10 @@ static const uint qt_meta_data_ConsumePage[] = {
       13,    0,  101,    2, 0x08 /* Private */,
       14,    0,  102,    2, 0x08 /* Private */,
       15,    0,  103,    2, 0x08 /* Private */,
-      16,    1,  104,    2, 0x08 /* Private */,
-      18,    1,  107,    2, 0x08 /* Private */,
-      19,    1,  110,    2, 0x08 /* Private */,
-      20,    1,  113,    2, 0x08 /* Private */,
+      16,    2,  104,    2, 0x08 /* Private */,
+      19,    1,  109,    2, 0x08 /* Private */,
+      20,    1,  112,    2, 0x08 /* Private */,
+      21,    1,  115,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::Float,    2,
@@ -110,7 +111,7 @@ static const uint qt_meta_data_ConsumePage[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Float,   17,
+    QMetaType::Void, QMetaType::Float, QMetaType::QString,   17,   18,
     QMetaType::Void, QMetaType::Int,   12,
     QMetaType::Void, QMetaType::Int,   12,
     QMetaType::Void, QMetaType::Int,   12,
@@ -134,7 +135,7 @@ void ConsumePage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         case 7: _t->on_btn_OK2_clicked(); break;
         case 8: _t->on_btn_OK1_clicked(); break;
         case 9: _t->on_btn_OK3_clicked(); break;
-        case 10: _t->on_readValue((*reinterpret_cast< float(*)>(_a[1]))); break;
+        case 10: _t->on_readValue((*reinterpret_cast< float(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
         case 11: _t->on_comboBox_foodName_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 12: _t->on_comboBox_goodsName_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 13: _t->on_comboBox_castType_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;

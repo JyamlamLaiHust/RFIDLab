@@ -80,6 +80,9 @@ void RegistorWidget::on_btn_Register_clicked()
     CardTableModel *cardTable = new CardTableModel(this);
     cardTable->bindTable();
 
+    CustomerTableModel *customerTable = new CustomerTableModel(this);
+    customerTable->bindTable();
+
     if(cardTable->findRecordByCardId(cardId) != -1)
     {
         message.setText(tr("此卡已经注册，请换张卡再试!"));
@@ -97,29 +100,16 @@ void RegistorWidget::on_btn_Register_clicked()
     }
 
 
-    if(!cardTable->insertRecords(number, cardId, roomId, checkInTime, checkOutTime, true))
+    if(!cardTable->insertRecords(number, cardId, roomId, checkInTime, checkOutTime, true) ||
+        !customerTable->insertRecords(cardId, userName, idCard, "yes"))
     {
         message.setText(tr("卡号信息保存失败，请重试!"));
         message.exec();
         delete cardTable;
+        delete customerTable;
         return ;
     }
 
-//    PersonTableModel *personTableModel =  new PersonTableModel(this);
-//    personTableModel->bindTable();
-
-//    if(!personTableModel->insertRecords(personId,userName,roomType,personRemark))
-//    {
-//        message.setText(tr("人员信息保存失败，请重试!"));
-//        message.exec();
-//        delete personTableModel;
-//        return ;
-//    }
-
-//    DialogCardConfig *dcc = new DialogCardConfig(this,serialThread);
-//    dcc->setWindowTitle(tr("初始化卡"));
-//    dcc->exec();
-//    delete dcc;
     delete cardTable;
 }
 /**

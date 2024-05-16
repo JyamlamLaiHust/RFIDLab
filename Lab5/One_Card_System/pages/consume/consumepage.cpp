@@ -225,6 +225,8 @@ void ConsumePage::on_cardIdReceived(QString tagId)
     {
         ui->lineEdit_tagId->setText(tagId);
         ui->lineEdit_customerName->setText(customerName);
+        ui->lineEdit_telephoneNumber->setText(telephoneNumber);
+        ui->lineEdit_roomId->setText(roomId);
 //        ui->lineEdit_InUse->setText(inUse);
 
         if(flag)
@@ -236,9 +238,13 @@ void ConsumePage::on_cardIdReceived(QString tagId)
             messageBox->setText("您好！您没有权限进入此房间，请到前台办理续费！");
             messageBox->exec();
             ui->btn_OK->setEnabled(false);
-        }
-        else
+        }else{
             ui->btn_OK->setEnabled(true);
+            CustomerRoomTableModel *customerRoomTable = new CustomerRoomTableModel(this);
+            customerRoomTable->bindTable();
+
+            customerRoomTable->insertRecords(tagId,  QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss"));
+        }
     }
     else if(currentEnventoryButton == ui->btn_Enventory1)
     {
@@ -336,7 +342,8 @@ void ConsumePage::onDecodeFrame(QByteArray bytes)
         }
         else if(frame.cmd.remove(" ") == "0A02" && currentOps == 10)
         {
-            ui->label_Tips->setText(ui->label_Tips->text() + tr("   状态: 完成,当前余额 %1 元").arg(last_value));
+//            ui->label_Tips->setText(ui->label_Tips->text() + tr("   状态: 完成,当前余额 %1 元").arg(last_value));
+            ui->label_Tips->setText("开门成功！");
             currentOps = -1;
             RecordTableModel *model = new RecordTableModel(this);
             model->bindTable();
@@ -371,18 +378,19 @@ void ConsumePage::onDecodeFrame(QByteArray bytes)
  * @param value 卡内余额
  * 读取卡内余额后调用
  */
-void ConsumePage::on_readValue(float value)
+void ConsumePage::on_readValue(float value, QString cardId)
 {
-    ui->label_Tips->setText(tr("卡内余额: %1 元\t\t应付金额: %2 元").arg(value).arg(sendData.value));
-    if(sendData.value > value)
-    {
-        messageBox->setText(tr("对不起,卡内余额不足,请充值!"));
-        messageBox->exec();
-        return;
-    }
-    last_value = value - sendData.value;
-    this->authentication();
-    currentOps = 10 ;
+//    ui->label_Tips->setText(tr("卡内余额: %1 元\t\t应付金额: %2 元").arg(value).arg(sendData.value));
+    ui->label_Tips->setText("开门成功！");
+//    if(sendData.value > value)
+//    {
+//        messageBox->setText(tr("对不起,卡内余额不足,请充值!"));
+//        messageBox->exec();
+//        return;
+//    }
+//    last_value = value - sendData.value;
+//    this->authentication();
+//    currentOps = 10 ;
 }
 /**
  * @brief ConsumePage::on_btn_OK_clicked

@@ -36,12 +36,16 @@ void TableInfoPages::on_btn_Query_clicked()
 {
     int index = ui->stackedWidget->currentIndex();
     switch (index) {
+
     case 0: //根据时间进行筛选查询
     {
         QString startTimeStr = ui->dtEditStart->dateTime().toString("yyyy-MM-dd hh:mm:ss");
         QString endTimeStr = ui->dtEditEnd->dateTime().toString("yyyy-MM-dd hh:mm:ss");
         QString str = "时间 Between '" + startTimeStr + "' and '" + endTimeStr + "'";
         currentModel->setFilter(str);
+        // 输出筛选信息
+        qDebug() << "Applying time filter:" << str;
+        qDebug() << "Filtered model row count:" << currentModel->rowCount();
         updateTableView(currentModel);
     }
         break;
@@ -79,10 +83,10 @@ void TableInfoPages::currentAction(QAction *action)
         WriteOffTableModel *writeOffTableModel = new WriteOffTableModel(this);
         writeOffTableModel->bindTable();
         updateTableView(writeOffTableModel);
-
         ui->comboBox->clear();
         ui->comboBox->addItem("时间");
         ui->comboBox->addItem("卡号");
+//        updateTableView(writeOffTableModel);
     }
     else if(action->text() == tr("入住记录"))
     {
@@ -90,11 +94,11 @@ void TableInfoPages::currentAction(QAction *action)
 //        registerTableModel->bindTable();
         CardTableModel *cardTableModel = new CardTableModel(this);
         cardTableModel->bindTable();
-
         updateTableView(cardTableModel);
         ui->comboBox->clear();
         ui->comboBox->addItem("时间");
         ui->comboBox->addItem("卡号");
+//        updateTableView(cardTableModel);
     }
 
     else if(action->text() == tr("刷卡记录"))
@@ -104,9 +108,8 @@ void TableInfoPages::currentAction(QAction *action)
         CustomerRoomTableModel *customerRoomTableModel = new CustomerRoomTableModel(this);
         customerRoomTableModel->bindTable();
         updateTableView(customerRoomTableModel);
-
         ui->comboBox->clear();
-        ui->comboBox->addItem("卡号");
+        ui->comboBox->addItem("卡号");  
     }
     else if(action->text() == tr("客人信息"))
     {
@@ -118,17 +121,8 @@ void TableInfoPages::currentAction(QAction *action)
         updateTableView(customerTableModel);
         ui->comboBox->clear();
         ui->comboBox->addItem("卡号");
-        ui->comboBox->addItem("姓名");
+        ui->comboBox->addItem("姓名");        
     }
-//    else if(action->text() == tr("充值记录"))
-//    {
-//        RechargeTableModel *rechargTableModel = new RechargeTableModel(this);
-//        rechargTableModel->bindTable();
-//        updateTableView(rechargTableModel);
-//        ui->comboBox->clear();
-//        ui->comboBox->addItem("时间");
-//        ui->comboBox->addItem("卡号");
-//    }
 }
 /**
  * @brief TableInfoPages::updateTableView

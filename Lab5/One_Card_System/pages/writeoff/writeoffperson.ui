@@ -43,6 +43,9 @@
        </item>
        <item>
         <widget class="QPushButton" name="btn_Inventory">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="font">
           <font>
            <family>Times New Roman</family>
